@@ -44,10 +44,30 @@
         }
       }
 
+      .rightsidefont {
+        font-size: 0.7em;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+
+      /* try to responsify the "we use" thing */
+      @media screen and (max-width: 500px) {
+        .rightsidefont {
+          font-size: 0.5em;
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        }
+      }
+
       body {
       background-color: #111418;
       font-size: 100%;
       }
+
+      .maincontainer {
+        width: 100%;
+        height: auto;
+
+      }
+
 
       .responsive {
         width: 72%;
@@ -63,9 +83,9 @@
           right: 10%;
           overflow-x: hidden;
           padding-top: 20px;
-          font-size: 0.7em;
-          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       }
+
+
 
       .rightsideimg {
         width: 100%;
@@ -105,11 +125,11 @@
 
 
   <body>
-
+  <div class="maincontainer">
     <center><img src="img/bg00_4k_color.gif" alt="noizHARDWARE" class="responsive"></center>
 
     <div class="rightside">
-      <h1><p><left><font color="808080">We use:</font></left></p> </h1>
+      <h1><p><left><font color="808080" class="rightsidefont">We use:</font></left></p> </h1>
       <p><center><img src="img/logos/neutrik.gif" alt="We use Neutrik jacks" class="rightsideimg"></center></p>
       <p><center><img src="img/logos/alps.gif" alt="We use Alps sealed potentiometers" class="rightsideimg"></center></p>
       <p><center><img src="img/logos/texasinstruments.gif" alt="We use Texas Instruments silicon" class="rightsideimg"></center></p>
@@ -118,6 +138,9 @@
 
 
     <embed src="snd/enter.mp3" width="180" height="90" loop="FALSE" autostart="TRUE" hidden="TRUE" type="audio/mpeg" />
+
+
+  </div>
 
       <!-- add also FLICKR ??? github??? blog???-->
 
