@@ -25,7 +25,7 @@
 
       .responsive {
         width: 80%;
-        height: auto;
+        height: 80%;
       }
 
       .rightside {
@@ -44,24 +44,43 @@
         height: auto;
         margin: 40% 0px;
       }
+
+      .bottombar {
+          height: 5%;
+          width: 100%;
+          position: fixed;
+          z-index: 10;
+          bottom: 1%;
+          overflow-x: hidden;
+          padding-bottom: 10px;
+      }
+
+      .bottombarimg {
+        width: 10%;
+        height: auto;
+      }
+
     </style>
   </head>
 
 
-<body>
+  <body>
 
-<center><img src="img/bg00_4k_color.gif" alt="noizHARDWARE" class="responsive"></center>
+    <center><img src="img/bg00_4k_color.gif" alt="noizHARDWARE" class="responsive"></center>
 
-<div class="rightside">
-<p><center><img src="img/logos/neutrik.gif" alt="we use Neutrik jacks" class="rightsideimg"></center></p>
-<p><center><img src="img/logos/alps.gif" alt="we use Alps sealed potentiometers" class="rightsideimg"></center></p>
-<p><center><img src="img/logos/texasinstruments.gif" alt="we use Texas Instruments silicon" class="rightsideimg"></center></p>
-<p><center><img src="img/logos/elna.gif" alt="we use Elna capacitors" class="rightsideimg"></center></p>
+    <div class="rightside">
+      <p><center><img src="img/logos/neutrik.gif" alt="we use Neutrik jacks" class="rightsideimg"></center></p>
+      <p><center><img src="img/logos/alps.gif" alt="we use Alps sealed potentiometers" class="rightsideimg"></center></p>
+      <p><center><img src="img/logos/texasinstruments.gif" alt="we use Texas Instruments silicon" class="rightsideimg"></center></p>
+      <p><center><img src="img/logos/elna.gif" alt="we use Elna capacitors" class="rightsideimg"></center></p>
+    </div>
 
-</div>
 
+    <embed src="snd/enter.mp3" width="180" height="90" loop="FALSE" autostart="TRUE" hidden="TRUE" type="audio/mpeg" />
 
-<embed src="snd/enter.mp3" width="180" height="90" loop="FALSE" autostart="TRUE" hidden="TRUE" type="audio/mpeg" />
+    <div class="bottombar">
+      <center><a href="https://www.youtube.com/c/minijackaudio"><img src="img/social/yt_logo_mono_dark.gif" alt="Visit the miniJack YouTube channel!" class="bottombarimg"></a><center>
+    </div>
 
-</body>
+  </body>
 </html>
