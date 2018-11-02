@@ -15,9 +15,35 @@
     <meta name="keywords" content="noizhardware,matrix,mixer,matrixmixer,eurorack,sdiy,synth,synthesizer,sound,music,noise,experimental,ambient">
     <meta name="author" content="noizHARDWARE">
     <meta name="contact" content="noizhardware@gmail.com">
-
+    <!-- SWAP 01 -->
+    <!-- trying version with brand logos on bottom bar, social + mail on right sidebar -->
 
     <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        height: auto;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
 
       body {
       background-color: #111418;
@@ -30,7 +56,7 @@
       }
 
       .rightside {
-          height: auto;
+          height: 80%;
           width: 7.5%;
           position: fixed;
           z-index: 10;
@@ -45,11 +71,11 @@
       .rightsideimg {
         width: 100%;
         height: auto;
-        margin: 40% 0px;
+        margin: 30% 0px;
       }
 
       .bottombar {
-          height: 5%;
+          height: 8%;
           width: 100%;
           position: fixed;
           z-index: 10;
@@ -59,8 +85,20 @@
       }
 
       .bottombarimg {
-        width: 9%;
+        width: 30%;
         height: auto;
+      }
+
+      .bottombarfont {
+        font-size: 100%;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+
+      .liedown {
+          z-index: 10;
+          bottom: 2%;
+          overflow-x: hidden;
+          padding-bottom: 5px;
       }
 
     </style>
@@ -73,18 +111,33 @@
 
     <div class="rightside">
       <h1><p><left><font color="808080">We use:</font></left></p> </h1>
-      <p><center><img src="img/logos/neutrik.gif" alt="we use Neutrik jacks" class="rightsideimg"></center></p>
-      <p><center><img src="img/logos/alps.gif" alt="we use Alps sealed potentiometers" class="rightsideimg"></center></p>
-      <p><center><img src="img/logos/texasinstruments.gif" alt="we use Texas Instruments silicon" class="rightsideimg"></center></p>
-      <p><center><img src="img/logos/elna.gif" alt="we use Elna capacitors" class="rightsideimg"></center></p>
+      <p><center><img src="img/logos/neutrik.gif" alt="We use Neutrik jacks" class="rightsideimg"></center></p>
+      <p><center><img src="img/logos/alps.gif" alt="We use Alps sealed potentiometers" class="rightsideimg"></center></p>
+      <p><center><img src="img/logos/texasinstruments.gif" alt="We use Texas Instruments silicon" class="rightsideimg"></center></p>
+      <p><center><img src="img/logos/elna.gif" alt="We use Elna capacitors" class="rightsideimg"></center></p>
     </div>
 
 
     <embed src="snd/enter.mp3" width="180" height="90" loop="FALSE" autostart="TRUE" hidden="TRUE" type="audio/mpeg" />
 
-    <div class="bottombar">
-      <center><a href="https://www.youtube.com/c/minijackaudio"><img src="img/social/yt_logo_mono_dark.png" alt="Visit the miniJack YouTube channell!" class="bottombarimg"></a><center>
+      <!-- add also FLICKR ??? github??? blog???-->
+
+    <div class="liedown">
+      <div class="row">
+        <div class="column">
+          <center><a href="https://www.instagram.com/noisefuel/"><img src="img/social/insta.png" alt="noizHARDWARE official Instagram" class="bottombarimg"></a></center>
+        </div>
+        <div class="column">
+          <center><a href="https://www.youtube.com/c/minijackaudio"><img src="img/social/yt_logo_mono_dark.png" alt="Visit the miniJack YouTube channell" class="bottombarimg"></a></center>
+        </div>
+        <div class="column">
+          <center><a href="mailto:noizhardware@gmail.com"><img src="img/social/mail.png" alt="Get in touch!" class="bottombarimg"></a></center>
+        </div>
+      </div>
     </div>
+
+
+
 
   </body>
 </html>
