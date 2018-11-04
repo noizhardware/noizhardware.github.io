@@ -70,6 +70,9 @@
         clear: both;
         display: table;
       }
+
+
+
       .rowsocial {
         width: 60%;
         margin-left: auto;
@@ -91,20 +94,12 @@
           width: 100%;
         }
       } */
-      .rightsidefont {
-        font-size: 0.7em;
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      }
-      /* try to responsify the "we use" thing */
-      @media screen and (max-width: 1050px) {
-        .rightsidefont {
-          font-size: 0.3em;
-        }
-      }
+
       body {
       background-color: #111418;
       font-size: 100%;
       }
+
       .bigfatface {
         display: block;
         margin-left: auto;
@@ -135,10 +130,20 @@
           padding-top: 2%;
       }
 
-      .bottombarimg {
+      .brandimg {
         width: 20%;
         height: auto;
       }
+
+      @media screen and (max-width: 1500px) {
+        .brandimg {
+          width: 50%;
+        }
+        .socialimg {
+          width: 30%;
+        }
+      }
+
       .bottombarfont {
         font-size:1.5vw;
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -159,16 +164,16 @@
         </div>
         <div class="rowbrands">
           <div class="columnbrands">
-            <p><center><img src="img/logos/neutrik.gif" alt="We use Neutrik jacks" class="bottombarimg"></center></p>
+            <p><center><img src="img/logos/neutrik.gif" alt="We use Neutrik jacks" class="brandimg"></center></p>
           </div>
           <div class="columnbrands">
-            <p><center><img src="img/logos/alps.gif" alt="We use Alps sealed potentiometers" class="bottombarimg"></center></p>
+            <p><center><img src="img/logos/alps.gif" alt="We use Alps sealed potentiometers" class="brandimg"></center></p>
           </div>
           <div class="columnbrands">
-            <p><center><img src="img/logos/texasinstruments.gif" alt="We use Texas Instruments silicon" class="bottombarimg"></center></p>
+            <p><center><img src="img/logos/texasinstruments.gif" alt="We use Texas Instruments silicon" class="brandimg"></center></p>
           </div>
           <div class="columnbrands">
-            <p><center><img src="img/logos/elna.gif" alt="We use Elna capacitors" class="bottombarimg"></center></p>
+            <p><center><img src="img/logos/elna.gif" alt="We use Elna capacitors" class="brandimg"></center></p>
           </div>
         </div>
         <hr>
