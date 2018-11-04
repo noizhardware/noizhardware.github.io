@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- I do synths while you do drugs -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="INDEX,FOLLOW" />
@@ -15,12 +17,13 @@
 
     <title>noizHARDWARE</title>
 
+    <meta name="pronunciation" content="nɔɪz">
 
     <meta name="description" content="noizHARDWARE, we make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules">
     <meta name="keywords" content="noizhardware,matrix,mixer,matrixmixer,minijack,eurorack,sdiy,synth,synthesizer,vca,vcamatrix,modularsynth,analog,sound,music,noise,experimental,ambient,vactrol,hardware">
     <meta name="author" content="noizHARDWARE">
     <meta name="contact" content="noizhardware@gmail.com">
-    <!-- SWAP 01 -->
+    <!-- SWAP 02 -->
 
     <style>
 
@@ -41,7 +44,14 @@
         color: #404040;
       }
 
-      .column {
+      .columnbrands {
+        float: left;
+        width: 25%;
+        height: auto;
+        padding: 5px;
+      }
+
+      .columnsocial {
         float: left;
         width: 33.3%;
         height: auto;
@@ -53,6 +63,37 @@
         content: "";
         clear: both;
         display: table;
+      }
+
+      .rowbrands {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+      }
+
+      .rowbrands::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .rowsocial {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+      }
+
+      .rowsocial::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .socialimg {
+        width: 10%;
+        height: auto;
       }
 
       /* Responsive layout - makes the three columns stack on top of each other instead of next to each other
@@ -87,96 +128,94 @@
       }
 
 
-      .responsive {
-        width: 72%;
+      .bigfatface {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 5;
+        width: 20%;
         height: auto;
+        padding-top: 10px;
       }
 
-      .rightside {
-          height: auto;
-          width: 7.5%;
-          position: fixed;
-          z-index: 10;
-          top: 0;
-          right: 10%;
-          overflow-x: hidden;
-          padding-top: 20px;
-      }
-
-
-
-      .rightsideimg {
+      .fatfaceimage {
         width: 100%;
         height: auto;
-        margin: 30% 0px;
       }
 
+
+
       .bottombar {
-          height: 10%;
+          height: 30%;
           width: 100%;
           position: fixed;
+          bottom: 3%;
           z-index: 10;
-          bottom: 5%;
           overflow-x: hidden;
-          padding-bottom: 5px;
+          padding-top: 2%;
       }
 
       .bottombarimg {
-        width: 30%;
+        width: 20%;
         height: auto;
       }
 
       .bottombarfont {
-        font-size: 100%;
+        font-size:1.5vw;
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       }
 
-      .liedown {
-          z-index: 10;
-          bottom: 2%;
-          overflow-x: hidden;
-          padding-bottom: 5px;
-      }
+
 
     </style>
   </head>
 
 
   <body>
-    <div class="row">
-      <center><img src="img/bg00_4k_color.gif" alt="noizHARDWARE" class="responsive"></center>
+    <div class="bigfatface">
+      <center><img src="img/bg00_4k_color_small.gif" alt="noizHARDWARE" class="fatfaceimage"></center>
+      <embed src="snd/enter.mp3" width="180" height="90" loop="FALSE" autostart="TRUE" hidden="TRUE" type="audio/mpeg" />
+    </div>
 
-      <div class="rightside">
-        <h1><p><left><font color="808080" class="rightsidefont">We use:</font></left></p> </h1>
-        <p><center><img src="img/logos/neutrik.gif" alt="We use Neutrik jacks" class="rightsideimg"></center></p>
-        <p><center><img src="img/logos/alps.gif" alt="We use Alps sealed potentiometers" class="rightsideimg"></center></p>
-        <p><center><img src="img/logos/texasinstruments.gif" alt="We use Texas Instruments silicon" class="rightsideimg"></center></p>
-        <p><center><img src="img/logos/elna.gif" alt="We use Elna capacitors" class="rightsideimg"></center></p>
+      <div class="bottombar">
+        <div class="row">
+          <center><h1><p><left><font color="808080" class="bottombarfont">We use:</font></left></p> </h1></center>
+        </div>
+        <div class="rowbrands">
+          <div class="columnbrands">
+            <p><center><img src="img/logos/neutrik.gif" alt="We use Neutrik jacks" class="bottombarimg"></center></p>
+          </div>
+          <div class="columnbrands">
+            <p><center><img src="img/logos/alps.gif" alt="We use Alps sealed potentiometers" class="bottombarimg"></center></p>
+          </div>
+          <div class="columnbrands">
+            <p><center><img src="img/logos/texasinstruments.gif" alt="We use Texas Instruments silicon" class="bottombarimg"></center></p>
+          </div>
+          <div class="columnbrands">
+            <p><center><img src="img/logos/elna.gif" alt="We use Elna capacitors" class="bottombarimg"></center></p>
+          </div>
+        </div>
+        <hr>
+
+        <!-- add also FLICKR ??? github??? blog???-->
+
+        <div class="rowsocial">
+          <div class="columnsocial">
+            <center><a href="https://www.instagram.com/noisefuel/"><img src="img/social/insta_icon.png" alt="noizHARDWARE official Instagram" class="socialimg"></a></center>
+          </div>
+          <div class="columnsocial">
+            <center><a href="https://www.youtube.com/c/minijackaudio"><img src="img/social/yt_logo_mono_dark_icon.png" alt="Visit the miniJack YouTube channell" class="socialimg"></a></center>
+          </div>
+          <div class="columnsocial">
+            <center><a href="mailto:noizhardware@gmail.com"><img src="img/social/mail_icon.png" alt="Get in touch!" class="socialimg"></a></center>
+          </div>
+        </div>
       </div>
 
 
-      <embed src="snd/enter.mp3" width="180" height="90" loop="FALSE" autostart="TRUE" hidden="TRUE" type="audio/mpeg" />
 
 
-    </div>
 
-      <!-- add also FLICKR ??? github??? blog???-->
-
-
-    <div class="bottombar">
-      <hr>
-      <!--<div class="row"> -->
-        <div class="column">
-          <center><a href="https://www.instagram.com/noisefuel/"><img src="img/social/insta.png" alt="noizHARDWARE official Instagram" class="bottombarimg"></a></center>
-        </div>
-        <div class="column">
-          <center><a href="https://www.youtube.com/c/minijackaudio"><img src="img/social/yt_logo_mono_dark.png" alt="Visit the miniJack YouTube channell" class="bottombarimg"></a></center>
-        </div>
-        <div class="column">
-          <center><a href="mailto:noizhardware@gmail.com"><img src="img/social/mail.png" alt="Get in touch!" class="bottombarimg"></a></center>
-        </div>
-      <!-- </div> -->
-    </div>
 
 
 
