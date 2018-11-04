@@ -53,8 +53,16 @@
         height: auto;
         padding: 5px;
       }
+
+      .rowwriting {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1px;
+        padding-top: 1px;
+      }
       /* Clearfix (clear floats) */
-      .row::after {
+      .rowwriting::after {
         content: "";
         clear: both;
         display: table;
@@ -101,7 +109,7 @@
       }
 
       .bigfatface {
-        display: block;
+        /*display: block;*/
         margin-left: auto;
         margin-right: auto;
         z-index: 5;
@@ -151,6 +159,7 @@
 
       .bottombarfont {
         font-size:1.5vw;
+        line-height: 80%;
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       }
     </style>
@@ -164,8 +173,8 @@
     </div>
 
       <div class="bottombar">
-        <div class="row">
-          <center><h1><p><left><font color="808080" class="bottombarfont">We use:</font></left></p> </h1></center>
+        <div class="rowwriting">
+          <center><h1><p><font color="808080" class="bottombarfont">We use:</font></p> </h1></center>
         </div>
         <div class="rowbrands">
           <div class="columnbrands">
