@@ -144,13 +144,14 @@
       }
 
       .bottombar {
+          display: table-row;
           height: 30%;
           width: 100%;
-          position: relative;
-
+          position: fixed;
+          bottom: 2%;
           z-index: 10;
           overflow-x: hidden;
-          padding-top: 2%;
+          padding-top: 1%;
       }
 
       .brandimg {
@@ -172,15 +173,45 @@
         line-height: 50%;
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       }
+
+      /* css soup for vertical aligning the big logo */
+      .outer {
+        display: table;
+        position: absolute;
+        height: 70%;
+        width: 100%;
+      }
+
+      .middle {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        /*whatever width you want*/
+      }
+
+
+
     </style>
   </head>
 
 
   <body>
-    <div class="bigfatface">
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+    <!-- <div class="bigfatface"> -->
       <center><img src="img/bg00_4k_color_small.gif" alt="noizHARDWARE" class="fatfaceimage"></center>
       <embed src="snd/enter.mp3" width="180" height="90" loop="FALSE" autostart="TRUE" hidden="TRUE" type="audio/mpeg" />
+      </div>
     </div>
+  </div>
+    <!-- </div> -->
+
 
       <div class="bottombar">
         <div class="rowwriting">
@@ -215,6 +246,7 @@
             <center><a href="mailto:noizhardware@gmail.com"><img src="img/social/mail_icon.png" alt="Get in touch!" class="socialimg"></a></center>
           </div>
         </div>
+
       </div>
 
 
