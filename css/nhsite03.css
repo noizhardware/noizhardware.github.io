@@ -48,6 +48,10 @@ line-height: 0.5;
   .col-12 {width: 100%;}
 
 
+
+
+
+
 .row::after {
     content: "";
     clear: both;
@@ -78,7 +82,8 @@ line-height: 0.5;
   margin-top: auto;
   margin-bottom: auto;
 }
-/* css soup for vertical aligning the big logo */
+
+/* css soup for vertical aligning the big logo
 .outer {
   display: table;
   position: absolute;
@@ -95,10 +100,11 @@ line-height: 0.5;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
-  /*whatever width you want*/
+  /*whatever width you want
 }
+*/
 
-
+/*
 .bottombar {
     display: table-row;
     height: 30%;
@@ -111,9 +117,10 @@ line-height: 0.5;
 }
 .bottombarfont {
   font-size:1vw;
-  /* line-height: 50%; */
+  line-height: 50%;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+*/
 
 
 
@@ -175,6 +182,28 @@ line-height: 0.5;
   width: 50%;
   height: auto;
 }
+
+
+/* for Desktop */
+  @media screen and (min-width: 650px) {
+
+    .brandimg {
+      width: 50%;
+    }
+
+    .fatfaceimage {
+      width: 30%;
+    }
+
+  }
+
+
+
+
+
+
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other
 @media screen and (max-width: 500px) {
   .column {
