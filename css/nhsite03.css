@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Handglove');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 
 /* SWAP 03 */
 
@@ -23,6 +23,7 @@ hr {
 body {
 background-color: #111418;
 font-family: 'PT Sans', sans-serif;
+
 font-size: 5vw;
 line-height: 0.5;
 }

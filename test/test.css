@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+body {
+background-color: #111418;
+font-family: 'EB Garamond', serif;
+color: #808080;
+font-size: 10vw;
+line-height: 1;
+}
