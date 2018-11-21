@@ -45,7 +45,7 @@ line-height: 0.5;
 }
 
   .col-1 {width: 8.33%;}
-  .col-1h {width: 12.495%;}
+  .col-1h {width: 12.5%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
   .col-4 {width: 33.33%;}
@@ -69,11 +69,19 @@ line-height: 0.5;
     display: table;
 }
 
+.topwrapper {
+  position: fixed;
+  top: 1%;
+  height: 79%;
+}
+
 .bottomwrapper {
   position: fixed;
   bottom: 1%;
-
+  height: 19%;
 }
+
+
 
 /*
 .bigfatface {
@@ -196,19 +204,20 @@ line-height: 0.5;
 
 
 /* for Desktop */
-/*
-  @media screen and (min-width: 650px) {
+
+  @media screen and (min-width: 900px) {
 
     .brandimg {
       width: 50%;
     }
-
+/*
     .fatfaceimage {
-      width: 30%;
+      width: auto;
+      height: 50%;
     }
-
+*/
   }
-  */
+
 
 
 
