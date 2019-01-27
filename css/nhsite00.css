@@ -2,11 +2,7 @@
   box-sizing: border-box;
 }
 
-.allwrapper {
-  height: 90%;
-  width: auto;
-  position: absolute;
-}
+
 
 hr {
   display: block;
@@ -50,6 +46,7 @@ font-size: 100%;
   position: absolute;
   height: 65%;
   width: 100%;
+  vertical-align: top;
 }
 
 .middle {
@@ -74,6 +71,7 @@ font-size: 100%;
     z-index: 10;
     overflow-x: hidden;
     padding-top: 1%;
+    vertical-align: top;
 }
 .bottombarfont {
   font-size:1.5vw;
