@@ -44,9 +44,10 @@ font-size: 100%;
 .outer {
   display: table;
   position: absolute;
-  height: 65%;
+  height: 45%;
   width: 100%;
   vertical-align: top;
+  horizontal-align: center;
 }
 
 .middle {
