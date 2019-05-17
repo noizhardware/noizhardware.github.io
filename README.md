@@ -4,4 +4,4 @@
 
 ---
 
-[[nɔɪz]](https://www.noizhardware.com "www.noizHARDWARE.com")
+[ʘ](https://www.noizhardware.com "www.noizHARDWARE.com")
