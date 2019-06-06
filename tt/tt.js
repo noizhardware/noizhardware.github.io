@@ -19,8 +19,6 @@ var TT = {
     var ttFull = ttMark + ":" + ttNum;
     var ttTwo = ttMark + ":" + ttNumTwo;
 
-    document.getElementById("seconds").innerHTML = totSec;
-    document.getElementById("mom").innerHTML = h + " " + m + " " + s;
     document.getElementById("clock").innerHTML = ttFull;
     document.getElementById("clockT").innerHTML = ttTwo;
   }
