@@ -19,4 +19,5 @@ var TT = {
     document.getElementById("clock").innerHTML = ttFull;
     document.getElementById("clockT").innerHTML = ttTwo;
   }
+  //setInterval(updateTime, 1000);
 }
