@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Puppa Fyah</title>
+    <!-- <link rel="stylesheet" src="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script> -->
+
+    <script src="js/saveToFirebase.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        hhStocazzooooo!!!!!
+      </header>
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Gimme yo data dawg!</h2>
+        <label for="inputData" class="sr-only">Yo data</<label>
+        <input type="text" id="inputData" class="form-control" placeholder="yo friggin' data here"  required autofocus>
+        <button onclick="saveToFirebase("porcodio")" id="sendButton" class="btn btn-lg btn-primary btn-block" type="submit" >Send dat data biatch!</button>
+      </form>
+
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAXjv0D9CZwOdJqiRCJCkvQLiNQXzAJPsY",
+      authDomain: "firetest00-9375d.firebaseapp.com",
+      databaseURL: "https://firetest00-9375d.firebaseio.com",
+      projectId: "firetest00-9375d",
+      storageBucket: "",
+      messagingSenderId: "458778975946",
+      appId: "1:458778975946:web:f37208391d96bd27"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    console.log('firebase initialized');
+
+    // function saveToFirebase(inputData) {
+    //     var dataObject = {
+    //         inputData: inputData
+    //     };
+    //
+    //     firebase.database().ref('big-mass-of-data').push().set(dataObject)
+    //         .then(function(snapshot) {
+    //             console.log('haha Success!'); // some success method
+    //         }, function(error) {
+    //             console.log('error' + error);
+    //             error(); // some error method
+    //         });
+    // }
+    saveToFirebase("e checcazzo porcoddio"); // THIS ONE WORKSSSS!!!!!!!
+  </script>
+  </body>
+</html>
