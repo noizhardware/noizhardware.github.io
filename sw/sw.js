@@ -16,9 +16,9 @@ function startTimer(){
 
     paused = 0;
     running = 1;
-timerDisplay.style.background = "#FF0000";
+timerDisplay.style.background = "#2E86AB"; //active timer color
     timerDisplay.style.cursor = "auto";
-    timerDisplay.style.color = "yellow";
+    timerDisplay.style.color = "white";
     startTimerButton.classList.add('lighter');
     pauseTimerButton.classList.remove('lighter');
     startTimerButton.style.cursor = "auto";
@@ -33,8 +33,8 @@ function pauseTimer(){
     savedTime = difference;
     paused = 1;
     running = 0;
-    timerDisplay.style.background = "#A90000";
-    timerDisplay.style.color = "#690000";
+    timerDisplay.style.background = "#A1A1A1";
+    timerDisplay.style.color = "white";
     timerDisplay.style.cursor = "pointer";
     startTimerButton.classList.remove('lighter');
     pauseTimerButton.classList.add('lighter');
@@ -52,8 +52,8 @@ function resetTimer(){
   paused = 0;
   running = 0;
   timerDisplay.innerHTML = 'Start Timer!';
-  timerDisplay.style.background = "#A90000";
-  timerDisplay.style.color = "#fff";
+  timerDisplay.style.background = "#A1A1A1";
+  timerDisplay.style.color = "white";
   timerDisplay.style.cursor = "pointer";
   startTimerButton.classList.remove('lighter');
   pauseTimerButton.classList.remove('lighter');
