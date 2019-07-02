@@ -67,20 +67,9 @@ function getShowTime(){
   } else {
     difference =  updatedTime - startTime;
   }
-  // var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  // var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  // var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  // var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  // var milliseconds = Math.floor((difference % (1000 * 60)) / 100);
-  // hours = (hours < 10) ? "0" + hours : hours;
-  // minutes = (minutes < 10) ? "0" + minutes : minutes;
-  // seconds = (seconds < 10) ? "0" + seconds : seconds;
-  // milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-  // var allsecs = seconds + (minutes * 60) + (hours * 3600);
-  var frags = difference / 28800000;
-  timerDisplay.innerHTML = fixdec(frags, 7);
-  //timerDisplay.innerHTML = parseFloat(frags).toFixed(4);
+  var floowPhases = difference / 28800000;
+  timerDisplay.innerHTML = fixDec(floowPhases, 7);
 }
-function fixdec(value, decimals) {
+function fixDec(value, decimals) {
   return Number(value).toFixed(decimals);
 }
