@@ -41,14 +41,14 @@ body {
   font-size: 24px;
   text-align:center;
   color: #fff;
-  background: #A90000;
+  background: #A1A1A1;
   cursor: pointer
 }
 .reset {
-  background: #550000;
+  background: #3D3D3D;
   color: white;
   width:14.9%;
-  border-left: 1px solid #990000;
+  border-left: 1px solid #FFFFFF;
 }
 .reset:hover {
   background: #CC0000;
