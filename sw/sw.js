@@ -73,3 +73,9 @@ function getShowTime(){
 function fixDec(value, decimals) {
   return Number(value).toFixed(decimals);
 }
+
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32){ // spacebar press
+        alert("Hello! I am an alert box!");
+    }
+}
