@@ -11,6 +11,7 @@
 
 </head>
 <body>
+    
 <div id="timerContainer">
     <div class="timer" onclick="startTimer()">Ready to F L O O W</div>
     <div class="startTimer reset" onclick="startTimer()" >
@@ -19,8 +20,11 @@
     <div class="pauseTimer reset" onclick="pauseTimer()" >
         <i class="fas fa-pause"></i>
     </div>
+    
     <div class="resetTimer reset" onclick="resetTimer()">Reset</div>
+    <input type="text" id="taskName" class="form-control" placeholder="task name"  required autofocus>
 </div>
+
 <script type="text/javascript" src="sw.js"></script>
 </body>
 </html>
