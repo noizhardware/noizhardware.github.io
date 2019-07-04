@@ -124,7 +124,7 @@ function spitMASS(){
     var tottVal = readInput("TOTT"); // TODO : qua mettere che vede da solo il tempo trascorso -- e anche la DATE
     
     insertText("massOut", makeMASSline("DATE","2019", true));
-    if(projVal){insertText("massOut", makeMASSline("PROJ",projVal))}
+    if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
     if(typ3Val){insertText("massOut", makeMASSline("typ3",typ3Val))}
