@@ -92,11 +92,16 @@ document.body.onkeyup = function(e){
 
 ////////// spit MASS /////////////
 document.addEventListener('keydown', function(event) { // Ctrl + M combo keypress
-  if (event.ctrlKey && event.key === 'm') {
+  //if (event.ctrlKey && event.key === 'm') {
+  if (ctrlPlus("m")) {
     //console.log("Ctrl + M");
     spitMASS();
   }
 });
+
+function ctrlPlus(key){
+    if (event.ctrlKey && event.key === key) {return true}
+}
 
 document.getElementById("makeMASSbutton").addEventListener("click", function(){
   spitMASS();
