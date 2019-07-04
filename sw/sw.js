@@ -103,17 +103,22 @@ document.getElementById("makeMASSbutton").addEventListener("click", function(){
 });
 
 function spitMASS(){
-    // var allmass = "";
-    // if(readInput("proj")){
-    //     allmass += "  proj  ";
-    //     allmass += readInput("proj");
-    //     allmass += '\n';
-    // }
     clearText("massOut"); // clears textarea
     var projVal = readInput("proj");
-    if(projVal){
-        insertText("massOut", makeMASSline("PROJ",projVal));
-    }
+    var typ1Val = readInput("typ1");
+    var typ2Val = readInput("typ2");
+    var typ3Val = readInput("typ3");
+    var forwVal = readInput("forw");
+    var noteVal = readInput("note");
+    var tottVal = readInput("TOTT"); // qua mettere che vede da solo il tempo trascorso
+    
+    if(projVal){insertText("massOut", makeMASSline("PROJ",projVal))}
+    if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
+    if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
+    if(typ3Val){insertText("massOut", makeMASSline("typ3",typ3Val))}
+    if(forwVal){insertText("massOut", makeMASSline("forw",forwVal))}
+    if(noteVal){insertText("massOut", makeMASSline("note",noteVal))}
+    if(tottVal){insertText("massOut", makeMASSline("TOTT",tottVal))}
     
 }
 ////////////////////////////
