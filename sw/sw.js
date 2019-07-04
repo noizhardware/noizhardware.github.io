@@ -110,7 +110,7 @@ function spitMASS(){
     var typ3Val = readInput("typ3");
     var forwVal = readInput("forw");
     var noteVal = readInput("note");
-    var tottVal = readInput("TOTT"); // qua mettere che vede da solo il tempo trascorso
+    var tottVal = readInput("TOTT"); // TODO : qua mettere che vede da solo il tempo trascorso -- e anche la DATE
     
     if(projVal){insertText("massOut", makeMASSline("PROJ",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
