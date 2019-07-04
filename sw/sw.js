@@ -70,8 +70,9 @@ function getShowTime(){
   var floowPhases = difference / 28800000;
   timerDisplay.innerHTML = fixDec(floowPhases, 7);
 }
+
 function fixDec(value, decimals) {
-  return Number(value).toFixed(decimals);
+    return Number(value).toFixed(decimals);
 }
 
 function spacebar(){
@@ -83,7 +84,20 @@ function spacebar(){
 }
 
 document.body.onkeyup = function(e){
-    if(e.keyCode == 32){ // spacebar press
+    if(e.keyCode == 32 && !(checkInputFocus("blabla"))){ // spacebar press, when there is no focus on any input field
+    //if(e.keyCode == 32){
         spacebar();
     }
+}
+
+function checkInputFocus(myclass){
+    var isFocused = new Boolean(false);
+    var x = document.activeElement.tagName;
+    if(x == "INPUT"){
+        isFocused = true;
+    } else{
+        isFocused = false;
+    }
+    console.log(isFocused);
+    return isFocused;
 }
