@@ -112,6 +112,7 @@ function spitMASS(){
     var noteVal = readInput("note");
     var tottVal = readInput("TOTT"); // TODO : qua mettere che vede da solo il tempo trascorso -- e anche la DATE
     
+    insertText("massOut", makeMASSline("DATE","2019", true));
     if(projVal){insertText("massOut", makeMASSline("PROJ",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
@@ -155,8 +156,12 @@ function clearText(id){
     elem.innerHTML = '';
 }
 
-function makeMASSline(attribName, attribValue){
-    var massLine = "  ";
+function makeMASSline(attribName, attribValue, header){ // header is non-mandatory
+    if(header){
+        var massLine = "";
+    } else{
+        var massLine = "  ";
+    }
         massLine += attribName;
         massLine += "  ";
         massLine += attribValue;
