@@ -85,9 +85,19 @@ function spacebar(){
 
 document.body.onkeyup = function(e){
     if(e.keyCode == 32 && !(checkInputFocus("blabla"))){ // spacebar press, when there is no focus on any input field
-    //if(e.keyCode == 32){
         spacebar();
     }
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.key === 'm') {
+    console.log("Ctrl + M");
+    spitMASS();
+  }
+});
+
+function spitMASS(){
+    
 }
 
 function checkInputFocus(myclass){
@@ -101,3 +111,6 @@ function checkInputFocus(myclass){
     console.log(isFocused);
     return isFocused;
 }
+
+
+
