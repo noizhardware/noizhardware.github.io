@@ -26,6 +26,10 @@ body {
   font-size: 30px;
 }
 
+.attName {
+  font-size: 15px;
+}
+
 #timerContainer {
   font-family: "Roboto";
   font-weight: 300;
