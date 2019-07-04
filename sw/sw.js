@@ -91,16 +91,22 @@ document.body.onkeyup = function(e){
 
 
 ////////// spit MASS /////////////
-document.addEventListener('keydown', function(event) { // Ctrl + M combo keypress
-  //if (event.ctrlKey && event.key === 'm') {
-  if (ctrlPlus("m")) {
-    //console.log("Ctrl + M");
+document.addEventListener('keydown', function(event) { 
+  if (event.ctrlKey && event.key === 'm') { // Ctrl + M combo keypress
+  //if (ctrlPlus('m')) { // call to the encapsulated version
+    console.log("Ctrl + M on eventlisten");
     spitMASS();
   }
 });
 
-function ctrlPlus(key){
-    if (event.ctrlKey && event.key === key) {return true}
+function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated version works
+    var output = new Boolean(false);
+    if(event.key === mykey){console.log("M");}
+    if (event.ctrlKey && event.key === mykey){
+        output = true;
+        console.log("combo");
+    }
+    return output;
 }
 
 document.getElementById("makeMASSbutton").addEventListener("click", function(){
