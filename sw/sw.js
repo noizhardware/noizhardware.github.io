@@ -103,13 +103,18 @@ document.getElementById("makeMASSbutton").addEventListener("click", function(){
 });
 
 function spitMASS(){
-    var allmass = "";
-    if(readInput("proj")){
-        allmass += "  proj  ";
-        allmass += readInput("proj");
-    }
+    // var allmass = "";
+    // if(readInput("proj")){
+    //     allmass += "  proj  ";
+    //     allmass += readInput("proj");
+    //     allmass += '\n';
+    // }
     clearText("massOut"); // clears textarea
-    insertText("massOut", allmass);
+    var projVal = readInput("proj");
+    if(projVal){
+        insertText("massOut", makeMASSline("PROJ",projVal));
+    }
+    
 }
 ////////////////////////////
 
@@ -143,6 +148,15 @@ function readInput(id) {
 function clearText(id){
     var elem = document.getElementById(id);
     elem.innerHTML = '';
+}
+
+function makeMASSline(attribName, attribValue){
+    var massLine = "  ";
+        massLine += attribName;
+        massLine += "  ";
+        massLine += attribValue;
+        massLine += '\n';
+    return massLine;
 }
 
 
