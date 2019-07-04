@@ -84,7 +84,7 @@ function spacebar(){
 }
 
 document.body.onkeyup = function(e){
-    if(e.keyCode == 32 && !(checkInputFocus("blabla"))){ // spacebar press, when there is no focus on any input field
+    if(e.keyCode == 32 && !(checkInputFocus("inputField"))){ // spacebar press, when there is no focus on any input field, my class "inputField"
         spacebar();
     }
 }
@@ -94,6 +94,10 @@ document.addEventListener('keydown', function(event) { // Ctrl + M combo keypres
     //console.log("Ctrl + M");
     spitMASS();
   }
+});
+
+document.getElementById("makeMASSbutton").addEventListener("click", function(){
+  spitMASS();
 });
 
 function spitMASS(){
