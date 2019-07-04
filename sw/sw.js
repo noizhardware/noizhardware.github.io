@@ -89,15 +89,15 @@ document.body.onkeyup = function(e){
     }
 }
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function(event) { // Ctrl + M combo keypress
   if (event.ctrlKey && event.key === 'm') {
-    console.log("Ctrl + M");
+    //console.log("Ctrl + M");
     spitMASS();
   }
 });
 
 function spitMASS(){
-    
+    insertText("massOut", "porcodio!!!");
 }
 
 function checkInputFocus(myclass){
@@ -111,6 +111,12 @@ function checkInputFocus(myclass){
     console.log(isFocused);
     return isFocused;
 }
+
+function insertText(elemID, text)
+    {
+        var elem = document.getElementById(elemID);
+        elem.innerHTML += text;
+     }
 
 
 
