@@ -89,6 +89,8 @@ document.body.onkeyup = function(e){
     }
 }
 
+
+////////// spit MASS /////////////
 document.addEventListener('keydown', function(event) { // Ctrl + M combo keypress
   if (event.ctrlKey && event.key === 'm') {
     //console.log("Ctrl + M");
@@ -101,8 +103,15 @@ document.getElementById("makeMASSbutton").addEventListener("click", function(){
 });
 
 function spitMASS(){
-    insertText("massOut", "porcodio!!!");
+    var allmass = "";
+    if(readInput("proj")){
+        allmass += "  proj  ";
+        allmass += readInput("proj");
+    }
+    clearText("massOut"); // clears textarea
+    insertText("massOut", allmass);
 }
+////////////////////////////
 
 function checkInputFocus(myclass){
     var isFocused = new Boolean(false);
@@ -120,7 +129,21 @@ function insertText(elemID, text)
     {
         var elem = document.getElementById(elemID);
         elem.innerHTML += text;
-     }
+    }
+    
+function readInput(id) {
+    if(document.getElementById(id).value){
+        var x = document.getElementById(id).value;
+    } else{
+        x = false;
+    }
+    return x;
+}
+
+function clearText(id){
+    var elem = document.getElementById(id);
+    elem.innerHTML = '';
+}
 
 
 
