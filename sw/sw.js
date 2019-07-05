@@ -185,6 +185,17 @@ function spitMASS(){
 }
 ////////////////////////////
 
+document.getElementById("clipboard").addEventListener("click", function(){
+  writetoClipboard();
+});
+
+function writetoClipboard() {
+  var text = document.getElementById("massOut");
+  text.select();
+  document.execCommand("copy");
+  console.log("Copied the text: " + text.value);
+}
+
 function checkInputFocus(myclass){
     var isFocused = new Boolean(false);
     var x = document.activeElement.tagName;
