@@ -184,7 +184,8 @@ function makeMASSline(attribName, attribValue, header){ // header is non-mandato
 /////////////////// cookies
 
 document.getElementById("testA").addEventListener("click", function(){
-  setCookie("porco","dio",30);
+    var fatCookie = makeMASSline("DATE","2019", true) + makeMASSline("proj",projVal);
+  setCookie("porco",fatCookie,30);
 });
 
 document.getElementById("testB").addEventListener("click", function(){
