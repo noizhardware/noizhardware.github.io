@@ -71,7 +71,7 @@ function getShowTime(){
   timerDisplay.innerHTML = fixDec(floowPhases, 7);
 }
 
-function floowTime(){
+function floowElapsed(){
   updatedTime = new Date().getTime();
   if (savedTime){
     difference = (updatedTime - startTime) + savedTime; // difference is in milliseconds!
@@ -79,7 +79,7 @@ function floowTime(){
     difference =  updatedTime - startTime;
   }
   var floowPhases = difference / 28800000;
-  return floowPhases;
+  return Number(floowPhases);
 }
 
 function floowDate(){
@@ -167,7 +167,8 @@ function spitMASS(){
     
     
     insertText("massOut", makeMASSline("DATE",floowDate(), true));
-    insertText("massOut", makeMASSline("TOTT",roundDec(floowTime(), 2)));
+    insertText("massOut", makeMASSline("TOTT",roundDec(floowElapsed(), 2)));
+    console.log(roundDec(floowElapsed(), 2));
     if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
