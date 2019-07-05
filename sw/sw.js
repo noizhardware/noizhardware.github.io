@@ -181,4 +181,42 @@ function makeMASSline(attribName, attribValue, header){ // header is non-mandato
 }
 
 
+/////////////////// cookies
+
+document.getElementById("testA").addEventListener("click", function(){
+  setCookie("porco","dio",30);
+});
+
+document.getElementById("testB").addEventListener("click", function(){
+    var biscotto=getCookie("porco");
+  console.log("biscotto: " + biscotto);
+});
+
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  console.log("cookie SET: " + cname + "=" + cvalue);
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+        console.log("cookie FOUND!!!");
+      return c.substring(name.length, c.length);
+    }
+  }
+  console.log("cookie NOT found");
+  return "";
+}
+
+
 
