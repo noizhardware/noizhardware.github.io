@@ -1,3 +1,7 @@
+function init(){
+    setInterval(function(){ TT.full(); }, 1);
+}
+
 var TT = {
   full: function(){
     //var seconds = Math.round(new Date() / 1000);
