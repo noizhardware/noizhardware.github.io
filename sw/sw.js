@@ -83,6 +83,26 @@ function floowTime(){
 }
 
 function floowDate(){
+    var floowYear = new Date().getFullYear();
+    
+    var month = new Date().getMonth() + 1;
+    if(month == 1){var floowMonth = "a"}
+    if(month == 2){var floowMonth = "b"}
+    if(month == 3){var floowMonth = "c"}
+    if(month == 4){var floowMonth = "d"}
+    if(month == 5){var floowMonth = "e"}
+    if(month == 6){var floowMonth = "f"}
+    if(month == 7){var floowMonth = "g"}
+    if(month == 8){var floowMonth = "h"}
+    if(month == 9){var floowMonth = "i"}
+    if(month == 10){var floowMonth = "j"}
+    if(month == 11){var floowMonth = "k"}
+    if(month == 12){var floowMonth = "z"}
+    
+    var day = new Date().getDay();
+    if(day < 10){var floowDay = "0" + day} else{var floowDay = day}
+    
+    return floowYear + floowMonth + floowDay;
 }
 
 function fixDec(value, decimals) {
@@ -146,7 +166,7 @@ function spitMASS(){
     var noteVal = readInput("note");
     
     
-    insertText("massOut", makeMASSline("DATE","2019", true));
+    insertText("massOut", makeMASSline("DATE",floowDate(), true));
     insertText("massOut", makeMASSline("TOTT",roundDec(floowTime(), 0)));
     if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
