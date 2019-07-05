@@ -71,8 +71,31 @@ function getShowTime(){
   timerDisplay.innerHTML = fixDec(floowPhases, 7);
 }
 
+function floowTime(){
+  updatedTime = new Date().getTime();
+  if (savedTime){
+    difference = (updatedTime - startTime) + savedTime; // difference is in milliseconds!
+  } else {
+    difference =  updatedTime - startTime;
+  }
+  var floowPhases = difference / 28800000;
+  return floowPhases;
+}
+
+function floowDate(){
+}
+
 function fixDec(value, decimals) {
     return Number(value).toFixed(decimals);
+}
+
+function roundDec(value, decimals) {
+    if(decimals == 0){
+        var mult = 1;
+    } else{
+        var mult = Math.pow(10, decimals)
+    }
+    return Math.round(value * mult) / mult;
 }
 
 function spacebar(){
@@ -121,16 +144,16 @@ function spitMASS(){
     var typ3Val = readInput("typ3");
     var forwVal = readInput("forw");
     var noteVal = readInput("note");
-    var tottVal = readInput("TOTT"); // TODO : qua mettere che vede da solo il tempo trascorso -- e anche la DATE
+    
     
     insertText("massOut", makeMASSline("DATE","2019", true));
+    insertText("massOut", makeMASSline("TOTT",roundDec(floowTime(), 0)));
     if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
     if(typ3Val){insertText("massOut", makeMASSline("typ3",typ3Val))}
     if(forwVal){insertText("massOut", makeMASSline("forw",forwVal))}
     if(noteVal){insertText("massOut", makeMASSline("note",noteVal))}
-    if(tottVal){insertText("massOut", makeMASSline("TOTT",tottVal))}
     
 }
 ////////////////////////////
