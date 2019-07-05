@@ -167,7 +167,7 @@ function spitMASS(){
     
     
     insertText("massOut", makeMASSline("DATE",floowDate(), true));
-    insertText("massOut", makeMASSline("TOTT",roundDec(floowTime(), 0)));
+    insertText("massOut", makeMASSline("TOTT",roundDec(floowTime(), 2)));
     if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
