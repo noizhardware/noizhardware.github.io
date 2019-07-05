@@ -118,6 +118,12 @@ function roundDec(value, decimals) {
     return Math.round(value * mult) / mult;
 }
 
+function roundStep(value, step) {
+    step || (step = 1.0);
+    var inv = 1.0 / step;
+    return Math.round(value * inv) / inv;
+}
+
 function spacebar(){
     if(!running){
         startTimer();
