@@ -141,12 +141,22 @@ document.body.onkeyup = function(e){
 
 ////////// spit MASS /////////////
 document.addEventListener('keydown', function(event) { 
-  if (event.ctrlKey && event.key === 'm') { // Ctrl + M combo keypress
+  if (event.ctrlKey && event.key === ',') { // Ctrl + , combo keypress
   //if (ctrlPlus('m')) { // call to the encapsulated version
-    console.log("Ctrl + M on eventlisten");
+    console.log("Ctrl + , on eventlisten");
     spitMASS();
   }
 });
+
+document.addEventListener('keydown', function(event) { 
+  if (event.ctrlKey && event.key === '.') { // Ctrl + . combo keypress
+  //if (ctrlPlus('l')) { // call to the encapsulated version
+    console.log("Ctrl + . on eventlisten");
+    writetoClipboard();
+  }
+});
+
+
 
 function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated version works
     var output = new Boolean(false);
