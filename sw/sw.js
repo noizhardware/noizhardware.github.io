@@ -72,8 +72,7 @@ function getShowTime(){
 }
 
 function floowElapsed(){
-  var elapsedTime = difference;
-  var floowPhases = elapsedTime / 28800000;
+  var floowPhases = difference / 28800000;
   return Number(floowPhases);
 }
 
