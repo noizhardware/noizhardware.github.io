@@ -72,13 +72,8 @@ function getShowTime(){
 }
 
 function floowElapsed(){
-  updatedTime = new Date().getTime();
-  if (savedTime){
-    difference = (updatedTime - startTime) + savedTime; // difference is in milliseconds!
-  } else {
-    difference =  updatedTime - startTime;
-  }
-  var floowPhases = difference / 28800000;
+  var elapsedTime = difference;
+  var floowPhases = elapsedTime / 28800000;
   return Number(floowPhases);
 }
 
@@ -184,7 +179,7 @@ function spitMASS(){
     
     insertText("massOut", makeMASSline("DATE",floowDate(), true));
     insertText("massOut", makeMASSline("TOTT",roundDec(floowElapsed(), 2)));
-    console.log(roundDec(floowElapsed(), 2));
+    console.log(floowElapsed());
     if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
