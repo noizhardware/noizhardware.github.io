@@ -95,9 +95,8 @@ function floowDate(){
     if(month == 11){var floowMonth = "k"}
     if(month == 12){var floowMonth = "z"}
     
-    var day = new Date().getDay();
+    var day = new Date().getDate();
     if(day < 10){var floowDay = "0" + day} else{var floowDay = day}
-    
     return floowYear + floowMonth + floowDay;
 }
 
