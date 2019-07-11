@@ -164,6 +164,7 @@ function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated ver
 }
 
 document.getElementById("makeMASSbutton").addEventListener("click", function(){
+  event.preventDefault(); // to prevent script reload on Android
   spitMASS();
 });
 
@@ -191,6 +192,7 @@ function spitMASS(){
 ////////////////////////////
 
 document.getElementById("clipboard").addEventListener("click", function(){
+     event.preventDefault(); // to prevent script reload on Android
   writetoClipboard();
 });
 
@@ -250,12 +252,14 @@ function makeMASSline(attribName, attribValue, header){ // header is non-mandato
 /////////////////// cookies
 
 document.getElementById("testA").addEventListener("click", function(){
+     event.preventDefault(); // to prevent script reload on Android
     var projVal = readInput("proj");
     var fatCookie = makeMASSline("DATE","2019", true) + makeMASSline("proj",projVal);
   setCookie("porco",fatCookie,30);
 });
 
 document.getElementById("testB").addEventListener("click", function(){
+     event.preventDefault(); // to prevent script reload on Android
     var biscotto=getCookie("porco");
   console.log("biscotto: " + biscotto);
 });
