@@ -174,6 +174,8 @@ function spitMASS(){
     var typ1Val = readInput("typ1");
     var typ2Val = readInput("typ2");
     var typ3Val = readInput("typ3");
+    var typ4Val = readInput("typ4");
+    var typ5Val = readInput("typ5");
     var forwVal = readInput("forw");
     var noteVal = readInput("note");
     
@@ -185,6 +187,8 @@ function spitMASS(){
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
     if(typ3Val){insertText("massOut", makeMASSline("typ3",typ3Val))}
+    if(typ4Val){insertText("massOut", makeMASSline("typ4",typ4Val))}
+    if(typ5Val){insertText("massOut", makeMASSline("typ5",typ5Val))}
     if(forwVal){insertText("massOut", makeMASSline("forw",forwVal))}
     if(noteVal){insertText("massOut", makeMASSline("note",noteVal))}
     
