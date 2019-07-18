@@ -60,3 +60,7 @@ body {
 .lighter {
   background: #EAE2B7
 }
+
+.tutorialText {
+  font-size: 15px;
+}

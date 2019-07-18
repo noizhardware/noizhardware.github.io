@@ -62,6 +62,22 @@ function resetTimer(){
   startTimerButton.style.cursor = "pointer";
   pauseTimerButton.style.cursor = "auto";
 }
+
+document.addEventListener('keydown', function(event) { 
+  if (event.ctrlKey && event.keyCode === 13) { // Ctrl + Enter combo keypress
+    //if (ctrlPlus('m')) { // call to the encapsulated version
+    console.log("Ctrl + Enter on eventlisten");
+    resetTimer();
+  }
+});
+
+document.addEventListener('keydown', function(event) { 
+  if (event.shiftKey && event.keyCode === 13) { // Shift + Enter combo keypress
+    //if (ctrlPlus('m')) { // call to the encapsulated version
+    console.log("Shift + Enter on eventlisten");
+  }
+});
+
 function getShowTime(){
   updatedTime = new Date().getTime();
   if (savedTime){
@@ -127,11 +143,18 @@ function spacebar(){
     }
 }
 
-document.body.onkeyup = function(e){
-    if(e.keyCode == 32 && !(checkInputFocus("inputField"))){ // spacebar press, when there is no focus on any input field, my class "inputField"
+// document.body.onkeyup = function(e){
+//     if(e.keyCode == 32 && !(checkInputFocus("inputField"))){ // spacebar press, when there is no focus on any input field, my class "inputField"
+//         spacebar();
+//     }
+document.addEventListener('keydown', function(event) { 
+  if (event.ctrlKey && event.key === ' ') { // Ctrl + SPACEBAR combo keypress
+  //if (ctrlPlus('m')) { // call to the encapsulated version
+  console.log("Ctrl + SPACEBAR on eventlisten");
         spacebar();
-    }
-}
+  }
+});
+
 
 
 ////////// spit MASS /////////////
