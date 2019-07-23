@@ -80,8 +80,13 @@ document.addEventListener('keydown', function(event) {
     //if (ctrlPlus('m')) { // call to the encapsulated version
     console.log("Shift + Enter on eventlisten");
     clearAll();
+    getfocus("proj");
   }
 });
+
+function getfocus(elemid) {
+  document.getElementById(elemid).focus();
+}
 
 function clearAll(){
      clearField("proj");
@@ -207,7 +212,7 @@ function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated ver
 }
 
 document.getElementById("makeMASSbutton").addEventListener("click", function(){
-  //event.preventDefault(); // to prevent script reload on Android
+  event.preventDefault(); // to prevent script reload on Android
   spitMASS();
 });
 
@@ -248,6 +253,32 @@ function writetoClipboard() {
   text.select();
   document.execCommand("copy");
   console.log("Copied the text: " + text.value);
+  clearSelection();
+  //clearAllFocus();
+}
+
+function clearAllFocus(){
+     if (document.activeElement != document.body) document.activeElement.blur();
+}
+
+function clearSelection() {
+    var sel;
+    if ( (sel = document.selection) && sel.empty ) {
+        sel.empty();
+    } else {
+        if (window.getSelection) {
+            window.getSelection().removeAllRanges();
+        }
+        var activeEl = document.activeElement;
+        if (activeEl) {
+            var tagName = activeEl.nodeName.toLowerCase();
+            if ( tagName == "textarea" ||
+                    (tagName == "input" && activeEl.type == "text") ) {
+                // Collapse the selection to the end
+                activeEl.selectionStart = activeEl.selectionEnd;
+            }
+        }
+    }
 }
 
 function checkInputFocus(myclass){
