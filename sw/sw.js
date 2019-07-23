@@ -1,4 +1,8 @@
 'use strict'
+// shit to conditional loading (to include in .html)
+// if (typeof startTime === 'undefined') {
+//         document.write('<script src="js/libs/jquery.tooltip.min.js">\x3C/script>');
+//     }
 
 var startTimerButton = document.querySelector('.startTimer');
 var pauseTimerButton = document.querySelector('.pauseTimer');
@@ -75,8 +79,24 @@ document.addEventListener('keydown', function(event) {
   if (event.shiftKey && event.keyCode === 13) { // Shift + Enter combo keypress
     //if (ctrlPlus('m')) { // call to the encapsulated version
     console.log("Shift + Enter on eventlisten");
+    clearAll();
   }
 });
+
+function clearAll(){
+     clearField("proj");
+     clearField("typ1");
+     clearField("typ2");
+     clearField("typ3");
+     clearField("typ4");
+     clearField("typ5");
+     clearField("forw");
+     clearField("note");
+}
+
+function clearField(elementid){
+     document.getElementById(elementid).value = "";
+}
 
 function getShowTime(){
   updatedTime = new Date().getTime();
@@ -187,7 +207,7 @@ function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated ver
 }
 
 document.getElementById("makeMASSbutton").addEventListener("click", function(){
-  event.preventDefault(); // to prevent script reload on Android
+  //event.preventDefault(); // to prevent script reload on Android
   spitMASS();
 });
 
@@ -205,7 +225,7 @@ function spitMASS(){
     
     insertText("massOut", makeMASSline("DATE",floowDate(), true));
     insertText("massOut", makeMASSline("TOTT",roundDec(floowElapsed(), 2)));
-    console.log(floowElapsed());
+    //console.log(floowElapsed());
     if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
