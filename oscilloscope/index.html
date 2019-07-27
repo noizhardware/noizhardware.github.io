@@ -356,8 +356,8 @@ onchange="controls.grid=!this.checked; if (Render) Render.screenTexture = Render
 <input id="urlText" type="text" size="28" style="margin-top:5px" onclick="Controls.generateUrl()"
 value=" export current settings as a URL">
 &nbsp<a href="javascript:Controls.restoreDefaults();">[reset all]</a>
-<button type="button" style="visibility:hidden;" id="START" onclick="AudioSystem.audioContext.resume()">START</button>
-
+<button type="button"  id="START" onclick="AudioSystem.audioContext.resume()">START</button>
+<!-- style="visibility:hidden;" -->
 <div id="extraNotes" style="display:none">
 <p style="line-height:110%">
 To share your settings, click on the textbox, copy the URL that appears there, and
