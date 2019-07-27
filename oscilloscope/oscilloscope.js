@@ -28,6 +28,16 @@ THE SOFTWARE.
 
 */
 
+function startup(){
+     AudioSystem.audioContext.resume();
+     AudioSystem.audioContext.resume();
+}
+
+document.getElementById("START").addEventListener("click", function(){
+  event.preventDefault(); // to prevent script reload on Android
+  startup();
+});
+
 
 
 var AudioSystem =
