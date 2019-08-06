@@ -1,7 +1,8 @@
 // environment operators
+// TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 20190805
+    version: 201908060255
 };
 
 function locus (){}
