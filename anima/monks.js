@@ -1,8 +1,11 @@
 // monadic functions, wrappers, validators and scapegoats
 'use strict';
 const monks = {
-    version: 201908061125
+    version: 201908071417
 };
+
+//TODO:
+//doJust(callback(var1, var2...)) : calls the passed function only if all the args passed to that function are Just 
 
 const Nothing = null;
 

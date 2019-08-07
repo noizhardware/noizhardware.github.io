@@ -2,7 +2,7 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201908060255
+    version: 201908071413
 };
 
 function locus (){}
@@ -12,8 +12,11 @@ function locus (){}
 
 function visor (){}
      visor.touch = function (elemID, text){
-          //if (isNothing(text)){console.log("nothing: " + text);}
-          if(isJust(text)){document.getElementById(elemID).innerHTML += text;};
+          if(isJust(text)){document.getElementById(elemID).innerHTML += text;
+               return true;
+          }else{
+               return null;
+          }
      };
 
 function hash (){}
@@ -22,6 +25,7 @@ function hash (){}
      };
      hash.touch = function(hash){
           location.hash = hash; // this is to SET the current location hash
+          return true;
      };
      
 function say (log){if(isJust(log)){console.log(log);}}
@@ -35,12 +39,15 @@ function say (log){if(isJust(log)){console.log(log);}}
      say.panic = function(log){if(isJust(log)){console.log('%c [[PANIC]] : ' + log, 'font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)'); alert("[[PANIC]] : " + log);};};
      
 function loadJS(jslocation, location, load){
-    //"location" is the location to insert the <script> element
-    //"load" is the function to be executed after onload
-    var scriptTag = document.createElement('script');
-    scriptTag.src = jslocation;
-    scriptTag.onload = load;
-    scriptTag.onreadystatechange = load;
-    location.appendChild(scriptTag);
-    say.debug("JS loaded: " + scriptTag.src);
+     //"location" is the location to insert the <script> element
+     //"load" is the function to be executed after onload
+     if(isJust(jslocation) && isJust(location) && isJust(load)){
+          var scriptTag = document.createElement('script');
+          scriptTag.src = jslocation;
+          scriptTag.onload = load;
+          scriptTag.onreadystatechange = load;
+          location.appendChild(scriptTag);
+          say.debug("JS loaded: " + scriptTag.src);
+          return true;
+     }else{return null;}
 }
