@@ -2,13 +2,11 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201908071413
+    version: 201908071915
 };
 
 function locus (){}
-     locus.see = function(){
-          return window.location.href.replace(/\#.*/g,"");
-     };
+     locus.see = () => window.location.href.replace(/\#.*/g,"");
 
 function visor (){}
      visor.touch = function (elemID, text){
@@ -20,12 +18,12 @@ function visor (){}
      };
 
 function hash (){}
-     hash.see = function(){
-       return location.hash.replace("#", "");
-     };
+     hash.see = () => location.hash.replace("#", "");
      hash.touch = function(hash){
-          location.hash = hash; // this is to SET the current location hash
-          return true;
+          if(isJust(hash)){
+               location.hash = hash; // this is to SET the current location hash
+               return true;
+          }else{return null;}
      };
      
 function say (log){if(isJust(log)){console.log(log);}}

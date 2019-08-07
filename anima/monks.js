@@ -1,7 +1,7 @@
 // monadic functions, wrappers, validators and scapegoats
 'use strict';
 const monks = {
-    version: 201908071417
+    version: 201908071901
 };
 
 //TODO:
@@ -9,20 +9,15 @@ const monks = {
 
 const Nothing = null;
 
-function isJust(input){ // basically, not(null ot empty or undefined), can be 0, true, false, whatever
-     return (input !== null && input != "" && typeof input != 'undefined') ? true : (input === 0 || input === false) ? true : false;
-}
+// basically, not(null ot empty or undefined), can be 0, true, false, whatever
+const isJust = (input) => (input !== null && input != "" && typeof input != 'undefined') ? true : (input === 0 || input === false) ? true : false;
 
-function isNothing(input){ // only if null
-     return !isJust(input);
-}
+const isNothing = (input) => !isJust(input);
 
 // usage: maybe("blahblah") // blahblah
 // maybe() // `null`
 // maybe(Nothing, 5) // 5
-function maybe(input, fallback){
-     return isJust(input) ? input : isJust(fallback) ? fallback : Nothing ;
-}
+const maybe = (input, fallback) => isJust(input) ? input : isJust(fallback) ? fallback : Nothing ;
 
 function m(){}
 
@@ -62,6 +57,4 @@ m.sleep = function(ms){
      }else{return false;}
 }
 
-function isFunction(functionToCheck) {
- return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
-}
+const isFunction = (functionToCheck) => functionToCheck && {}.toString.call(functionToCheck) === '[object Function]'; // TODO: needs to return FALSE also when the function is undefined
