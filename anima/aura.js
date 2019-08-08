@@ -2,7 +2,7 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201908071915
+    version: 201908090154
 };
 
 function locus (){}
@@ -10,12 +10,26 @@ function locus (){}
 
 function visor (){}
      visor.touch = function (elemID, text){
-          if(isJust(text)){document.getElementById(elemID).innerHTML += text;
+          if(isJust(elemID) && isJust(text)){document.getElementById(elemID).innerHTML += text;
                return true;
           }else{
                return null;
           }
-     };
+     }
+          visor.touch.wipe = function (elemID){
+               if(isJust(elemID)){document.getElementById(elemID).innerHTML = "";
+                    return true;
+               }else{
+                    return null;
+               }
+          }
+          visor.touch.conquer = function (elemID, text){
+               if(isJust(elemID) && isJust(text)){document.getElementById(elemID).innerHTML = text;
+                    return true;
+               }else{
+                    return null;
+               }
+          }    
 
 function hash (){}
      hash.see = () => location.hash.replace("#", "");
