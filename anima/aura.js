@@ -2,7 +2,7 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201908090154
+    version: 201908091518
 };
 
 function locus (){}
@@ -63,3 +63,13 @@ function loadJS(jslocation, location, load){
           return true;
      }else{return null;}
 }
+
+function zeit (){}
+     zeit.start = () => {
+          window.t0 = performance.now();
+          //var t0 = performance.now();
+     }
+     zeit.see = () => {
+          var t1 = performance.now();
+          say.notice("Rendering took " + (t1 - window.t0) + " msecs.");
+     }
