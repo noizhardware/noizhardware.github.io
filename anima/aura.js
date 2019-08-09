@@ -2,7 +2,7 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201908091518
+    version: 201908100026
 };
 
 function locus (){}
@@ -66,10 +66,20 @@ function loadJS(jslocation, location, load){
 
 function zeit (){}
      zeit.start = () => {
-          window.t0 = performance.now();
-          //var t0 = performance.now();
+          if (typeof window.t0 == 'undefined'){
+               window.t0 = performance.now();
+               return true;
+          }else{
+               say.error("global variable t0 is already defined, please un-define it!!!");
+               return null;
+          }
      }
      zeit.see = () => {
-          var t1 = performance.now();
-          say.notice("Rendering took " + (t1 - window.t0) + " msecs.");
+          if (typeof window.t0 !== 'undefined'){
+               var t1 = performance.now();
+               say.notice("Rendering took " + (t1 - window.t0) + " msecs.");
+          }else{
+               say.error("ZEIT was not started!!!");
+               return null;
+          }
      }
