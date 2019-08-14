@@ -39,8 +39,8 @@ function startTimer(){
     timerDisplay.style.color = "white";
     //startTimerButton.classList.add('lighter');
     //pauseTimerButton.classList.remove('lighter');
-    startTimerButton.style.cursor = "auto";
-    pauseTimerButton.style.cursor = "pointer";
+    //startTimerButton.style.cursor = "auto";
+    //pauseTimerButton.style.cursor = "pointer";
      }else{
      pauseTimer();
      }
