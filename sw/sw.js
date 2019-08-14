@@ -57,10 +57,10 @@ function pauseTimer(){
     timerDisplay.style.background = "#A1A1A1";
     timerDisplay.style.color = "white";
     timerDisplay.style.cursor = "pointer";
-    startTimerButton.classList.remove('lighter');
-    pauseTimerButton.classList.add('lighter');
-    startTimerButton.style.cursor = "pointer";
-    pauseTimerButton.style.cursor = "auto";
+    //startTimerButton.classList.remove('lighter');
+    //pauseTimerButton.classList.add('lighter');
+    //startTimerButton.style.cursor = "pointer";
+    //pauseTimerButton.style.cursor = "auto";
   } else {
 // if the timer was already paused, when they click pause again, start the timer again
 startTimer();
@@ -76,10 +76,10 @@ function resetTimer(){
   timerDisplay.style.background = "#A1A1A1";
   timerDisplay.style.color = "white";
   timerDisplay.style.cursor = "pointer";
-  startTimerButton.classList.remove('lighter');
-  pauseTimerButton.classList.remove('lighter');
-  startTimerButton.style.cursor = "pointer";
-  pauseTimerButton.style.cursor = "auto";
+  //startTimerButton.classList.remove('lighter');
+  //pauseTimerButton.classList.remove('lighter');
+  //startTimerButton.style.cursor = "pointer";
+  //pauseTimerButton.style.cursor = "auto";
 }
 
 document.addEventListener('keydown', function(event) { 
