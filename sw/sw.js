@@ -37,8 +37,8 @@ function startTimer(){
     timerDisplay.style.background = "#FF6700"; //active timer color
     timerDisplay.style.cursor = "auto";
     timerDisplay.style.color = "white";
-    startTimerButton.classList.add('lighter');
-    pauseTimerButton.classList.remove('lighter');
+    //startTimerButton.classList.add('lighter');
+    //pauseTimerButton.classList.remove('lighter');
     startTimerButton.style.cursor = "auto";
     pauseTimerButton.style.cursor = "pointer";
      }else{
