@@ -4,6 +4,17 @@
 //         document.write('<script src="js/libs/jquery.tooltip.min.js">\x3C/script>');
 //     }
 
+const icoInactive = "floow_fav00.png";
+const icoActive = "floow_fav00_orange.png";
+
+function changeIcon(icon) {
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'icon';
+    link.href = '../img/' + icon;
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+
 var startTimerButton = document.querySelector('.startTimer');
 var pauseTimerButton = document.querySelector('.pauseTimer');
 var timerDisplay = document.querySelector('.timer');
@@ -16,25 +27,29 @@ var paused = 0;
 var running = 0;
 function startTimer(){
   if(!running){
+       changeIcon(icoActive);
     startTime = new Date().getTime();
     tInterval = setInterval(getShowTime, 1);
-// change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.
-
+    // change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.
     paused = 0;
     running = 1;
-timerDisplay.style.background = "#2E86AB"; //active timer color
+    //timerDisplay.style.background = "#2E86AB"; //active timer color
+    timerDisplay.style.background = "#FF6700"; //active timer color
     timerDisplay.style.cursor = "auto";
     timerDisplay.style.color = "white";
     startTimerButton.classList.add('lighter');
     pauseTimerButton.classList.remove('lighter');
     startTimerButton.style.cursor = "auto";
     pauseTimerButton.style.cursor = "pointer";
-  }
+     }else{
+     pauseTimer();
+     }
 }
 function pauseTimer(){
   if (!difference){
     // if timer never started, don't allow pause button to do anything
   } else if (!paused) {
+       changeIcon(icoInactive);
     clearInterval(tInterval);
     savedTime = difference;
     paused = 1;

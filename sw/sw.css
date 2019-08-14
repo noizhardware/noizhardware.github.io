@@ -26,6 +26,15 @@ body {
   font-size: 30px;
 }
 
+.inputFields {
+  font-family: "Roboto";
+  font-weight: 300;
+  width:700px;
+  margin:20px auto;
+  min-height: 60px;
+  border-top:0px;
+}
+
 .attName {
   font-size: 15px;
 }
@@ -55,6 +64,7 @@ body {
   border-left: 1px solid #FFFFFF;
 }
 .reset:hover {
+     /* safety orange */
   background: #FF6700;
 }
 .lighter {
