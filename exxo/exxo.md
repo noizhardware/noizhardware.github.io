@@ -1,7 +1,7 @@
 # Ξ X X Ō
 Exocortex framework
 
-## Bring all tools in one place
+## Bringing all tools in one place
   * `FLOOW` Clock
   * `FLOOW` Stopwatch / `Grain` time tracking
     - live Grain pie-chart/meter
