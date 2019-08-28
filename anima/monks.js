@@ -1,17 +1,17 @@
 // monadic functions, wrappers, validators and scapegoats
 'use strict';
 const monks = {
-    version: 201908071901
+    version: 201908281807
 };
 
 //TODO:
 //doJust(callback(var1, var2...)) : calls the passed function only if all the args passed to that function are Just 
 
 const Nothing = null;
+const nil = null;
 
 // basically, not(null ot empty or undefined), can be 0, true, false, whatever
 const isJust = (input) => (input !== null && input != "" && typeof input != 'undefined') ? true : (input === 0 || input === false) ? true : false;
-
 const isNothing = (input) => !isJust(input);
 
 // usage: maybe("blahblah") // blahblah
