@@ -2,7 +2,7 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201908100026
+    version: 201909031305
 };
 
 function locus (){}
@@ -82,4 +82,11 @@ function zeit (){}
                say.error("ZEIT was not started!!!");
                return null;
           }
+     }
+     
+function script (){}
+     script.load = (scriptPath) => {
+          var script = document.createElement("script");
+          script.setAttribute("src", scriptPath);
+          document.head.appendChild(script);
      }
