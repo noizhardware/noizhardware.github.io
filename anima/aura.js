@@ -2,7 +2,7 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201909031305
+    version: 201909031622
 };
 
 function locus (){}
