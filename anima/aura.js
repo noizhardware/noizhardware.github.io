@@ -13,21 +13,21 @@ function visor (){}
           if(isJust(elemID) && isJust(text)){document.getElementById(elemID).innerHTML += text;
                return true;
           }else{
-               return null;
+               return nil;
           }
      }
           visor.touch.wipe = function (elemID){
                if(isJust(elemID)){document.getElementById(elemID).innerHTML = "";
                     return true;
                }else{
-                    return null;
+                    return nil;
                }
           }
           visor.touch.conquer = function (elemID, text){
                if(isJust(elemID) && isJust(text)){document.getElementById(elemID).innerHTML = text;
                     return true;
                }else{
-                    return null;
+                    return nil;
                }
           }    
 
@@ -37,7 +37,7 @@ function hash (){}
           if(isJust(hash)){
                location.hash = hash; // this is to SET the current location hash
                return true;
-          }else{return null;}
+          }else{return nil;}
      };
      
 function say (log){if(isJust(log)){console.log(log);}}
@@ -61,7 +61,7 @@ function loadJS(jslocation, location, load){
           location.appendChild(scriptTag);
           say.debug("JS loaded: " + scriptTag.src);
           return true;
-     }else{return null;}
+     }else{return nil;}
 }
 
 function zeit (){}
@@ -71,7 +71,7 @@ function zeit (){}
                return true;
           }else{
                say.error("global variable t0 is already defined, please un-define it!!!");
-               return null;
+               return nil;
           }
      }
      zeit.see = () => {
@@ -80,7 +80,7 @@ function zeit (){}
                say.notice("Rendering took " + (t1 - window.t0) + " msecs.");
           }else{
                say.error("ZEIT was not started!!!");
-               return null;
+               return nil;
           }
      }
      
