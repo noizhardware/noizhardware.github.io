@@ -18,13 +18,11 @@ var TT = {
     else if (totSec >= 57600){ttMark = "R";}
     var ttNum = (totSec % 28800) / 28800;
 
-    var ttNumTwo = Math.round(ttNum * 100) / 100; // only two decimal digits
+    var tt5 = ttMark + ":" + (Math.round(ttNum * 100000) / 100000).toFixed(5); // only five decimal digits
+    var tt2 = ttMark + ":" + (Math.round(ttNum * 100) / 100).toFixed(2); // only two decimal digits
 
-    var ttFull = ttMark + ":" + ttNum;
-    var ttTwo = ttMark + ":" + ttNumTwo;
-
-    document.getElementById("clock").innerHTML = ttFull;
-    document.getElementById("clockT").innerHTML = ttTwo;
+    document.getElementById("clock5").innerHTML = tt5;
+    document.getElementById("clock2").innerHTML = tt2;
   }
   //setInterval(updateTime, 1000);
 }
