@@ -149,7 +149,7 @@ function floowDate(){
     if(month == 9){var floowMonth = "i"}
     if(month == 10){var floowMonth = "j"}
     if(month == 11){var floowMonth = "k"}
-    if(month == 12){var floowMonth = "z"}
+    if(month == 12){var floowMonth = "w"}
     
     var day = new Date().getDate();
     if(day < 10){var floowDay = "0" + day} else{var floowDay = day}
