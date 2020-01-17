@@ -214,8 +214,6 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-
-
 function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated version works
     var output = new Boolean(false);
     if(event.key === mykey){console.log("M");}
@@ -260,7 +258,13 @@ function spitMASS(){
 
 document.getElementById("clipboard").addEventListener("click", function(){
      event.preventDefault(); // to prevent script reload on Android
-  writetoClipboard();
+     writetoClipboard();
+});
+
+document.getElementById("clear").addEventListener("click", function(){
+     event.preventDefault(); // to prevent script reload on Android
+     clearAll();
+     getfocus("proj");
 });
 
 function writetoClipboard() {
