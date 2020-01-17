@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>F L O O W - Stopwatch</title>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="sw.css">
+<link rel="stylesheet" href="nopull.css">
+
+<link rel="icon" href="../img/floow_fav00.png" type="image/x-icon" />
+<link rel="shortcut icon" href="../img/floow_fav00.png" type="image/png" />
+
+</head>
+<body class="body">
+<div class="wrapper">
+    
+<div id="timerContainer">
+    <div class="timer" onclick="startTimer()">Ready to F L O O W</div>
+    <!-- <div class="startTimer reset" onclick="startTimer()" >
+        <i class="fas fa-play"></i>
+    </div>
+    <div class="pauseTimer reset" onclick="pauseTimer()" >
+        <i class="fas fa-pause"></i>
+    </div> -->
+    
+    <div class="resetTimer reset" onclick="resetTimer()">Reset</div>
+</div>
+
+
+<div class = "inputFields">   
+    <div>
+        <span class="attName">PROJ</span>  <input type="text" id="proj" class="inputField" class="form-control" placeholder="proj" autofocus > 
+    </div>
+    <div>
+        <span class="attName">typ1</span> <input type="text" id="typ1" class="inputField" class="form-control" placeholder="typ1" >
+    </div>
+    <div>
+        <span class="attName">typ2</span> <input type="text" id="typ2" class="inputField" class="form-control" placeholder="typ2" >
+    </div>
+    <div>
+        <span class="attName">typ3</span> <input type="text" id="typ3" class="inputField" class="form-control" placeholder="typ3" >
+    </div>
+    <div>
+        <span class="attName">typ4</span> <input type="text" id="typ4" class="inputField" class="form-control" placeholder="typ4" >
+    </div>
+    <div>
+        <span class="attName">typ5</span> <input type="text" id="typ5" class="inputField" class="form-control" placeholder="typ5" >
+    </div>
+    <div>
+        <span class="attName">forw</span> <input type="text" id="forw" class="inputField" class="form-control" placeholder="forw" >
+    </div>
+    <div>
+        <span class="attName">note</span> <input type="text" id="note" class="inputField" class="form-control" placeholder="note" >
+    </div>
+    
+    <button type="button" id="makeMASSbutton">make .MASS (Ctrl + ,)</button>
+    <button type="button" id="clipboard">copy to clipboard (Ctrl + .)</button>
+    <button type="button" id="clear">clear input fields</button>
+    <!-- <button type="button" id="cookieMASS">.MASS to cookies</button>
+    <button type="button" id="testA">test A</button>
+    <button type="button" id="testB">test B</button> -->
+    
+    <div>
+        <textarea id="massOut" rows="12" cols="50">Here output in .MASS</textarea>
+    </div>
+    
+    <div class = "tutorialText">
+         <p>Ctrl + SPACEBAR >> Play/Pause</p>
+         <p>Ctrl + Enter >> Reset</p>
+         <p>Shift + Enter >> Clear all input fields</p>
+    </div>
+    
+</div>
+
+<!-- <script type="text/javascript" src="https://www.noizhardware.com/sw/sw.js"></script> <!--that's to host it online -->
+<script type="text/javascript" src="sw.js"></script>
+
+</div>
+</body>
+</html>
