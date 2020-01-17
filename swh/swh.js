@@ -143,9 +143,7 @@ function floowElapsed(){
   return Number(floowPhases);
 }
 
-function hourzElapsed(){
-  return floor(Number(difference / 3600000)) + fract(Number(difference / 3600000)) * .6;
-}
+const hourzElapsed = () => floor(Number(difference / 3600000)) + (fract(Number(difference / 3600000)) * .6);
 
 function floowDate(){
     var floowYear = new Date().getFullYear();
