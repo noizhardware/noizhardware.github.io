@@ -126,7 +126,9 @@ function getShowTime(){
     difference =  updatedTime - startTime;
   }
   var floowPhases = difference / 28800000;
-  timerDisplay.innerHTML = fixDec(floowPhases, 7);
+  //timerDisplay.innerHTML = fixDec(floowPhases, 7);
+  var hourz = fixDec(fixDec(floowPhases , 7) * 8, 7); // LOL phases get converted back into hours, with decimal minutes. what a waste
+  timerDisplay.innerHTML = hourz;
 }
 
 function floowElapsed(){
@@ -347,7 +349,7 @@ function makeMASSline(attribName, attribValue, header){ // header is non-mandato
 
 
 /////////////////// cookies
-
+/*
 document.getElementById("testA").addEventListener("click", function(){
      event.preventDefault(); // to prevent script reload on Android
     var projVal = readInput("proj");
@@ -360,6 +362,7 @@ document.getElementById("testB").addEventListener("click", function(){
     var biscotto=getCookie("porco");
   console.log("biscotto: " + biscotto);
 });
+*/
 
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
