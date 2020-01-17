@@ -82,6 +82,9 @@ function resetTimer(){
   //pauseTimerButton.style.cursor = "auto";
 }
 
+const fract = (n) => (n - Math.floor(n));
+const floor = (n) => Math.floor(n);
+
 document.addEventListener('keydown', function(event) { 
   if (event.ctrlKey && event.keyCode === 13) { // Ctrl + Enter combo keypress
     //if (ctrlPlus('m')) { // call to the encapsulated version
@@ -125,15 +128,23 @@ function getShowTime(){
   } else {
     difference =  updatedTime - startTime;
   }
-  var floowPhases = difference / 28800000;
+  //var floowPhases = difference / 28800000;
+  
+  //var hourz =  fixDec((difference / 3600000), 7);
+  
   //timerDisplay.innerHTML = fixDec(floowPhases, 7);
-  var hourz = fixDec(fixDec(floowPhases , 7) * 8, 7); // LOL phases get converted back into hours, with decimal minutes. what a waste
-  timerDisplay.innerHTML = hourz;
+  //var hourz = fixDec(fixDec(floowPhases , 7) * 8, 7); // LOL phases get converted back into hours, with decimal minutes. what a waste
+  
+  timerDisplay.innerHTML = fixDec(hourzElapsed(), 7);
 }
 
 function floowElapsed(){
   var floowPhases = difference / 28800000;
   return Number(floowPhases);
+}
+
+function hourzElapsed(){
+  return floor(Number(difference / 3600000)) + fract(Number(difference / 3600000)) * .6;
 }
 
 function floowDate(){
@@ -244,8 +255,7 @@ function spitMASS(){
     
     
     insertText("massOut", makeMASSline("DATE",floowDate(), true));
-    insertText("massOut", makeMASSline("TOTT",roundDec(floowElapsed(), 2)));
-    //console.log(floowElapsed());
+    insertText("massOut", makeMASSline("TOTT",roundDec(hourzElapsed(), 2)));
     if(projVal){insertText("massOut", makeMASSline("proj",projVal))}
     if(typ1Val){insertText("massOut", makeMASSline("typ1",typ1Val))}
     if(typ2Val){insertText("massOut", makeMASSline("typ2",typ2Val))}
