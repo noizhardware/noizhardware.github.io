@@ -7,5 +7,5 @@ Exocortex framework
     - live Grain pie-chart/meter
   * `e.` Lifetime and life energy monitor
   
- [Ѻ](http://noizhardware.com "noizHARDWARE")
+ [Φ](http://noizhardware.com "noizHARDWARE")
   
