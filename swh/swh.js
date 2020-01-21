@@ -87,24 +87,15 @@ const floor = (n) => Math.floor(n);
 
 document.addEventListener('keydown', function(event) { 
   if (event.ctrlKey && event.keyCode === 13) { // Ctrl + Enter combo keypress
-    //if (ctrlPlus('m')) { // call to the encapsulated version
-    console.log("Ctrl + Enter on eventlisten");
-    resetTimer();
-  }
-});
+    resetTimer();}});
 
 document.addEventListener('keydown', function(event) { 
   if (event.shiftKey && event.keyCode === 13) { // Shift + Enter combo keypress
-    //if (ctrlPlus('m')) { // call to the encapsulated version
-    console.log("Shift + Enter on eventlisten");
     clearAll();
-    getfocus("proj");
-  }
-});
+    getfocus("proj");}});
 
 function getfocus(elemid) {
-  document.getElementById(elemid).focus();
-}
+  document.getElementById(elemid).focus();}
 
 function clearAll(){
      clearField("proj");
@@ -114,12 +105,10 @@ function clearAll(){
      clearField("typ4");
      clearField("typ5");
      clearField("forw");
-     clearField("note");
-}
+     clearField("note");}
 
 function clearField(elementid){
-     document.getElementById(elementid).value = "";
-}
+     document.getElementById(elementid).value = "";}
 
 function getShowTime(){
   updatedTime = new Date().getTime();
@@ -200,30 +189,18 @@ function spacebar(){
 //     }
 document.addEventListener('keydown', function(event) { 
   if (event.ctrlKey && event.key === ' ') { // Ctrl + SPACEBAR combo keypress
-  //if (ctrlPlus('m')) { // call to the encapsulated version
-  console.log("Ctrl + SPACEBAR on eventlisten");
-        spacebar();
-  }
-});
+        spacebar();}});
 
 
 
 ////////// spit MASS /////////////
 document.addEventListener('keydown', function(event) { 
   if (event.ctrlKey && event.key === ',') { // Ctrl + , combo keypress
-  //if (ctrlPlus('m')) { // call to the encapsulated version
-    console.log("Ctrl + , on eventlisten");
-    spitMASS();
-  }
-});
+    spitMASS();}});
 
 document.addEventListener('keydown', function(event) { 
   if (event.ctrlKey && event.key === '.') { // Ctrl + . combo keypress
-  //if (ctrlPlus('l')) { // call to the encapsulated version
-    console.log("Ctrl + . on eventlisten");
-    writetoClipboard();
-  }
-});
+    writetoClipboard();}});
 
 function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated version works
     var output = new Boolean(false);
@@ -237,8 +214,7 @@ function ctrlPlus(mykey){  // TODO : this doesn't work, the non-encapsulated ver
 
 document.getElementById("makeMASSbutton").addEventListener("click", function(){
   event.preventDefault(); // to prevent script reload on Android
-  spitMASS();
-});
+  spitMASS();});
 
 function spitMASS(){
     clearText("massOut"); // clears textarea
@@ -354,23 +330,6 @@ function makeMASSline(attribName, attribValue, header){ // header is non-mandato
         massLine += '\n';
     return massLine;
 }
-
-
-/////////////////// cookies
-/*
-document.getElementById("testA").addEventListener("click", function(){
-     event.preventDefault(); // to prevent script reload on Android
-    var projVal = readInput("proj");
-    var fatCookie = makeMASSline("DATE","2019", true) + makeMASSline("proj",projVal);
-  setCookie("porco",fatCookie,30);
-});
-
-document.getElementById("testB").addEventListener("click", function(){
-     event.preventDefault(); // to prevent script reload on Android
-    var biscotto=getCookie("porco");
-  console.log("biscotto: " + biscotto);
-});
-*/
 
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
