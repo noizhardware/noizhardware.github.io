@@ -9,7 +9,7 @@ console.log("yo, ver 1");
 const icoInactive = "floow_fav00.png";
 const icoActive = "floow_fav00_orange.png";
 
-function changeIcon = (icon) => {
+const changeIcon = (icon) => {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'icon';
