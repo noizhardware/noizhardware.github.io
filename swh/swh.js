@@ -4,12 +4,10 @@
 //         document.write('<script src="js/libs/jquery.tooltip.min.js">\x3C/script>');
 //     }
 
-console.log("yo, ver 1");
-
 const icoInactive = "floow_fav00.png";
 const icoActive = "floow_fav00_orange.png";
 
-const changeIcon = (icon) => {
+function changeIcon(icon) {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'icon';
@@ -27,88 +25,97 @@ var tInterval;
 var savedTime;
 var paused = 0;
 var running = 0;
-const startTimer = () => {
-     if(!running){
-          changeIcon(icoActive);
-          startTime = new Date().getTime();
-          tInterval = setInterval(getShowTime, 1);
-          // change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.
-          paused = 0;
-          running = 1;
-          //timerDisplay.style.background = "#2E86AB"; //active timer color
-          timerDisplay.style.background = "#FF6700"; //active timer color
-          timerDisplay.style.cursor = "auto";
-          timerDisplay.style.color = "white";
-          //startTimerButton.classList.add('lighter');
-          //pauseTimerButton.classList.remove('lighter');
-          //startTimerButton.style.cursor = "auto";
-          //pauseTimerButton.style.cursor = "pointer";
+function startTimer(){
+  if(!running){
+       changeIcon(icoActive);
+    startTime = new Date().getTime();
+    tInterval = setInterval(getShowTime, 1);
+    // change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.
+    paused = 0;
+    running = 1;
+    //timerDisplay.style.background = "#2E86AB"; //active timer color
+    timerDisplay.style.background = "#FF6700"; //active timer color
+    timerDisplay.style.cursor = "auto";
+    timerDisplay.style.color = "white";
+    //startTimerButton.classList.add('lighter');
+    //pauseTimerButton.classList.remove('lighter');
+    //startTimerButton.style.cursor = "auto";
+    //pauseTimerButton.style.cursor = "pointer";
      }else{
-          pauseTimer();}}
-          
-const pauseTimer = () => {
-     if (!difference){
-          // if timer never started, don't allow pause button to do anything}
-     else if (!paused) {
-          changeIcon(icoInactive);
-          clearInterval(tInterval);
-          savedTime = difference;
-          paused = 1;
-          running = 0;
-          timerDisplay.style.background = "#A1A1A1";
-          timerDisplay.style.color = "white";
-          timerDisplay.style.cursor = "pointer";
-          //startTimerButton.classList.remove('lighter');
-          //pauseTimerButton.classList.add('lighter');
-          //startTimerButton.style.cursor = "pointer";
-          //pauseTimerButton.style.cursor = "auto";}
-     else {
-          // if the timer was already paused, when they click pause again, start the timer again
-          startTimer();}}
-          
-const resetTimer = () =>{
-     clearInterval(tInterval);
-     savedTime = 0;
-     difference = 0;
-     paused = 0;
-     running = 0;
-     timerDisplay.innerHTML = 'Ready to F L O O W';
-     timerDisplay.style.background = "#A1A1A1";
-     timerDisplay.style.color = "white";
-     timerDisplay.style.cursor = "pointer";
-     //startTimerButton.classList.remove('lighter');
-     //pauseTimerButton.classList.remove('lighter');
-     //startTimerButton.style.cursor = "pointer";
-     //pauseTimerButton.style.cursor = "auto";}
+     pauseTimer();
+     }
+}
+function pauseTimer(){
+  if (!difference){
+    // if timer never started, don't allow pause button to do anything
+  } else if (!paused) {
+       changeIcon(icoInactive);
+    clearInterval(tInterval);
+    savedTime = difference;
+    paused = 1;
+    running = 0;
+    timerDisplay.style.background = "#A1A1A1";
+    timerDisplay.style.color = "white";
+    timerDisplay.style.cursor = "pointer";
+    //startTimerButton.classList.remove('lighter');
+    //pauseTimerButton.classList.add('lighter');
+    //startTimerButton.style.cursor = "pointer";
+    //pauseTimerButton.style.cursor = "auto";
+  } else {
+// if the timer was already paused, when they click pause again, start the timer again
+startTimer();
+  }
+}
+function resetTimer(){
+  clearInterval(tInterval);
+  savedTime = 0;
+  difference = 0;
+  paused = 0;
+  running = 0;
+  timerDisplay.innerHTML = 'Ready to F L O O W';
+  timerDisplay.style.background = "#A1A1A1";
+  timerDisplay.style.color = "white";
+  timerDisplay.style.cursor = "pointer";
+  //startTimerButton.classList.remove('lighter');
+  //pauseTimerButton.classList.remove('lighter');
+  //startTimerButton.style.cursor = "pointer";
+  //pauseTimerButton.style.cursor = "auto";
+}
 
 const fract = (n) => (n - Math.floor(n));
 const floor = (n) => Math.floor(n);
 
-document.addEventListener('keydown', (event) => { 
-     if (event.ctrlKey && event.keyCode === 13) { // Ctrl + Enter combo keypress
-          //if (ctrlPlus('m')) { // call to the encapsulated version
-          console.log("Ctrl + Enter on eventlisten");
-          resetTimer();}});
+document.addEventListener('keydown', function(event) { 
+  if (event.ctrlKey && event.keyCode === 13) { // Ctrl + Enter combo keypress
+    //if (ctrlPlus('m')) { // call to the encapsulated version
+    console.log("Ctrl + Enter on eventlisten");
+    resetTimer();
+  }
+});
 
-document.addEventListener('keydown', function(event){ 
-     if (event.shiftKey && event.keyCode === 13) { // Shift + Enter combo keypress
-          //if (ctrlPlus('m')) { // call to the encapsulated version
-          console.log("Shift + Enter on eventlisten");
-          clearAll();
-          getfocus("proj");}});
+document.addEventListener('keydown', function(event) { 
+  if (event.shiftKey && event.keyCode === 13) { // Shift + Enter combo keypress
+    //if (ctrlPlus('m')) { // call to the encapsulated version
+    console.log("Shift + Enter on eventlisten");
+    clearAll();
+    getfocus("proj");
+  }
+});
 
-function getfocus(elemid){
-  document.getElementById(elemid).focus();}
+function getfocus(elemid) {
+  document.getElementById(elemid).focus();
+}
 
 function clearAll(){
      clearField("proj");
-     clearField("type");
-     clearField("type");
-     clearField("type");
-     clearField("type");
-     clearField("type");
+     clearField("typ1");
+     clearField("typ2");
+     clearField("typ3");
+     clearField("typ4");
+     clearField("typ5");
      clearField("forw");
-     clearField("note");}
+     clearField("note");
+}
 
 function clearField(elementid){
      document.getElementById(elementid).value = "";
@@ -236,11 +243,11 @@ document.getElementById("makeMASSbutton").addEventListener("click", function(){
 function spitMASS(){
     clearText("massOut"); // clears textarea
     var projVal = readInput("proj");
-    var typ1Val = readInput("type");
-    var typ2Val = readInput("type");
-    var typ3Val = readInput("type");
-    var typ4Val = readInput("type");
-    var typ5Val = readInput("type");
+    var typ1Val = readInput("typ1");
+    var typ2Val = readInput("typ2");
+    var typ3Val = readInput("typ3");
+    var typ4Val = readInput("typ4");
+    var typ5Val = readInput("typ5");
     var forwVal = readInput("forw");
     var noteVal = readInput("note");
     
