@@ -4,6 +4,8 @@
 //         document.write('<script src="js/libs/jquery.tooltip.min.js">\x3C/script>');
 //     }
 
+console.log("yo, ver 1");
+
 const icoInactive = "floow_fav00.png";
 const icoActive = "floow_fav00_orange.png";
 
