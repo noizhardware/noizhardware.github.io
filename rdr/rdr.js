@@ -12,5 +12,8 @@ const httpGetAsync = (url, callback) => {
     
 const ipGet = (nodeId, callback) => {
      return httpGetAsync('https://raw.githubusercontent.com/noizhardware/dotfiles/master/ip/.' + nodeId, callback);}
+     
+const ipGo = (nodeId) => {
+     ipGet(nodeId, (ip) => locus.touch('http://' + ip));}
 
 //ipGet(hash.see(), (a)=>console.log(a));
