@@ -2,34 +2,28 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 201909031622
-};
+    version: 202003271400 };
 
 function locus (){}
      locus.see = () => window.location.href.replace(/\#.*/g,"");
+     locus.touch = (newLocus) => window.location.replace(newLocus);
 
 function visor (){}
      visor.touch = function (elemID, text){
           if(isJust(elemID) && isJust(text)){document.getElementById(elemID).innerHTML += text;
-               return true;
-          }else{
-               return nil;
-          }
-     }
+               return true; }
+          else{
+               return nil; }}
           visor.touch.wipe = function (elemID){
                if(isJust(elemID)){document.getElementById(elemID).innerHTML = "";
-                    return true;
-               }else{
-                    return nil;
-               }
-          }
+                    return true; }
+               else{
+                    return nil; }}
           visor.touch.conquer = function (elemID, text){
                if(isJust(elemID) && isJust(text)){document.getElementById(elemID).innerHTML = text;
-                    return true;
-               }else{
-                    return nil;
-               }
-          }    
+                    return true; }
+               else{
+                    return nil; }}    
 
 function hash (){}
      hash.see = () => location.hash.replace("#", "");
@@ -37,8 +31,7 @@ function hash (){}
           if(isJust(hash)){
                location.hash = hash; // this is to SET the current location hash
                return true;
-          }else{return nil;}
-     };
+          }else{return nil;}};
      
 function say (log){if(isJust(log)){console.log(log);}}
      say.debug = function(log){if(isJust(log)){console.log("%cDebug log: %c" + log, "font-weight: bold", "");};};
@@ -55,6 +48,7 @@ function loadJS(jslocation, location, load){
      //"load" is the function to be executed after onload
      if(isJust(jslocation) && isJust(location) && isJust(load)){
           var scriptTag = document.createElement('script');
+          scriptTag.async = true;
           scriptTag.src = jslocation;
           scriptTag.onload = load;
           scriptTag.onreadystatechange = load;
@@ -68,21 +62,17 @@ function zeit (){}
      zeit.start = () => {
           if (typeof window.t0 == 'undefined'){
                window.t0 = performance.now();
-               return true;
-          }else{
+               return true; }
+          else{
                say.error("global variable t0 is already defined, please un-define it!!!");
-               return nil;
-          }
-     }
+               return nil; }};
      zeit.see = () => {
           if (typeof window.t0 !== 'undefined'){
                var t1 = performance.now();
-               say.notice("Rendering took " + (t1 - window.t0) + " msecs.");
-          }else{
+               say.notice("Rendering took " + (t1 - window.t0) + " msecs."); }
+          else{
                say.error("ZEIT was not started!!!");
-               return nil;
-          }
-     }
+               return nil; }};
      
 function script (){}
      script.load = (scriptPath) => {
