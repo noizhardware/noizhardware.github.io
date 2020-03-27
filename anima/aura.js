@@ -2,11 +2,11 @@
 // TODO: verify all arguments before function execution 
 'use strict';
 const aura = {
-    version: 202003271405 };
+    version: 202003271410 };
 
 function locus (){}
      locus.see = () => window.location.href.replace(/\#.*/g,"");
-     locus.touch = (newLocus) => location.replace(newLocus);
+     locus.touch = (newLocus) => window.location.href = newLocus;
 
 function visor (){}
      visor.touch = function (elemID, text){
