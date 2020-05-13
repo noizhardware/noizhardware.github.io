@@ -34,10 +34,10 @@ var pomoSavedTime;
 var pomoPaused = 0;
 var pomoRunning = 0;
 var pomoRestmode = 0; // start in WORK mode
-// const POMOWORK = 0.25;
-// const POMOREST = 0.05;
-const POMOWORK = 0.001;
-const POMOREST = 0.001;
+const POMOWORK = 0.25;
+const POMOREST = 0.05;
+// const POMOWORK = 0.001;
+// const POMOREST = 0.001;
 
 function startTimer(){
   if(!running){
@@ -151,14 +151,14 @@ function pomoRest(){
      console.log("pomoRest function!");
      pomoRestmode = 1;
      pauseTimer();
-     pomoReset();
+     pomoSoftReset();
      pomoStart();
 }
 
 function pomoWork(){
      console.log("pomoWork function!");
      pomoRestmode = 0;
-     pomoReset();
+     pomoSOftReset();
      pomoStart();
 }
 
@@ -188,6 +188,19 @@ function resetTimer(){
 }
 
 function pomoReset(){
+  clearInterval(pomotInterval);
+  pomoSavedTime = 0;
+  pomoDifference = 0;
+  pomoPaused = 0;
+  pomoRunning = 0;
+  pomoRestmode = 0; // start in WORK mode
+  pomoDisplay.innerHTML = 'pomo';
+  pomoDisplay.style.background = "#A1A1A1";
+  pomoDisplay.style.color = "white";
+  pomoDisplay.style.cursor = "pointer";
+}
+
+function pomoSoftReset(){ // doesn't reset the restmode status
   clearInterval(pomotInterval);
   pomoSavedTime = 0;
   pomoDifference = 0;
