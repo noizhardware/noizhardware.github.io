@@ -1,5 +1,5 @@
 'use strict'
-// shit to conditional loading (to include in .html)
+// shit to do conditional loading (to include in .html)
 // if (typeof startTime === 'undefined') {
 //         document.write('<script src="js/libs/jquery.tooltip.min.js">\x3C/script>');
 //     }
@@ -15,8 +15,6 @@ function changeIcon(icon) {
     document.getElementsByTagName('head')[0].appendChild(link);
 }
 
-var startTimerButton = document.querySelector('.startTimer');
-var pauseTimerButton = document.querySelector('.pauseTimer');
 var timerDisplay = document.querySelector('.timer');
 var startTime;
 var updatedTime;
@@ -25,6 +23,22 @@ var tInterval;
 var savedTime;
 var paused = 0;
 var running = 0;
+
+var pomoDisplay = document.querySelector('.pomo');
+var pomoStartTime;
+var pomoUpdatedTime;
+var pomoDifference;
+var pomotInterval;
+var pomoVerify;
+var pomoSavedTime;
+var pomoPaused = 0;
+var pomoRunning = 0;
+var pomoRestmode = 0; // start in WORK mode
+// const POMOWORK = 0.25;
+// const POMOREST = 0.05;
+const POMOWORK = 0.001;
+const POMOREST = 0.001;
+
 function startTimer(){
   if(!running){
        changeIcon(icoActive);
@@ -33,14 +47,9 @@ function startTimer(){
     // change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.
     paused = 0;
     running = 1;
-    //timerDisplay.style.background = "#2E86AB"; //active timer color
     timerDisplay.style.background = "#FF6700"; //active timer color
     timerDisplay.style.cursor = "auto";
     timerDisplay.style.color = "white";
-    //startTimerButton.classList.add('lighter');
-    //pauseTimerButton.classList.remove('lighter');
-    //startTimerButton.style.cursor = "auto";
-    //pauseTimerButton.style.cursor = "pointer";
      }else{
      pauseTimer();
      }
@@ -57,15 +66,115 @@ function pauseTimer(){
     timerDisplay.style.background = "#A1A1A1";
     timerDisplay.style.color = "white";
     timerDisplay.style.cursor = "pointer";
-    //startTimerButton.classList.remove('lighter');
-    //pauseTimerButton.classList.add('lighter');
-    //startTimerButton.style.cursor = "pointer";
-    //pauseTimerButton.style.cursor = "auto";
   } else {
 // if the timer was already paused, when they click pause again, start the timer again
 startTimer();
   }
 }
+
+function pomoStart(){
+     console.log("restmode: " + pomoRestmode);
+     if(!pomoRunning){
+          if(!pomoRestmode){
+               if(!running){startTimer();}}
+          pomoRunning = 1;
+          console.log("pomo started");
+          bip(pomoRestmode ? 2 : 3);
+          // if(!running){startTimer();}
+          pomoStartTime = new Date().getTime();
+          pomotInterval = setInterval(getShowPomo, 1); // change 1 to 1000 above to run script every second instead of every millisecond. one other change will be needed in the getShowTime() function below for this to work. see comment there.
+          //pomoVerify = setInterval(pomoWork, 1);
+          pomoPaused = 0;
+          pomoRunning = 1;
+          var activeBG = pomoRestmode ? "green" : "red"; // RED = workmode / GREEN = restmode
+          pomoDisplay.style.background = activeBG; //active pomo color
+          pomoDisplay.style.cursor = "auto";
+          pomoDisplay.style.color = "white";
+     }else{
+          pomoPause();
+     }
+}
+
+function pomoPause(){
+     console.log("pomopause");
+  if (!pomoDifference){
+       console.log("no pomoDifference detected!");
+    // if pomo never started, don't allow the pause function to do anything
+} else if (!pomoPaused) {
+     console.log("not pomopaused");
+     if(!pomoRestmode){pauseTimer();}
+    clearInterval(pomotInterval);
+    pomoSavedTime = pomoDifference;
+    pomoPaused = 1;
+    pomoRunning = 0;
+    var pausedFont = pomoRestmode ? "green" : "red";
+    pomoDisplay.style.background = "#A1A1A1"; // paused pomo color
+    pomoDisplay.style.color = pausedFont;
+    pomoDisplay.style.cursor = "pointer";
+  } else {
+       console.log("already pomopaused, pomostarting now");
+// if the pomo was already paused, when they click pause again, start the pomo again
+pomoStart();
+  }
+}
+
+function getShowTime(){
+  updatedTime = new Date().getTime();
+  if (savedTime){
+    difference = (updatedTime - startTime) + savedTime; // difference is in milliseconds!
+  } else {
+    difference =  updatedTime - startTime;
+  }
+  //var floowPhases = difference / 28800000;
+  //var hourz =  fixDec((difference / 3600000), 7);
+  //timerDisplay.innerHTML = fixDec(floowPhases, 7);
+  //var hourz = fixDec(fixDec(floowPhases , 7) * 8, 7); // LOL phases get converted back into hours, with decimal minutes. what a waste
+  timerDisplay.innerHTML = fixDec(hourzElapsed(), 7);
+}
+
+function getShowPomo(){
+     pomoUpdatedTime = new Date().getTime();
+     if (pomoSavedTime){
+          pomoDifference = (pomoUpdatedTime - pomoStartTime) + pomoSavedTime;}  // difference is in milliseconds!
+     else {
+          pomoDifference =  pomoUpdatedTime - pomoStartTime;}
+     pomoDisplay.innerHTML = fixDec(pomoHourzElapsed(), 7);
+     //console.log("getshowpomo conditional check coming... (" + pomoRestmode + ")");
+     if(!pomoRestmode){ // work mode
+          if(fixDec(pomoHourzElapsed(), 7) >= POMOWORK){pomoRest();}} // if pomowork time elapsed, go rest
+     else{ //rest mode
+          //console.log("it's rest mode!! " + fixDec(pomoHourzElapsed(), 7));
+          if(fixDec(pomoHourzElapsed(), 7) >= POMOREST){console.log("rest is finished!!!"); pomoWork();}} // if pomorest time elapsed, go work
+}
+
+function pomoRest(){
+     console.log("pomoRest function!");
+     pomoRestmode = 1;
+     pauseTimer();
+     pomoReset();
+     pomoStart();
+}
+
+function pomoWork(){
+     console.log("pomoWork function!");
+     pomoRestmode = 0;
+     pomoReset();
+     pomoStart();
+}
+
+// function beep(){
+//      var snd = new Audio("data:audio/wav;base64,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qJrx4KOQjahZxWbcZgztj2c49nKmkId44S71j0c8eV9yDK6uPRzx5X18eDvjvQ6yKo9ZSS6l//8elePK/Lf//IInrOF/FvDoADYAGBMGb7FtErm5MXMlmPAJQVgWta7Zx2go+8xJ0UiCb8LHHdftWyLJE0QIAIsI+UbXu67dZMjmgDGCGl1H+vpF4NSDckSIkk7Vd+sxEhBQMRU8j/12UIRhzSaUdQ+rQU5kGeFxm+hb1oh6pWWmv3uvmReDl0UnvtapVaIzo1jZbf/pD6ElLqSX+rUmOQNpJFa/r+sa4e/pBlAABoAAAAA3CUgShLdGIxsY7AUABPRrgCABdDuQ5GC7DqPQCgbbJUAoRSUj+NIEig0YfyWUho1VBBBA//uQZB4ABZx5zfMakeAAAAmwAAAAF5F3P0w9GtAAACfAAAAAwLhMDmAYWMgVEG1U0FIGCBgXBXAtfMH10000EEEEEECUBYln03TTTdNBDZopopYvrTTdNa325mImNg3TTPV9q3pmY0xoO6bv3r00y+IDGid/9aaaZTGMuj9mpu9Mpio1dXrr5HERTZSmqU36A3CumzN/9Robv/Xx4v9ijkSRSNLQhAWumap82WRSBUqXStV/YcS+XVLnSS+WLDroqArFkMEsAS+eWmrUzrO0oEmE40RlMZ5+ODIkAyKAGUwZ3mVKmcamcJnMW26MRPgUw6j+LkhyHGVGYjSUUKNpuJUQoOIAyDvEyG8S5yfK6dhZc0Tx1KI/gviKL6qvvFs1+bWtaz58uUNnryq6kt5RzOCkPWlVqVX2a/EEBUdU1KrXLf40GoiiFXK///qpoiDXrOgqDR38JB0bw7SoL+ZB9o1RCkQjQ2CBYZKd/+VJxZRRZlqSkKiws0WFxUyCwsKiMy7hUVFhIaCrNQsKkTIsLivwKKigsj8XYlwt/WKi2N4d//uQRCSAAjURNIHpMZBGYiaQPSYyAAABLAAAAAAAACWAAAAApUF/Mg+0aohSIRobBAsMlO//Kk4soosy1JSFRYWaLC4qZBYWFRGZdwqKiwkNBVmoWFSJkWFxX4FFRQWR+LsS4W/rFRb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VEFHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU291bmRib3kuZGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjAwNGh0dHA6Ly93d3cuc291bmRib3kuZGUAAAAAAAAAALA=");  
+//   snd.play();}
+
+function beep(){
+     new Audio('data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU'+Array(1e3).join(10)).play();}
+     // number inside join() determines pitch/duration. use minimum value: 10
+  
+function bip(bips){
+     const bipLen = 250;
+     var bibi = setInterval(beep, bipLen);
+     setTimeout(() => {clearInterval(bibi);}, bipLen * bips);}
+
 function resetTimer(){
   clearInterval(tInterval);
   savedTime = 0;
@@ -76,10 +185,18 @@ function resetTimer(){
   timerDisplay.style.background = "#A1A1A1";
   timerDisplay.style.color = "white";
   timerDisplay.style.cursor = "pointer";
-  //startTimerButton.classList.remove('lighter');
-  //pauseTimerButton.classList.remove('lighter');
-  //startTimerButton.style.cursor = "pointer";
-  //pauseTimerButton.style.cursor = "auto";
+}
+
+function pomoReset(){
+  clearInterval(pomotInterval);
+  pomoSavedTime = 0;
+  pomoDifference = 0;
+  pomoPaused = 0;
+  pomoRunning = 0;
+  pomoDisplay.innerHTML = 'pomo';
+  pomoDisplay.style.background = "#A1A1A1";
+  pomoDisplay.style.color = "white";
+  pomoDisplay.style.cursor = "pointer";
 }
 
 const fract = (n) => (n - Math.floor(n));
@@ -110,22 +227,9 @@ function clearAll(){
 function clearField(elementid){
      document.getElementById(elementid).value = "";}
 
-function getShowTime(){
-  updatedTime = new Date().getTime();
-  if (savedTime){
-    difference = (updatedTime - startTime) + savedTime; // difference is in milliseconds!
-  } else {
-    difference =  updatedTime - startTime;
-  }
-  //var floowPhases = difference / 28800000;
-  
-  //var hourz =  fixDec((difference / 3600000), 7);
-  
-  //timerDisplay.innerHTML = fixDec(floowPhases, 7);
-  //var hourz = fixDec(fixDec(floowPhases , 7) * 8, 7); // LOL phases get converted back into hours, with decimal minutes. what a waste
-  
-  timerDisplay.innerHTML = fixDec(hourzElapsed(), 7);
-}
+
+
+
 
 function floowElapsed(){
   var floowPhases = difference / 28800000;
@@ -133,6 +237,7 @@ function floowElapsed(){
 }
 
 const hourzElapsed = () => floor(Number(difference / 3600000)) + (fract(Number(difference / 3600000)) * .6);
+const pomoHourzElapsed = () => floor(Number(pomoDifference / 3600000)) + (fract(Number(pomoDifference / 3600000)) * .6);
 
 function floowDate(){
     var floowYear = new Date().getFullYear();
@@ -190,7 +295,10 @@ function spacebar(){
 document.addEventListener('keydown', function(event) { 
   if (event.ctrlKey && event.key === ' ') { // Ctrl + SPACEBAR combo keypress
         spacebar();}});
-
+        
+document.addEventListener('keydown', function(event) { 
+     if (event.ctrlKey && event.key === 'x') { // Ctrl + X combo keypress
+          pomoStart();}});
 
 
 ////////// spit MASS /////////////
