@@ -158,7 +158,7 @@ function pomoRest(){
 function pomoWork(){
      console.log("pomoWork function!");
      pomoRestmode = 0;
-     pomoSOftReset();
+     pomoSoftReset();
      pomoStart();
 }
 
