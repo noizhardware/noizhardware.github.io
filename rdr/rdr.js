@@ -12,4 +12,4 @@ const ipGet = (nodeId, callback) => {
 const ipGo = (nodeId_SubAddr) => {
      nodeId = nodeId_SubAddr.split('-')[0];
      subAddr = nodeId_SubAddr.split('-')[1];
-     ipGet(nodeId, (ip) => locus.touch('http://' + ip + subAddr));}
+     ipGet(nodeId, (ip) => locus.touch('http://' + ip + '/' + subAddr));}
