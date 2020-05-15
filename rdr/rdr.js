@@ -9,5 +9,7 @@ const httpGetAsync = (url, callback) => {
 const ipGet = (nodeId, callback) => {
      return httpGetAsync('https://raw.githubusercontent.com/noizhardware/dotfiles/master/ip/.' + nodeId, callback);}
      
-const ipGo = (nodeId) => {
-     ipGet(nodeId, (ip) => locus.touch('http://' + ip));}
+const ipGo = (nodeId_SubAddr) => {
+     nodeId = nodeId_SubAddr.split('-')[0];
+     subAddr = nodeId_SubAddr.split('-')[1];
+     ipGet(nodeId, (ip) => locus.touch('http://' + ip + subAddr));}
