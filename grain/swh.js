@@ -4,14 +4,14 @@
 //         document.write('<script src="js/libs/jquery.tooltip.min.js">\x3C/script>');
 //     }
 
-const icoInactive = "floow_fav00.png";
-const icoActive = "floow_fav00_orange.png";
+const icoInactive = "grain.png";
+const icoActive = "grain_orange.png";
 
 function changeIcon(icon) {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'icon';
-    link.href = '../img/' + icon;
+    link.href = './' + icon;
     document.getElementsByTagName('head')[0].appendChild(link);
 }
 
