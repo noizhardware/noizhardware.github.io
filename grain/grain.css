@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Roboto';
         src:  url('../fonts/Roboto-Black.ttf') format('truetype');
     font-weight: black;
@@ -15,38 +15,36 @@
         src:  url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
+} */
 
 body {
   background-color: #111;
   color: #ccc;
   font-weight : normal;
-  font-family: "Roboto";
-  font-size: 30px;
-}
+  /* font-family: "Roboto"; */
+  font-family: monospace;
+  font-size: 30px;}
 
 .inputFields {
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family: monospace;
   font-weight: 300;
   width:700px;
   margin:20px auto;
   min-height: 60px;
-  border-top:0px;
-}
+  border-top:0px;}
 
 .attName {
-  font-size: 15px;
-}
+  font-size: 15px;}
 
 #timerContainer, #pomoContainer {
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family: monospace;
   font-weight: 300;
   width:700px;
   margin:20px auto;
   min-height: 60px;
-  border-top:0px;
-}
+  border-top:0px;}
 .timer, .pomo, .reset {
   float:left;
   width: 54%;
@@ -55,22 +53,16 @@ body {
   text-align:center;
   color: #fff;
   background: #A1A1A1;
-  cursor: pointer
-}
+  cursor: pointer}
 .reset {
   background: #3D3D3D;
   color: white;
   width:14.9%;
-  border-left: 1px solid #FFFFFF;
-}
+  border-left: 1px solid #FFFFFF;}
 .reset:hover {
      /* safety orange */
-  background: #FF6700;
-}
+  background: #FF6700;}
 .lighter {
-  background: #EAE2B7
-}
-
+  background: #EAE2B7}
 .tutorialText {
-  font-size: 15px;
-}
+  font-size: 15px;}
