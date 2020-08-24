@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>G R A I N - Stopwatch - HOURS</title>
+<link rel="stylesheet" href="grain.css">
+<link rel="stylesheet" href="nopull.css">
+
+<link rel="icon" href="./grain.png" type="image/x-icon" />
+<link rel="shortcut icon" href="./grain.png" type="image/png" />
+
+</head>
+<body class="body">
+<div class="wrapper">
+    
+<div id="timerContainer">
+    <div class="timer" onclick="startTimer()">Ready to F L O O W</div>
+    <div class="resetTimer reset" onclick="resetTimer()">Reset</div>
+
+</div>
+<div id="pomoContainer">
+     <div class="pomo" onclick="pomoStart()">pomo</div>
+     <div class="pomoReset reset" onclick="pomoReset()">pomoRst</div>
+</div>
+
+<div><center>HOURS.MINUTES!!!</center></div>
+
+<div class = "inputFields">   
+    <div>
+        <span class="attName">proj</span> <input type="text" id="proj" class="inputField" class="form-control" placeholder="proj" autofocus ></div>
+    <div>
+        <span class="attName">type</span> <input type="text" id="typ1" class="inputField" class="form-control" placeholder="type" ></div>
+    <div>
+        <span class="attName">type</span> <input type="text" id="typ2" class="inputField" class="form-control" placeholder="type" ></div>
+    <div>
+        <span class="attName">type</span> <input type="text" id="typ3" class="inputField" class="form-control" placeholder="type" ></div>
+    <div>
+        <span class="attName">type</span> <input type="text" id="typ4" class="inputField" class="form-control" placeholder="type" ></div>
+    <div>
+        <span class="attName">type</span> <input type="text" id="typ5" class="inputField" class="form-control" placeholder="type" ></div>
+    <div>
+        <span class="attName">forw</span> <input type="text" id="forw" class="inputField" class="form-control" placeholder="forw" ></div>
+    <div>
+        <span class="attName">note</span> <input type="text" id="note" class="inputField" class="form-control" placeholder="note" ></div>
+    
+    <button type="button" id="makeMASSbutton">make .MASS (Ctrl + ,)</button>
+    <button type="button" id="clipboard">copy to clipboard (Ctrl + .)</button>
+    <button type="button" id="clear">clear input fields</button>
+    <!-- <button type="button" id="cookieMASS">.MASS to cookies</button>
+    <button type="button" id="testA">test A</button>
+    <button type="button" id="testB">test B</button> -->
+    
+    <div>
+        <textarea id="massOut" rows="12" cols="50">Here output in .MASS</textarea></div>
+    
+    <div class = "tutorialText">
+         <p>Ctrl + SPACEBAR >> Start/Pause</p>
+         <p>Ctrl + Enter >> Reset</p>
+         <p>Shift + Enter >> Clear all input fields</p>
+         <p>Ctrl + X >> POMODORO start/pause</p></div>
+    
+</div>
+
+<script type="text/javascript" src="grain.js"></script>
+
+</div>
+</body>
+</html>
