@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Roboto';
         src:  url('../fonts/Roboto-Black.ttf') format('truetype');
     font-weight: black;
@@ -15,14 +15,15 @@
         src:  url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 
 body {
   background-color: #111;
   color: #ccc;
   font-weight : normal;
-  font-family: "Roboto";
+  /*font-family: "Roboto";*/
+  font-family: monospace;
   font-size: 6vw;
 }
 
