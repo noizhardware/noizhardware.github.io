@@ -1,0 +1,12 @@
+:root {
+  --hover-bg: #080808;
+  --hover-text: white;
+  --main-bg: white;
+  --main-fg: #080808;
+  --link-e-hover: black;
+  --link-e-text: #dddeee;
+  /* --hilite: #f26722; */
+  --hilite: #FF6700;
+  --hilite-text: black;
+  --icons-light-percent: 0.1; /* it's #dedede */
+}
