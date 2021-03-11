@@ -40,6 +40,48 @@ font-size: 100%;
   margin-top: auto;
   margin-bottom: auto;
 }
+.newsletter {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size:1vw;
+  line-height: 50%;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+body form .button {
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+     background:#404040;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     cursor: pointer;
+}
+body form .button:hover {background-color: #727272 !important;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;}
+
+body form .email {
+     /* font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+     background:#404040;
+     border: none;
+     color: white; */
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     /* cursor: pointer; */
+}
+
+body form {
+     margin-top: 5px;
+     horizontal-align: center}
+
 /* css soup for vertical aligning the big logo */
 .outer {
   display: table;
