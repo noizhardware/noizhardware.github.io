@@ -109,7 +109,7 @@
           </font></h1>
      <!-- </center> -->
      
-     <form
+     <!-- <form
           style="
                padding:3px;
                /* text-align:center; */
@@ -120,7 +120,7 @@
           onsubmit=
                'window.open(
                     ' https://tinyletter.com/noizHARDWARE ',
-                    'popupwindow ',
+                    'popupwindow',
                     'scrollbars=yes,
                     width=800,
                     height=600 ');
@@ -138,6 +138,35 @@
                value='Subscribe'
                name='subscribe'
                class='button'>
+     </form> -->
+     <form 
+          style="
+               padding:3px;
+               /* text-align:center; */
+               "
+          action="https://tinyletter.com/noizHARDWARE"
+          method="post"
+          target="popupwindow"
+          onsubmit=
+               "window.open('https://tinyletter.com/noizHARDWARE',
+               'popupwindow',
+               'scrollbars=yes,width=800,height=600');
+               return true"
+     >
+          <input
+               type="email"
+               value=""
+               name="email"
+               class="email"
+               placeholder="email@address.com"
+               required=""
+          />
+          <input
+               type="submit"
+               value="Subscribe"
+               name="subscribe"
+               class="button"
+          />
      </form>
      
      </main>
