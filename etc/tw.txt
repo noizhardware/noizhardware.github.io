@@ -8,8 +8,10 @@
 # n      `nff. `nf n nffn         n nffn
 # n         `nff.` n nffn         n nffn
 # n            `nf n nffn         n nffn
+#
 # nick = nff
 # url = https://www.noizhardware.com/etc/tw.txt
 # mention = @<nff https://www.noizhardware.com/etc/tw.txt>
 #
 2022-03-20T12:41:23+01:00	more testing
+2022-03-20T13:48:47+01:00	let's seeeeee
