@@ -8,6 +8,4 @@
 # url = https://www.noizhardware.com/etc/tw.txt
 # mention = @<nff https://www.noizhardware.com/etc/tw.txt>
 #
-2022-03-20T16:06:57+01:00	blablaaaahh
-2022-03-20T16:08:38+01:00	blablaaaahhculooo
-2022-03-20T16:12:37+01:00	puppaaaa
+2022-03-20T16:40:09+01:00	hello twtxt!!! tweeting with https://git.sr.ht/~noizhardware/twBao, still a work in progress :))
