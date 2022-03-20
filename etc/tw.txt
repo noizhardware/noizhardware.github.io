@@ -1,13 +1,8 @@
-# n.             f f nffnffnffnff n nffnffnffnff
-# nffn.          f n nffn         n nffn
-# nffnffn.       f n nffn         n nffn
-# .`nffnffnf.    f n nffn         n nffn
-# nf. `nffnffnf. f f nffnffnffnff n nffnffnffnff
-# n`nff. `nffnffnf n nffn         n nffn
-# n   `nff. `nffnf n nffn         n nffn
-# n      `nff. `nf n nffn         n nffn
-# n         `nff.` n nffn         n nffn
-# n            `nf n nffn         n nffn
+#    ________  ________  ________
+#   ╱    ╱   ╲╱        ╲╱        ╲
+#  ╱         ╱       __╱       __╱
+# ╱         ╱        _╱        _╱
+# ╲__╱_____╱╲_______╱ ╲_______╱
 #
 # nick = nff
 # url = https://www.noizhardware.com/etc/tw.txt
@@ -15,3 +10,4 @@
 #
 2022-03-20T12:41:23+01:00	more testing
 2022-03-20T13:48:47+01:00	let's seeeeee
+2022-03-20T14:47:33+01:00	nnmmmmore
