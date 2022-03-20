@@ -9,3 +9,4 @@
 # mention = @<nff https://www.noizhardware.com/etc/tw.txt>
 #
 2022-03-20T16:40:09+01:00	hello twtxt!!! tweeting with https://git.sr.ht/~noizhardware/twBao, still a work in progress :))
+2022-03-20T19:46:51+01:00	tuitt amakaaahah
