@@ -18,3 +18,4 @@
 2022-03-21T00:15:18+01:00	will have to implement some curl scanning for follows and mentions. gona be a nice chance to brush up my C-string-fu LoL
 2022-03-21T11:40:51+01:00	funny how a stack-based machine might actually be a welcoming environment for functional reactive programming #frp #coding #raven #666cpu
 2022-03-21T20:39:14+01:00	LWave : system to generate a 1bit or 8bit audio stream with L-Systems (might have an interactive/livecoding part) #sound #coding #livecoding #1bit #nyx #halfbaked
+2022-03-22T00:54:15+01:00	twtxting from Android(Termux) uiiiiii!
