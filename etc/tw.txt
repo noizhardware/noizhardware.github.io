@@ -8,10 +8,10 @@
 # url = https://www.noizhardware.com/etc/tw.txt
 # mention = @<nff https://www.noizhardware.com/etc/tw.txt>
 #
-# follow = pbatch https://pbat.ch/twtxt.txt
-# follow = compudanzas https://compudanzas.net/tw.txt
-# follow = neauoire https://wiki.xxiivv.com/links/tw.txt
-# follow = akkartik http://akkartik.name/twtxt.txt
+# follow = @<pbatch https://pbat.ch/twtxt.txt>
+# follow = @<compudanzas https://compudanzas.net/tw.txt>
+# follow = @<neauoire https://wiki.xxiivv.com/links/tw.txt>
+# follow = @<akkartik http://akkartik.name/twtxt.txt>
 #
 2022-03-20T16:40:09+01:00	hello twtxt!!! tweeting with https://git.sr.ht/~noizhardware/twBao, still a work in progress :))
 2022-03-20T22:50:19+01:00	now twtxting from my netbook, on Lubuntu uiiii it works!
