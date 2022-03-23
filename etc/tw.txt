@@ -21,7 +21,3 @@
 2022-03-22T00:54:15+01:00	twtxting from Android(Termux) uiiiiii!
 2022-03-22T09:52:33+01:00	started adding follows, decided to keep the list in the header here, hope it helps with discoverability and making new connections :)) #twtxt #community
 2022-03-22T15:34:38+01:00	#idea using a #matrixmixer to generate feedback exciting membranes with a piezo. Try an irish drum #minijack #video #sound
-2022-03-23T11:55:12+01:00	test dis
-2022-03-23T11:55:51+01:00	#test dat #tag
-2022-03-23T12:30:49+01:00	and diiiis
-2022-03-23T12:31:06+01:00	#tag daaaaat #ting
