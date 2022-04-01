@@ -13,6 +13,7 @@
 # follow = @<neauoire https://wiki.xxiivv.com/links/tw.txt>
 # follow = @<akkartik http://akkartik.name/twtxt.txt>
 # follow = @<marcofavorito https://marcofavorito.me/twtxt.txt>
+# follow = @<dzns http://tilde.town/~dozens/tw.txt>
 #
 2022-03-20T16:40:09+01:00	hello twtxt!!! tweeting with https://git.sr.ht/~noizhardware/twBao, still a work in progress :))
 2022-03-20T22:50:19+01:00	now twtxting from my netbook, on Lubuntu uiiii it works!
@@ -23,4 +24,4 @@
 2022-03-22T09:52:33+01:00	started adding follows, decided to keep my list in the header here, hope it helps with discoverability and making new connections :)) #twtxt #community
 2022-03-22T15:34:38+01:00	idea: using a #matrixmixer to generate feedback exciting membranes with a piezo. Try an irish drum #minijack #video #sound
 2022-03-25T13:07:36+01:00	#live #music idea: revived devices used as instruments, #sound coming from their own speakers. #livecoding #permacomputing #666cpu #uxn
-2022-03-28T22:38:14+01:00	twtxting from my old laptop! stuck in bed with a nasty back pain, trying to come up with a small fun project to take mind off it
+2022-03-28T22:38:14+01:00	twtxting from my old laptop! stuck in bed with a nasty back pain, trying to come up with a small fun project to take my mind off it
