@@ -25,3 +25,4 @@
 2022-03-22T15:34:38+01:00	idea: using a #matrixmixer to generate feedback exciting membranes with a piezo. Try an irish drum #minijack #video #sound
 2022-03-25T13:07:36+01:00	#live #music idea: revived devices used as instruments, #sound coming from their own speakers. #livecoding #permacomputing #666cpu #uxn
 2022-03-28T22:38:14+01:00	twtxting from my old laptop! stuck in bed with a nasty back pain, trying to come up with a small fun project to take my mind off it
+2022-04-04T00:51:16+01:00	next step for https://git.sr.ht/~noizhardware/666cpu/tree/master/item/vm/666MR will be Kur, a new virtual computer system with a variable length audio buffer, let's see how it plays out #666cpu #nyx #coding #sound
