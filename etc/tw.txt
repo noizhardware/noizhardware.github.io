@@ -26,4 +26,5 @@
 2022-03-25T13:07:36+01:00	#live #music idea: revived devices used as instruments, #sound coming from their own speakers. #livecoding #permacomputing #666cpu #uxn
 2022-03-28T22:38:14+01:00	twtxting from my old laptop! stuck in bed with a nasty back pain, trying to come up with a small fun project to take my mind off it
 2022-04-04T00:51:16+01:00	next step for https://git.sr.ht/~noizhardware/666cpu/tree/master/item/vm/666MR will be Kur, a new virtual computer system with a variable length audio buffer, let's see how it plays out #666cpu #nyx #coding #sound
-2022-04-07T23:30:51+01:00	lolol actually, I'm now building a quick'n'dirty repl in C to test some mechanics, ended up implementing a small VM, adding sound asap, let's see where that leads me #crow #raven #lang #coding #sound #livecoding
+2022-04-07T23:30:51+01:00	lolol actually, I'm now building a quick'n'dirty repl in C to test some mechanics, ended up implementing a small VM, adding sound asap, let's see where that leads me #crow #raven #lang 
+#coding #sound #livecoding #nyx
