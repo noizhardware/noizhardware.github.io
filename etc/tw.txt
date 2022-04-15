@@ -28,3 +28,4 @@
 2022-04-04T00:51:16+01:00	next step for https://git.sr.ht/~noizhardware/666cpu/tree/master/item/vm/666MR will be Kur, a new virtual computer system with a variable length audio buffer, let's see how it plays out #666cpu #nyx #coding #sound
 2022-04-07T23:30:51+01:00	lolol actually, I'm now building a quick'n'dirty repl in C to test some mechanics, ended up implementing a small VM, adding sound asap, let's see where that leads me #crow #raven #lang #coding #sound #livecoding #nyx
 2022-04-12T23:01:22+01:00	I present you klebe https://git.sr.ht/~noizhardware/klebe a small library to connect programs, has a common device memory and an audio process, no need for midi, osc, tdp, just throw bytes around!!
+2022-04-15T12:20:58+01:00	twtxting from a train, that's a first :))
