@@ -29,3 +29,4 @@
 2022-04-07T23:30:51+01:00	lolol actually, I'm now building a quick'n'dirty repl in C to test some mechanics, ended up implementing a small VM, adding sound asap, let's see where that leads me #crow #raven #lang #coding #sound #livecoding #nyx
 2022-04-12T23:01:22+01:00	I present you klebe https://git.sr.ht/~noizhardware/klebe a small library to connect programs, has a common device memory and an audio process, no need for midi, osc, tdp, just throw bytes around!!
 2022-04-15T12:20:58+01:00	twtxting from a train, that's a first :))
+2022-04-27T14:05:00+01:00	just learnt about VT100 escape codes. The most minimalist-direct way to make TUIs :)) #coding #tui
