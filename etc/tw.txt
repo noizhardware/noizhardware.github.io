@@ -31,5 +31,5 @@
 2022-04-15T12:20:58+01:00	twtxting from a train, that's a first :))
 2022-04-27T14:05:00+01:00	just learnt about VT100 escape codes. The most minimalist-direct way to make TUIs :)) #coding #tui
 2022-05-06T00:24:51+01:00	trying some day planning on paper, quantizing all tasks into pomodoros. feels good. my goal is to make software only if/when I'll feel I'll need it and have a pretty decent idea of WHAT I need #tracking #selfimprovement #time
-2022-05-09T19:02:59+01:00	LoL I just added a REPL to my simple & minimal cli pomodoro timer #coding #tool #util #lang
-2022-05-10T21:43:13+01:00	I was reading something to make a little pause form work. I saw a gnat on the screen. I thought 'wow imagine how's it perceiving the screen-space world'. So I went on and browsed Shadertoy for an hour #shader #visual #trip #psychedelic #coding #shader
+2022-05-09T19:02:59+01:00	LoL I just added a REPL to my 'simple & minimal' cli pomodoro timer #coding #tool #util #lang
+2022-05-10T21:43:13+01:00	I was reading something to make a little pause from work. I saw a gnat on the screen. I thought 'wow imagine how's it perceiving the screen-space world'. So I went on and browsed Shadertoy for an hour LoL #shader #visual #trip #psychedelic #coding #shader
