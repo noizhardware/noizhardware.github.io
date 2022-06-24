@@ -36,3 +36,4 @@
 2022-05-10T21:43:13+01:00	I was reading something to make a little pause from work. I saw a gnat on the screen. I thought 'wow imagine how's it perceiving the screen-space world'. So I went on and browsed Shadertoy for an hour LoL #shader #visual #trip #psychedelic #coding
 2022-06-01T20:44:41+01:00	on my workbench I have 3x raspberryPis, an Arduino Micro, 2 full breadboards, a screen, a box of PIR sensors, 100mt of phone cable, and it's for a job. I'm happy.
 2022-06-12T21:58:03+01:00	@<kubikpixel https://thunix.net/~kubikpixel/twtxt.txt> hellooo!!!! \\o//
+2022-06-24T18:20:42+01:00	in the [[gameoflife]] there are 8 cells around each cell, that can be 0 or 1. Make #sound with that. #8bit or even #1bit with bitscan. Maybe on #uxn . #halfbaked #coding
