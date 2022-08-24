@@ -40,3 +40,4 @@
 2022-06-24T18:20:42+01:00	in the [[gameoflife]] there are 8 cells around each cell, that can be 0 or 1. Make #sound with that. #8bit or even #1bit with bitscan. Maybe on #uxn . #halfbaked #coding #cellularautomata
 2022-08-18T21:24:42+01:00	dreaming of exotic APUs
 2022-08-23T13:44:48+01:00	#TIR (Today I Realized): typical human hands count in base eleven, as two closed fists can represent zero, so a good single-digit representation could be a [0..A] range #math
+2022-08-24T22:20:23+01:00	started writing a small crawler to find keywords and mentions, should now be able to see if you're mentioning me :)) #twtxt #community #coding
