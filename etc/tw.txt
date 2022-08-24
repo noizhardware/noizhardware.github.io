@@ -15,6 +15,7 @@
 # follow = @<marcofavorito https://marcofavorito.me/twtxt.txt>
 # follow = @<dzns http://tilde.town/~dozens/tw.txt>
 # follow = @<kubikpixel https://thunix.net/~kubikpixel/twtxt.txt>
+# follow = @<off_grid_living https://twtxt.net/user/off_grid_living/twtxt.txt>
 #
 2022-03-20T16:40:09+01:00	hello twtxt!!! tweeting with https://git.sr.ht/~noizhardware/twBao, still a work in progress :))
 2022-03-20T22:50:19+01:00	now twtxting from my netbook, on Lubuntu uiiii it works!
