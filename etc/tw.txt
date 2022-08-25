@@ -18,6 +18,7 @@
 # follow = off_grid_living https://twtxt.net/user/off_grid_living/twtxt.txt
 # follow = hecanjog https://hecanjog.com/twtxt.txt
 # follow = the-lunduke-journal-of-technology https://feeds.twtxt.net/the-lunduke-journal-of-technology/twtxt.txt
+# follow = anth http://a.9srv.net/tw.txt
 #
 2022-03-20T16:40:09+01:00	hello twtxt!!! tweeting with https://git.sr.ht/~noizhardware/twBao, still a work in progress :))
 2022-03-20T22:50:19+01:00	now twtxting from my netbook, on Lubuntu uiiii it works!
