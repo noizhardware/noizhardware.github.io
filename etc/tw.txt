@@ -47,3 +47,4 @@
 2022-08-24T22:20:23+01:00	started writing a small crawler to find keywords and mentions, should now be able to see if you're mentioning me :)) #twtxt #community #coding
 2022-08-25T12:55:12+01:00	#test from p2 phone ૮ ˶ᵔ ᵕ ᵔ˶ ა
 
+2022-08-25T22:25:05+01:00	looking at my crawler's log scrolling on the screen, randomly copying feeds with an interesting-looking name into my browser. what a nice way to discover new things #twtxt
