@@ -47,3 +47,4 @@
 2022-08-24T22:20:23+01:00	started writing a small crawler to find keywords and mentions, should now be able to see if you're mentioning me :)) #twtxt #community #coding
 2022-08-25T12:55:12+01:00	#test from p2 phone ૮ ˶ᵔ ᵕ ᵔ˶ ა
 2022-08-25T22:25:05+01:00	looking at my crawler's log scrolling on the screen, randomly copying feeds with an interesting-looking name into my browser. what a nice way to discover new things #twtxt
+2022-08-27T14:07:21+01:00	pondering about the difference between my use of the tags #idea and #halfbaked . halfbaked looks like something in a more advanced stage, merely lacking execution #meta
