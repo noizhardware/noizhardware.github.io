@@ -50,3 +50,4 @@
 2022-08-27T14:07:21+01:00	pondering about the difference between my use of the tags #idea and #halfbaked . halfbaked looks like something in a more advanced stage, merely lacking execution #meta
 2022-09-06T16:30:20+01:00	just had an MRI scan, rekindled my enthusiasm for #music , fragmented arrangement ideas #noise #idm #experimental
 2022-09-11T20:49:33+01:00	sound-only pong: pitch, panning and volume should be enough #halfbaked #videogame #sound #coding #nyx #klebe
+2022-09-11T20:51:24+01:00	sound-only tetris: chords and layered timbres come to mind, might yield pretty interesting tunes :)) #halfbaked #videogame #sound #coding #nyx #klebe
