@@ -52,7 +52,7 @@
 2022-09-11T20:49:33+01:00	sound-only pong: pitch, panning and volume should be enough #halfbaked #videogame #sound #coding #nyx #klebe
 2022-09-11T20:51:24+01:00	sound-only tetris: chords and layered timbres come to mind, might yield pretty interesting tunes :)) #halfbaked #videogame #sound #coding #nyx #klebe
 2022-09-13T22:44:45+01:00	pirate radio stations from another dimension #trip #sound
-2022-09-21T10:54:52+01:00	TIL pencil writing is more permanent and waterproof than most ink. good news, I love pencils! #eco #notes
+2022-09-21T10:54:52+01:00	#TIL pencil writing is more permanent and waterproof than most ink. good news, I love pencils! #eco #notes
 2022-09-21T17:56:48+01:00	analog circuit debugging is a transcendental experience. every.single.time. #electronics
 2022-09-25T13:34:08+01:00	M DISC media has a projected lifetime of several hundred years. interesting. #permacomputing #hardware
 2022-09-27T19:38:59+01:00	I feel that cyberpunk direct man-machine connection I've always thought wonders about, might just be.. #sound . it's a deep, almost unfiltered connection to the subconscious
