@@ -57,4 +57,3 @@
 2022-09-25T13:34:08+01:00	M DISC media has a projected lifetime of several hundred years. interesting. #permacomputing #hardware
 2022-09-27T19:38:59+01:00	I feel that cyberpunk direct man-machine connection I've always thought wonders about, might just be.. #sound . it's a deep, almost unfiltered connection to the subconscious
 2022-09-30T12:57:36+01:00	just wrote a note in my code `float* output; /* to write output to physical device, or just the next lower device in the abstraction tower */` feeling pretty proud of that LoL #coding #klebe
-2022-09-30T13:06:09+01:00	just wrote a note in my code `float* output; /* to write output to physical device, or just the next lower device in the abstraction tower */` feeling pretty proud of that LoL #coding #klebe
