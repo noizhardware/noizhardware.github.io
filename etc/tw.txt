@@ -59,3 +59,4 @@
 2022-09-30T12:57:36+01:00	just wrote a note in my code `float* output; /* to write output to physical device, or just the next lower device in the abstraction tower */` feeling pretty proud of that LoL #coding #klebe
 2022-10-22T10:53:56+01:00	the first bar in space should be called The 0x20
 2022-11-11T19:16:56+01:00	WTFM : Write The Fucking Manual, a note to self. #coding #lol
+2022-12-08T22:25:52+01:00	tonight's treat: roasted peanuts, ginger soda and some #ada #coding , with a side of HPC rabbithole
