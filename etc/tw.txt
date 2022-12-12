@@ -60,3 +60,4 @@
 2022-10-22T10:53:56+01:00	the first bar in space should be called The 0x20
 2022-11-11T19:16:56+01:00	WTFM : Write The Fucking Manual, a note to self. #coding #lol
 2022-12-08T22:25:52+01:00	tonight's treat: roasted peanuts, ginger soda and some #ada #coding , with a side of HPC rabbithole
+2022-12-12T18:37:21+01:00	updated kalk, a minimal CLI RPN calculator with some extra quirky fuctionality. Pretty happy with its current status https://git.sr.ht/~noizhardware/kalk
