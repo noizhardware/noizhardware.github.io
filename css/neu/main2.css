@@ -116,7 +116,7 @@ header {
 	margin-left:0px;
 }
 
-header #logo {
+.navbar #logo {
      background:none;
      background-image: url(../../img/neu/svg/logo.svg);
      /* position: absolute; */
@@ -134,7 +134,7 @@ header #logo {
      /* left: 50vw; */
      /* margin-top: 15px; */
 }
-header #logo:hover{
+.navbar #logo:hover{
 	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
 	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
 }
@@ -147,14 +147,24 @@ object {
 
 
      
-
-    
-nav {
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 	margin-top:0px;
 	margin-right:0px;
 	margin-bottom:30px;
-/*	margin-left:;*/
 }
+    
+nav {
+	float:left;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:30px;
+	margin-left:120;
+}
+
+
 
 
 /* header #activity ul {
@@ -477,7 +487,7 @@ footer #cc:hover{
      /* text-decoration-line: underline;
      text-decoration-style: solid; */}
 
-/* custom highlight color */
+/*** custom highlight color */
 ::-moz-selection { /* Code for Firefox */
   color: var(--hilite-text);
   background: var(--hilite);}
