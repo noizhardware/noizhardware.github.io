@@ -254,6 +254,7 @@ header #activity li a:hover {
 main {
      padding-top: 20px;
      max-width:624px;
+/*     max-width:100%;*/
      clear:both }
 main figure:first-child img {
      margin-left: -30px;
@@ -266,8 +267,8 @@ main figure figcaption {
 main pre { border: 1px solid black;
      padding: 15px;
      overflow-x: scroll }
-main h2 {
-     max-width:400px } 
+/*main h2 {
+     max-width:400px } */
 main h4 {
      font-style: italic;
      font-weight: normal } 
