@@ -267,7 +267,7 @@ main figure figcaption {
 main pre { border: 1px solid black;
      padding: 15px;
      overflow-x: scroll }
-main h2 {
+/*main h2 {*/
      max-width:400px } 
 main h4 {
      font-style: italic;
