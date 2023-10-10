@@ -23,6 +23,31 @@ nhw orange #f26722
 #2c3434
 */
 
+/* link to #id animation */
+:target {
+	-webkit-animation: target-fade 2s;
+	-moz-animation: target-fade 2s;
+	-o-animation: target-fade 2s;
+	animation: target-fade 2s;
+}
+@-webkit-keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+@-moz-keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+@-o-keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+@keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+
+
 media {
 	display: block;
 	width: 100%;
@@ -97,6 +122,7 @@ body {
 body > * {
 	margin-bottom:30px
 }
+/*jjj*/
 body > * > * {
      margin-bottom:30px }
 a:hover, ::selection {
@@ -114,6 +140,10 @@ header {
 	margin-right:30px;
 	margin-bottom:0px;
 	margin-left:0px;
+}
+h1{
+	text-decoration: none;
+	text-decoration-style: dotted;
 }
 
 header #logo {
@@ -292,7 +322,7 @@ main q { /* short quotation - Use <blockquote> for long quotations. */
      display:block;
      max-width: 400px } 
 main img {
-	max-width:100%;
+	max-width:150%;
 	display:block;
 	margin:0 0 10px;
 } 
@@ -537,7 +567,19 @@ grid-row-gap: 0px;
 } */
 
 div {
-    display: block;}
+    display: block;
+}
+div.chapter {
+  margin-top: 10px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}div.chapter_h {
+  margin-top: -20px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+div.spacer {
+  margin-top: 20px !important;
 /*
 body {*/
     /* background-color: #111418; */
