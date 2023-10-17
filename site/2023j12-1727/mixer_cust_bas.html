@@ -48,7 +48,7 @@ body:
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="www.noizhardware.com" />
 	<!--*** title -->
-	<meta property="og:title" content="noizHARDWARE &mdash; mixer customization : INTERFACE" />
+	<meta property="og:title" content="noizHARDWARE &mdash; mixer customization : BASICS" />
 	<meta property="og:description" content="We make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules" />
 
 
@@ -88,78 +88,90 @@ body:
 		<ul>
 			<li><a class="selected" href="mixers.html">mixers</a></li>
 			<li><a href="eurorack.html">eurorack</a></li>
-			<li><a href="order.html">order</a></li>
-			<li><a href="about.html">about</a></li>
+			<!-- <li><a class="selected" href="index.html">research</a></li> -->
+			<li><a href="contact.html">contact</a></li>
+			<!-- <li><a id="dive" href="index.html">dive.</a></li> -->
 		</ul>
 		<ul>
-			<li><a class="selected" href="mixer_cust.html">customization</a></li>
 			<li><a href="mixer_features.html">features</a></li>
+			<li><a class="selected" href="mixer_cust.html">customization</a></li>
 			<li><a href="matrix.html">matrix mixers</a></li>
 			<li><a href="vcamatrix.html">VCA matrix</a></li>
 			<li><a href="hybrid.html">hybrid mixers</a></li>
 		</ul>
 		<ul>
-			<li><a href="mixer_cust_bas.html">basics</a></li>
-			<li><a class="current" href="mixer_cust_int.html">interface</a></li>
+			<li><a class="current" href="mixer_cust_bas.html">basics</a></li>
+			<li><a href="mixer_cust_int.html">interface</a></li>
 			<li><a href="mixer_cust_spe.html">special features</a></li>
 		</ul>
 
 		<ul>
-			<li><a href="mixer_cust_int.html#bus">output bus</a></li>
-			<li><a href="mixer_cust_int.html#hp">headphones</a></li>
-			<li><a href="mixer_cust_int.html#mute">muting</a></li>
-			<li><a href="mixer_cust_int.html#vca">VCAs</a></li>
+			<li><a href="mixer_cust_bas.html#gain">input/output gain</a></li>
+			<li><a href="mixer_cust_bas.html#conn">connections</a></li>
+			<li><a href="mixer_cust_bas.html#pan">pan/balance</a></li>
 		</ul>
 	</nav>
 
 	<!--*** content -->
 	<main>
-		<h1>INTERFACE</h1>
-		<h3>Interfacing with the external world</h3>
-
+		<h1>BASICS</h1>
+		<h3>Your mixer's structural features</h3>
 
 		<ul>
-			<li><a class="local" href="mixer_cust_int.html#bus">Output bus</a></li>
-			<li><a class="local" href="mixer_cust_int.html#hp">Headphones</a></li>
-			<li><a class="local" href="mixer_cust_int.html#mute">Muting</a></li>
-			<li><a class="local" href="mixer_cust_int.html#vca">VCAs</a></li>
+			<li><a href="mixer_cust_bas.html#gain" class="local">Input/output gain</a></li>
+			<li><a href="mixer_cust_bas.html#conn" class="local">Connections</a></li>
+			<li><a href="mixer_cust_bas.html#pan" class="local">Pan/Balance</a></li>
 		</ul>
-		
+
 		<hr style="visibility: hidden; margin-top:20px;">
 
 		<div class="chapter_h">
-			<h2 id="bus">Output bus</h2>
+		
+			<h2 id="gain">Input/output gain</h2>
 			<div class="chapter">
-				<img src="../img/pages/bus2.jpg" alt="headphone and main out busses" width="98%"/>
-				<p>One or more output bus can be added, with or without their dedicated "send" level control</p>
-			</div>
-			<h2 id="hp">Headphones</h2>
-			<div class="chapter">
-				<img src="../img/pages/hp.jpg" alt="headphones output" width="98%"/>
-				<p>The most basic form of headphones is just a fixed mix of an equal amount of all output channels, with a global volume, very convenient, you don't have to setup anything.</p>
-				<p>But then, as for output busses, you can have a PFL bus with <b>illuminated buttons</b>, <b>flipswitches</b> or with <b>pots</b>, effectively creating an <i>independent mix</i>.</p>
-			</div>
-			<h2 id="mute">Muting</h2>
-			<div class="chapter">
-				<img src="../img/pages/mute.jpg" alt="illuminated mute buttons" width="98%"/>
-				<p>You can add muting on inputs and/or outputs, can be simple flipswitches or fancy illuminated buttons.</p>
-				<img src="../img/pages/muteDual.jpg" alt="dual-mode mutes" width="98%"/>
-				<p>Another option is our signature <b><i>dual-mode mutes</i></b>, they work with a flipswitch(the <i>mode</i> switch) and a momentary pushbutton, friendly known as the <i>bashbutton</i>.</p>
+				<p>You can choose any gain value, even individually for each input or output channel.</p>
+				<p>A gain of 2.2x is usually good to use with guitar pedals and low-power gear. A 5x gain is good if you want to interact with synthesizers, like the <a href="eurorack.html" class="local">Eurorack</a> format.</p>
 				<ul>
-					<li>With the <i>mode</i> switch <b>DOWN</b> the channel is muted, and you can use the <i>bashbutton</i> to momentarily un-mute it.</li>
-					<li>With the <i>mode</i> switch <b>UP</b> the channel is on, and you can use the <i>bashbutton</i> to momentarily mute it.</li>
+					<li>Gains up to 20x are available, without distortion.</li>
+					<li>You can also have a <i>negative</i> gain, AKA <i>attenuation</i>, for example 0.2x (or 1/5x) to act as a bridge between hot synth voltages and line level.</li>
+					<li>Max flexibility with a <i>variable gain</i> potentiometer, e.g. in range <i>[0.2x..5x]</i></li>
+					<li>Multiple outputs, each with its own gain control <img src="../img/pages/gainsplit.jpg" alt="individual gain controls" width="98%"/></li>
 				</ul>
-				<p>Very performance-friendly, you can still use it as a normal mute, using only the <i>mode</i> switch, or go for a dub-mixing style with the <i>bashbutton</i></p>
-				<p>A vactrol-based active circuit provides a clickless, silky-soft switching action.</p>
 			</div>
-			<h2 id="vca">VCAs</h2>
+
+			<h2 id="conn">Connections</h2> <!-- interface -->
 			<div class="chapter">
-				<img src="../img/pages/pndouts.jpg" alt="P'n'D VCAs on outputs" width="500%"/>
-				<p>Our signature <a href="pnd.html" class="local">Pluck'n'Duck VCAs</a> can be placed on inputs, outputs or matrix junctions (creating a <a href="vcamatrix.html" class="local">VCA Matrix</a>)</p>
+				<img src="../img/pages/sockets.jpg" alt="sockets" width="98%"/>
+
+				<p>Input and output sockets can be of any type you wish, you can also have multiple individually buffered connectors on inputs/outputs, so you don't need adapters, making patching faster and easier.</p>
+
+				<p>Your inputs and outputs can be either <b>mono</b> or <b>stereo</b>, <b>balanced</b> or <b>unbalanced</b>.</p>
+				<p>One common trick for inputs is to have <i>left</i> and <i>right</i> as individual inputs, where the <i>right</i> channel is normalized to the <i>left</i>, so you can use it as stereo by connecting both, but if you only connect something in the <i>left</i> input, it will work as a mono input.</p>
+
+				<p>Available input/output sockets:</p>
+				<ul>
+					<li>1/4" jack</li>
+					<li>3.5mm jack (minijack)</li>
+					<li>Banana jack</li>
+					<li>XLR (balanced ins/outs only)</li>
+					<li>RCA</li>
+				</ul>
+				<p>Need some other exotic connector not on this list? <a href="mailto:noizhardware@gmail.com?subject=Exotic%20socket%20request" target="_blank" rel="noopener" class="external">Just ask!</a></p>
+			</div>
+
+			<h2 id="pan">Pan/Balance</h2>
+			<div class="chapter">
+				<p>A panning knob can be added to control the position of the sound in the stereo field.</p>
+				<p>With a <i>mono-to-stereo</i> architecture it will be a <b>mono panning</b> knob, while in a <i>stereo-to-stereo</i> situation it will act as <b>stereo balance.</b></p>
+				<ul><li><p>Geek bonus; you can also have true <b>stereo panning</b>, enabling you to set the stereo position of <i>left</i> and <i>right</i> channels individually.</p></li></ul>
+				
 			</div>
 		</div>
 
-	
+		
+			
+		</div>
+
 
 	</main>
 

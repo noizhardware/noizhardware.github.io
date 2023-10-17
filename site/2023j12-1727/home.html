@@ -1,7 +1,7 @@
 <!--
 head: title, theme
 body:
-	nav: menu (current, selected)
+	nav: menu
 	main: content
 	footer: year
 
@@ -47,12 +47,11 @@ body:
 
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="www.noizhardware.com" />
-	<!--*** title -->
-	<meta property="og:title" content="noizHARDWARE &mdash; mixer customization : INTERFACE" />
+	<meta property="og:title" content="noizHARDWARE" />
 	<meta property="og:description" content="We make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules" />
 
 
-	<title>noizHARDWARE &mdash; mixers</title>
+	<title>noizHARDWARE</title>
 
 	<meta name="pronunciation" content="nɔɪz">
 	<meta name="description" content="noizHARDWARE, we make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules">
@@ -68,13 +67,7 @@ body:
 	<link rel="stylesheet" type="text/css" href="../css/neu/main.css" />
 	<!-- <link rel="shortcut icon" type="image/png" href="./img/neu/favico/favicon-32x32.png" /> -->
 	<link rel="stylesheet" type="text/css" href="../css/neu/bridge.css">
-	<!--*** theme -->
-	<!--
-		black
-		dark
-		dark-hc
-		light
-	-->
+	<!-- theme -->
 	<link rel="stylesheet" type="text/css" href="../css/neu/themes/dark-hc.css" />
 
 </head>
@@ -83,97 +76,73 @@ body:
 	<header>
 		<a id="logo" href="home.html" alt="LOGO"></a>
 	</header>
-	<!--*** menu -->
 	<nav id="lxmenu">
 		<ul>
-			<li><a class="selected" href="mixers.html">mixers</a></li>
+			<li><a href="mixers.html">mixers</a></li>
 			<li><a href="eurorack.html">eurorack</a></li>
-			<li><a href="order.html">order</a></li>
-			<li><a href="about.html">about</a></li>
-		</ul>
-		<ul>
-			<li><a class="selected" href="mixer_cust.html">customization</a></li>
-			<li><a href="mixer_features.html">features</a></li>
-			<li><a href="matrix.html">matrix mixers</a></li>
-			<li><a href="vcamatrix.html">VCA matrix</a></li>
-			<li><a href="hybrid.html">hybrid mixers</a></li>
-		</ul>
-		<ul>
-			<li><a href="mixer_cust_bas.html">basics</a></li>
-			<li><a class="current" href="mixer_cust_int.html">interface</a></li>
-			<li><a href="mixer_cust_spe.html">special features</a></li>
-		</ul>
-
-		<ul>
-			<li><a href="mixer_cust_int.html#bus">output bus</a></li>
-			<li><a href="mixer_cust_int.html#hp">headphones</a></li>
-			<li><a href="mixer_cust_int.html#mute">muting</a></li>
-			<li><a href="mixer_cust_int.html#vca">VCAs</a></li>
+			<li><a href="contact.html">contact</a></li>
 		</ul>
 	</nav>
 
-	<!--*** content -->
 	<main>
-		<h1>INTERFACE</h1>
-		<h3>Interfacing with the external world</h3>
+		<h1>noizHARDWARE</h1>
+		<h3>We make Machines to make Music ™</h3>
 
+		<a href="mixers.html" class="local"><img src="../img/pages/sample.jpg" alt="mixers" width="90%"/></a>
+		<p><a href="mixers.html" class="local">>>> Mixers</a> flagship signal routing hardware </p>
+		</br>
 
-		<ul>
-			<li><a class="local" href="mixer_cust_int.html#bus">Output bus</a></li>
-			<li><a class="local" href="mixer_cust_int.html#hp">Headphones</a></li>
-			<li><a class="local" href="mixer_cust_int.html#mute">Muting</a></li>
-			<li><a class="local" href="mixer_cust_int.html#vca">VCAs</a></li>
-		</ul>
-		
-		<hr style="visibility: hidden; margin-top:20px;">
+		<a href="eurorack.html" class="local"><img src="../img/pages/euro.jpg" alt="eurorack" width="90%"/></a>
+		<p><a href="eurorack.html" class="local">>>> Eurorack</a> modulez </p>
+		</br>
 
-		<div class="chapter_h">
-			<h2 id="bus">Output bus</h2>
-			<div class="chapter">
-				<img src="../img/pages/bus2.jpg" alt="headphone and main out busses" width="98%"/>
-				<p>One or more output bus can be added, with or without their dedicated "send" level control</p>
-			</div>
-			<h2 id="hp">Headphones</h2>
-			<div class="chapter">
-				<img src="../img/pages/hp.jpg" alt="headphones output" width="98%"/>
-				<p>The most basic form of headphones is just a fixed mix of an equal amount of all output channels, with a global volume, very convenient, you don't have to setup anything.</p>
-				<p>But then, as for output busses, you can have a PFL bus with <b>illuminated buttons</b>, <b>flipswitches</b> or with <b>pots</b>, effectively creating an <i>independent mix</i>.</p>
-			</div>
-			<h2 id="mute">Muting</h2>
-			<div class="chapter">
-				<img src="../img/pages/mute.jpg" alt="illuminated mute buttons" width="98%"/>
-				<p>You can add muting on inputs and/or outputs, can be simple flipswitches or fancy illuminated buttons.</p>
-				<img src="../img/pages/muteDual.jpg" alt="dual-mode mutes" width="98%"/>
-				<p>Another option is our signature <b><i>dual-mode mutes</i></b>, they work with a flipswitch(the <i>mode</i> switch) and a momentary pushbutton, friendly known as the <i>bashbutton</i>.</p>
-				<ul>
-					<li>With the <i>mode</i> switch <b>DOWN</b> the channel is muted, and you can use the <i>bashbutton</i> to momentarily un-mute it.</li>
-					<li>With the <i>mode</i> switch <b>UP</b> the channel is on, and you can use the <i>bashbutton</i> to momentarily mute it.</li>
-				</ul>
-				<p>Very performance-friendly, you can still use it as a normal mute, using only the <i>mode</i> switch, or go for a dub-mixing style with the <i>bashbutton</i></p>
-				<p>A vactrol-based active circuit provides a clickless, silky-soft switching action.</p>
-			</div>
-			<h2 id="vca">VCAs</h2>
-			<div class="chapter">
-				<img src="../img/pages/pndouts.jpg" alt="P'n'D VCAs on outputs" width="500%"/>
-				<p>Our signature <a href="pnd.html" class="local">Pluck'n'Duck VCAs</a> can be placed on inputs, outputs or matrix junctions (creating a <a href="vcamatrix.html" class="local">VCA Matrix</a>)</p>
-			</div>
-		</div>
+		<a href="contact.html" class="local"><img src="../img/pages/contact2.jpg" alt="contact" width="90%"/></a>
+		<p><a href="contact.html" class="local">>>> Contact</a> a journey to the heart of the signal </p>
+		</br>
 
-	
+		<p><font color="808080">
+			Subscribe to the newsletter for updates:
+		</font></p>
 
+		<form
+			style="
+				padding:3px;
+				/* text-align:center; */
+			"
+			action="https://tinyletter.com/noizHARDWARE"
+			method="post"
+			target="popupwindow"
+			onsubmit=
+			"window.open('https://tinyletter.com/noizHARDWARE',
+			'popupwindow',
+			'scrollbars=yes,width=800,height=600');
+			return true"
+				>
+			<input
+				type="email"
+				value=""
+				name="email"
+				class="email"
+				placeholder="email@address.com"
+				required=""
+			/>
+			<input
+				type="submit"
+				value="Subscribe"
+				name="subscribe"
+				class="button"
+			/>
+		</form>
 	</main>
 
-	<!--*** footer -->
 	<footer>
 		<a class="icon" id="email" href="mailto:noizhardware@gmail.com" alt="email" target="_blank" rel="noopener"></a>
 		<a class="icon" id="youtube" href="https://youtube.com/@minijackaudio/" alt="youtube" target="_blank" rel="noopener"></a>
 		<a class="icon" id="instagram" href="https://www.instagram.com/noisefuel/" alt="instagram" target="_blank" rel="noopener"></a>
 		<a class="icon" id="merveilles" href="https://merveilles.town/@nff" alt="merveilles" target="_blank" rel="noopener"></a>
 		<a class="icon" id="sourcehut" href="https://git.sr.ht/~noizhardware" alt="sourcehut" target="_blank" rel="noopener"></a>
-		<a class="icon" id="github" href="https://github.com/noizhardware" alt="github" target="_blank" rel="noopener"></a>
+		<a class="icon" id="github" href="https://github.com/noizhardware/electronics-app-notes" alt="github" target="_blank" rel="noopener"></a>
 		<a class="icon" id="cc" href="https://creativecommons.org/licenses/by-nc-sa/4.0" alt="CC" target="_blank" rel="noopener"></a>
-
-		<!--*** year -->
 		<span><a href="home.html">noizHARDWARE</a> © 2023 — <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank" rel="noopener">BY-NC-SA 4.0</a></span>
 	</footer>
 
