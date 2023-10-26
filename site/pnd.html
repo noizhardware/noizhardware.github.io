@@ -48,11 +48,11 @@ body:
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="www.noizhardware.com" />
 	<!--*** title -->
-	<meta property="og:title" content="noizHARDWARE &mdash; eurorack" />
+	<meta property="og:title" content="noizHARDWARE &mdash; Pluck'n'Duck VCA" />
 	<meta property="og:description" content="We make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules" />
 
 
-	<title>noizHARDWARE &mdash; mixers</title>
+	<title>noizHARDWARE &mdash; Pluck'n'Duck VCA</title>
 
 	<meta name="pronunciation" content="nɔɪz">
 	<meta name="description" content="noizHARDWARE, we make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules">
@@ -67,7 +67,7 @@ body:
 
 	<link rel="stylesheet" type="text/css" href="../css/neu/main.css" />
 	<!-- <link rel="shortcut icon" type="image/png" href="./img/neu/favico/favicon-32x32.png" /> -->
-	<link rel="stylesheet" type="text/css" href="../css/neu/bridge.css">
+	<link rel="stylesheet" type="text/css" href="../css/neu/bridge.css" />
 	<!--*** theme -->
 	<!--
 		black
@@ -87,124 +87,80 @@ body:
 	<nav id="lxmenu">
 		<ul>
 			<li><a href="mixers.html">mixers</a></li>
-			<li><a class="current" href="eurorack.html">eurorack</a></li>
+			<li><a href="eurorack.html">eurorack</a></li>
+			<li><a class="current" href="pnd.html">P'n'D VCA</a></li>
 			<li><a href="order.html">order</a></li>
 			<li><a href="about.html">about</a></li>
 		</ul>
 		<ul>
-			<li><a href="eurorack.html#mmx88">MMX-88</a></li>
-			<li><a href="eurorack.html#custom">customization</a></li>
-			<li><a href="eurorack.html#commission">commissions</a></li>
-			<li><a href="eurorack.html#order">ordering info</a></li>
+			<li><a href="pnd.html#applications">applications</a></li>
+			<li><a href="pnd.html#basic">basic functioning</a></li>
+			<li><a href="pnd.html#controls">controls and operation</a></li>
 		</ul>
 	</nav>
 
 	<!--*** content -->
 	<main>
-		Also, now you can have my new "Pluck'n'Duck" VCAs on the mixer.
-Here you can find a quick video explaining how it works: https://youtu.be/z7zuravyo_U
-It is basically a VCA that can handle any type of signal, from line audio to 10v gates as control voltages, with a built-it envelope follower and buffered gain stage.
-They have a built-in envelope follower and are basically able to receive a wide range of signals as control voltages, from 20volt gates from old equipment, to 10 or 5 Vpp from eurorack, down to line level audio, and very faint line level audio. These would allow you to use the VCAs with any audio signal as control voltage
-You have two controls on each flexi-VCA, [gain] and [smoothness], with [gain] you can attenuate or amplify the signal up to 10x, from 12 o'clock clockwise you have normal operation, "Pluck", the higher the CV, the louder the sound, from 12 o'clock counterclockwise you have inverted response, a "Ducking" effect, the higher the CV, the quieter the sound, so it can actually act as a side-chained compressor.
-With the [smoothness] control you can adjust the envelope follower, which you can use to take in audio as CV or to smooth out transients from actual CVs, you turn it all the way down, the signal will be unaffected. There is also a switch to select whether the VCA is active or not on the node (when it's off you can just use the audio matrix as if it was a normal matrix mixer).
+		<h1>Pluck'n'Duck VCA</h1>
+		<h3>Versatile Voltage Controlled Amplifier with built-in envelope follower, input CV gain control and threshold inverter</h3>
+			<img src="../img/pages/pndFlat.jpg" alt="Pluck'n'Duck" width="98%"/>
 
-You can have them in the matrix mixer nodes, or on the line outputs.
-
-
-
-		<h1>Eurorack modules</h1>
-		<img src="../img/pages/euro.jpg" alt="eurorack" width="98%"/>
-
-		<h2>Creative signal routing tools</h2>
-		<h3>Electronic instruments for musical experimentation, in Eurorack format</h3>
-
-		<h2 id="mmx88">MMX-88</h2>
+		<h2 id="applications">Applications</h2>
 		<div class="chapter_h">
-			<img src="../img/pages/mmx88_0.jpg" alt="eurorack" width="98%"/>
-			<h3>8x8 Matrix Mixer</h3>
-			<p>Specs:</p>
-			<ul>
-				<li>mono inputs, mono outputs (<a href="eurorack.html#custom" class="local">customizable</a>)</li>
-				<li>DC-coupled (<a href="eurorack.html#custom" class="local">customizable</a>)</li>
-				<li>sealed aluminum pots, ready for battle</li>
-				<li>45 mA +12V</li>
-				<li>45 mA -12V</li>
-				<li>45 mA -12V</li>
-				<li>0 mA 5V</li>
-				<li>1x gain (<a href="eurorack.html#custom" class="local">customizable</a>)</li>
-				<li>36hp width</li>
-				<li>32 mm depth, with power cable connected (skiff-friendly)</li>
-				<li>integrated reverse polarity and overvoltage protection</li>
-			</ul>
-			<p>View on <a href="https://www.modulargrid.net/e/other-unknown-mmx-88" target="_blank" rel="noopener" class="external">Modular Grid</a></p>
-			<div class="spacer"></div>
-	
-			<p id="custom">In keeping with noizHARDWARE tradition, some features of this module are customizable:</p>
-			<ul>
-				<li>Mono or stereo inputs/outputs. (mono-to-mono, <a href="mixer_cust_bas.html#monostereo" class="local">mono-to-stereo, or true stereo</a>)</li>
-				<li>Polarity switches (unipolar/bipolar), usually on outputs</li>
-				<li>AC or DC coupling (can also add a switch for this)</li>
-				<li>Gain, <a href="mixer_cust_bas.html#gain" class="local">learn more...</a></li>
-				<li>In general, if you see something interesting <a href="mixer_cust.html" class="local">here</a>, there's a good chance it can be applied in the Eurorack version as well, <a href="mailto:noizhardware@gmail.com?subject=MMX-88%20customization" target="_blank" rel="noopener" class="external">just ask!</a></li>
-			</ul>
-			<p>The price is <b>450eur + shipping</b>.</p>
-			<p>Includes 4x M3x5mm screws and power cable (10p-10p or 10p-16p)</p>
-			<p>Standard version ships immediately, if you're buying a customized version we'll talk about lead time.</p>
-			
-
-		</div>
-
-		<h2 id="commission">Eurorack module commissions</h2>
-		<div class="chapter_h">
-			<p>We can also design eurorack modules from scratch.</p>
-			<p>The creation process is similar to that of <a href="order.html#mixers" class="local">custom Mixers</a>, <a href="mailto:noizhardware@gmail.com?subject=Eurorack%20commission" target="_blank" rel="noopener" class="external">get in touch</a> and we'll discuss about it.</p>
-		</div>
-
-		<h2 id="order">Ordering</h2>
-		<div class="chapter_h">
-			<p>For both standard and customized orders, send an email to <a href="mailto:noizhardware@gmail.com" target="_blank" rel="noopener" class="external">noizhardware@gmail.com</a></p>
-			<p>Shipping worldwide.</p>
-			
+			<p><a href="matrix.html#gallery" class="local">>>> See gallery</a> for application examples</p>
 			<div class="spacer"></div>
 
-			<p><i>International Shipments (delivery address outside Europe) may be subject to import duties, value added taxes (VAT), and customs clearance times. Tariff rates vary from country to country. We don't collect VAT on behalf of the customer. We're not responsible for payment of import taxes. Please check with your local customs agency for rates and more information.</i></p>
+			<p>The Pluck'n'Duck VCA can be installed on inputs, outputs, or on matrix mixer nodes, effectively forming a <a href="mixer_cust_spe.html#vcamatrix" class="local">VCA Matrix</a></p>
+
+			<p>Might also be available in <a href="eurorack.html#custom" class="local">Eurorack format</a> upon request.</p>
 		</div>
 
-		<div class="spacer"></div>
+		<h2 id="basic">Basic Functioning</h2>
+		<div class="chapter_h">
+			<p>The Pluck'n'Duck is a VCA that accepts any type of signal as control voltage, ranging from line audio to 20v gates , with a built-it envelope follower and a true-inverting gain stage.</p>
+			<div class="spacer"></div>
 
-		<p id="newsletter"><font color="808080">
-			Want to stay updated on new Eurorack modules from noizHARDWARE? Subscribe to the newsletter!
-		</font></p>
+			<p>Here you can find a quick video explaining how it works</p>
+			<iframe width='624' height='380' src='https://www.youtube.com/embed/z7zuravyo_U?rel=0' style='max-width:700px' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
+			<div class="spacer"></div>
 
-		<form
-			style="
-				padding:3px;
-				/* text-align:center; */
-			"
-			action="https://tinyletter.com/noizHARDWARE"
-			method="post"
-			target="popupwindow"
-			onsubmit=
-			"window.open('https://tinyletter.com/noizHARDWARE',
-			'popupwindow',
-			'scrollbars=yes,width=800,height=600');
-			return true"
-				>
-			<input
-				type="email"
-				value=""
-				name="email"
-				class="email"
-				placeholder="email@address.com"
-				required=""
-			/>
-			<input
-				type="submit"
-				value="Subscribe"
-				name="subscribe"
-				class="button"
-			/>
-		</form>
+			<p>You can use both CVs and audio signals as input CVs, the VCA will work with a wide range of signals as control voltages, from 20v gates from old equipment, 10 or 5 Vpp from eurorack, down to line level audio, down to <i>very faint</i> line level audio.</p>
+
+			<p>The circuit is vactrol-based, giving it a very soft and musical response, while NOT being an lpg (low-pass gate), thus only affecting the amplitude of the controlled sound.</p>
+		</div>
+
+		<h2 id="controls">Controls and operation</h2>
+		<div class="chapter_h">
+			<p>Each P'n'D VCA has two main controls, [<b>gain</b>] and [<b>smoothness</b>]</p>
+			<img src="../img/pages/vca_out.jpg" alt="Pluck'n'Duck controls - output" width="98%"/>
+				<p><i>P'n'D on an output row</i></p>
+				<div class="spacer"></div>
+			<img src="../img/pages/vcamat1_notes.jpg" alt="Pluck'n'Duck controls - vca matrix" width="98%"/>
+				<p><i>P'n'D in a <a href="mixer_cust_spe.html#vcamatrix" class="local">VCA Matrix</a></i></p>
+				<div class="spacer"></div>
+			<img src="../img/pages/vca_in.jpg" alt="Pluck'n'Duck controls - input" width="98%"/>
+				<p><i>P'n'D on an input</i></p>
+				<div class="spacer"></div>
+			<h3 id="gain">Gain</h3>
+			<div class="chapter">
+				<p>It's a combined [<b>gain</b>]+[<b>attenuverter</b>] knob, you can attenuate or amplify the incoming CV signal up to <b>21x</b> (<i>+27dB</i>)</p>
+				<ul>
+					<li>from 12 o'clock <b>up</b> it operates as a normal VCA, "<i>Pluck</i>"; the higher the CV, the louder the sound</li>
+					<li>from 12 o'clock <b>down</b> you have inverted response, a "<i>Ducking</i>" effect; the higher the CV, the quieter the sound, it will act as a side-chained compressor</li>
+					<li>of course you can still use the [<b>smoothness</b>] control in "<i>Duck</i>" mode, for all sorts of interesting effects</li>
+				</ul>
+			</div>
+			<h3 id="smooth">Smoothness</h3>
+			<div class="chapter">
+				<p>With the this control you can adjust the <b>release</b> of the envelope follower, with a little bit of influence on the <b>attack</b> as well (with a <i>1/24 ratio</i>)</p>
+				<p>You can use it to take in an audio signal, smooth it out and use it as a Control Voltage, or to smooth out transients of actual CVs</p>
+				<ul>
+					<li>fully <b>counterclockwise</b>, the signal will be unaffected</li>
+					<li>fully <b>clockwise</b>, it will add a ~2seconds smooth attack</li>
+					<li>use the switch to select whether the VCA is active or bypassed (<a href="https://en.wikipedia.org/wiki/DI_unit#:~:text=True%2Dbypass%20occurs%20when%20the%20signal%20goes%20straight%20from%20the%20input%20jack%20to%20the%20output%20jack%20with%20no%20circuitry%20involved%20and%20no%20loading%20of%20the%20source%20impedance" target="_blank" rel="noopener" class="external">true bypass</a>)</li>
+				</ul>
+			</div>
+		</div>
 
 	</main>
 

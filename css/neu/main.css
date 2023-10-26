@@ -122,7 +122,7 @@ body {
 body > * {
 	margin-bottom:30px
 }
-/*jjj*/
+
 body > * > * {
      margin-bottom:30px }
 a:hover, ::selection {
@@ -281,6 +281,13 @@ header #activity li a:hover {
      font-weight: bold;}
 /**************************************/
 
+#chapter_h figure figcaption {
+     /*font-size: 14px;*/
+     font-size: var(--fontsize);
+     max-width:400px ;
+     color: black;
+ }
+
 main {
      padding-top: 20px;
      max-width:624px;
@@ -293,12 +300,14 @@ main figure:first-child img {
 main figure figcaption {
      /*font-size: 14px;*/
      font-size: var(--fontsize);
-     max-width:400px }
+     max-width:400px ;
+     color: black;
+ }
 main pre { border: 1px solid black;
      padding: 15px;
      overflow-x: scroll }
 /*main h2 {*/
-     max-width:400px } 
+/*     max-width: 400px; } */
 main h4 {
      font-style: italic;
      font-weight: normal } 
@@ -579,7 +588,7 @@ div.chapter {
   margin-bottom: 20px;
 }
 div.spacer {
-  margin-top: 20px !important;
+  margin-top: 20px !important;}
 /*
 body {*/
     /* background-color: #111418; */
