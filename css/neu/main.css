@@ -330,11 +330,22 @@ main q { /* short quotation - Use <blockquote> for long quotations. */
      font-style:italic;
      display:block;
      max-width: 400px } 
+
+/* For mobile phones: */
 main img {
-	max-width:150%;
+	max-width:100%;
 	display:block;
 	margin:0 0 10px;
-} 
+}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+	main img {
+		max-width:150%;
+		display:block;
+		margin:0 0 10px;
+	}
+}
+
 main svg {
 	max-width:100%;
 	display:block;
