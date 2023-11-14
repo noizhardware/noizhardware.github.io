@@ -337,12 +337,18 @@ main img {
 	display:block;
 	margin:0 0 10px;
 }
+#frame {
+  max-width:100%;
+}
 /* For desktop: */
 @media only screen and (min-width: 768px) {
 	main img {
 		max-width:150%;
 		display:block;
 		margin:0 0 10px;
+	}
+	#frame {
+		max-width:700px;
 	}
 }
 
