@@ -4,7 +4,10 @@ body form .button {
 	background:#404040;
 	border: none;
 	color: white;
-	padding: 15px 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 6px;
+	padding-right: 6px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;

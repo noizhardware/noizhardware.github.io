@@ -48,11 +48,11 @@ body:
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="www.noizhardware.com" />
 	<!--*** title -->
-	<meta property="og:title" content="noizHARDWARE &mdash; about" />
+	<meta property="og:title" content="noizHARDWARE &mdash; mixer customization : BASICS" />
 	<meta property="og:description" content="We make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules" />
 
 
-	<title>noizHARDWARE &mdash; about</title>
+	<title>noizHARDWARE &mdash; mixer customization : BASICS</title>
 
 	<meta name="pronunciation" content="nɔɪz">
 	<meta name="description" content="noizHARDWARE, we make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules">
@@ -86,72 +86,99 @@ body:
 	<!--*** menu -->
 	<nav id="lxmenu">
 		<ul>
-			<li><a href="mixers.html">mixers</a></li>
+			<li><a class="selected" href="mixers.html">mixers</a></li>
 			<li><a href="eurorack.html">eurorack</a></li>
 			<li><a href="pnd.html">P'n'D VCAs</a></li>
 			<li><a href="order.html">order</a></li>
-			<li><a class="current" href="about.html">about</a></li>
+			<li><a href="about.html">about</a></li>
+		</ul>
+		<ul>
+			<li><a class="selected" href="mixer_cust.html">customization</a></li>
+			<li><a href="mixer_features.html">features</a></li>
+			<li><a href="matrix.html">matrix mixers</a></li>
+			<li><a href="mixer_cust_spe.html#vcamatrix">VCA matrix</a></li>
+			<li><a href="matrix.html#hybrid">hybrid mixers</a></li>
+		</ul>
+		<ul>
+			<li><a class="current" href="mixer_cust_bas.html">basics</a></li>
+			<li><a href="mixer_cust_int.html">interface</a></li>
+			<li><a href="mixer_cust_spe.html">special features</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="mixer_cust_bas.html#gain">input/output gain</a></li>
+			<li><a href="mixer_cust_bas.html#conn">connections</a></li>
+			<li><a href="mixer_cust_bas.html#pan">pan/balance</a></li>
 		</ul>
 	</nav>
 
 	<!--*** content -->
 	<main>
-		<img src="../img/pages/nhware.png" alt="example layout" width="120%"/>
-		<img src="../img/pages/lab01.jpg" alt="example layout" width="120%"/>
-		<h3>We make Machines to make Music ™</h3>
-		<p>Based in Italy, a small lab on the Appennino Reggiano, amidst the mountains and nature.</p>
-		<p>Building hardware since 2016</p>
+		<h1>BASICS</h1>
+		<h3>Your mixer's structural features</h3>
+			<p><a href="matrix.html#gallery" class="local">>>> See gallery</a> for application examples</p>
 
-		<div class="spacer"></div>
+		<ul>
+			<li><a href="mixer_cust_bas.html#gain" class="local">Input/output gain</a></li>
+			<li><a href="mixer_cust_bas.html#conn" class="local">Connections</a></li>
+			<li><a href="mixer_cust_bas.html#pan" class="local">Pan/Balance</a></li>
+		</ul>
 
-		<p><q>Your effort to remain what you are is what limits you.</q>
-		Puppet Master - <i>Ghost in the Shell</i></p>
+		<hr style="visibility: hidden; margin-top:20px;">
 
-
-		<p>For all inquiries and orders, send an email to <a href="mailto:noizhardware@gmail.com" target="_blank" rel="noopener" class="external">noizhardware@gmail.com</a></p>
-
-		<div class="spacer"></div>
-
-
-		<p id="newsletter">Subscribe to the newsletter for updates ; send a blank email to <a href="mailto:noizhardware+subscribe@gmail.com" target="_blank" rel="noopener" class="external">noizhardware+subscribe@gmail.com</a></p>
-		<form>
-			<a href="mailto:noizhardware+subscribe@gmail.com" target="_blank" rel="noopener" class="external">
-				<input
-					value="Subscribe"
-					class="button"
-				/>
-			</a>
-		</form>
-
-		<h2 id="other">Find us also on:</h2>
 		<div class="chapter_h">
-			<ul>
-				<li><p><a href="https://www.youtube.com/c/minijackaudio" target="_blank" rel="noopener" class="external">Minijack YouTube channel</a> : audio tech, r&d and music</p><iframe width='624' height='380' src='https://www.youtube.com/embed/EAZWlJxd5nI?rel=0' style='max-width:700px' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></li>
-				<li><p><a href="https://www.instagram.com/noisefuel/" target="_blank" rel="noopener" class="external">Instagram</a> : eye candy</p> <a href="https://www.instagram.com/noisefuel/" target="_blank" rel="noopener" class="external"><img src="../img/pages/IMG_2415.jpg" alt="eye candy" width="98%"/></a></li>
+		
+			<h2 id="gain">Input/output gain</h2>
+			<div class="chapter">
+				<p>You can choose any gain value, even individually for each input or output channel.</p>
+				<p>A gain of 2.2x is usually good to use with guitar pedals and low-power gear. A 5x gain is good if you want to interact with synthesizers, like the <a href="eurorack.html" class="local">Eurorack</a> format.</p>
+				<ul>
+					<li>Gains up to 20x are available, without distortion.</li>
+					<li>You can also have a <i>negative</i> gain, AKA <i>attenuation</i>, for example 0.2x (or 1/5x) to act as a bridge between hot synth voltages and line level.</li>
+					<li>Max flexibility with a <i>variable gain</i> potentiometer, e.g. in range <i>[0.2x..5x]</i></li>
+					<li>Multiple outputs, each with its own gain control <img src="../img/pages/gainsplit.jpg" alt="individual gain controls" width="98%"/></li>
+				</ul>
+			</div>
 
-			</ul>
-			
+			<h2 id="conn">Connections</h2> <!-- interface -->
+			<div class="chapter">
+				<img src="../img/pages/sockets.jpg" alt="sockets" width="98%"/>
 
+				<p>Input and output sockets can be of any type you wish, you can also have multiple individually buffered connectors on inputs/outputs, so you don't need adapters, making patching faster and easier.</p>
+
+				<p  id="monostereo">Your inputs and outputs can be either <b>mono</b> or <b>stereo</b>, <b>balanced</b> or <b>unbalanced</b>.</p>
+				<p>One common trick for inputs is to have <i>left</i> and <i>right</i> as individual inputs, where the <i>right</i> channel is normalized to the <i>left</i>, so you can use it as stereo by connecting both, but if you only connect something in the <i>left</i> input, it will copy it to the right channel, and work as a mono input.</p>
+
+				<p>Available input/output sockets:</p>
+				<ul>
+					<li>1/4" jack</li>
+					<li>3.5mm jack (minijack)</li>
+					<li>Banana jack</li>
+					<li>XLR (balanced ins/outs only)</li>
+					<li>RCA</li>
+				</ul>
+				<p>Need some other exotic connector not on this list? <a href="mailto:noizhardware@gmail.com?subject=Exotic%20socket%20request" target="_blank" rel="noopener" class="external">Just ask!</a></p>
+			</div>
+
+			<h2 id="pan">Pan/Balance</h2>
+			<div class="chapter">
+				<p>A panning knob can be added to control the position of the sound in the stereo field.</p>
+				<p>With a <i>mono-to-stereo</i> architecture it will be a <b>mono panning</b> knob, while in a <i>stereo-to-stereo</i> situation it will act as <b>stereo balance.</b></p>
+				<ul><li><p>Geek bonus; you can also have true <b>stereo panning</b>, enabling you to set the stereo position of <i>left</i> and <i>right</i> channels individually, with two separate knobs.</p></li></ul>
+				
+			</div>
 		</div>
 
-		<hr style="visibility: hidden; margin-top:40px;">
-
-		<p>No cookies, no google analytics, no javascript.</p>
-		<p><q>I need privacy, not because my actions are questionable, but because your judgement and intentions are</q></p>
-		<p><a href="https://www.reddit.com/r/privacy/comments/fvocq2/i_need_privacy_not_because_my_actions_are/" target="_blank" rel="noopener" class="external">From here</a> (that's the only source I've been able to track that quote to)</p>
 		
-		<h2>Thanks</h2>
-		<div class="chapter_h">
-			<p>This website is handwritten with love, the design is heavily inspired by <a href="https://xxiivv.com/" target="_blank" rel="noopener" class="external">XXIIVV</a>, thanks :))</p>
+			
 		</div>
 
 
 	</main>
 
 	<!--*** footer -->
-
 	<div class="spacer"></div>
-	<p>⇈<a href="about.html#" class="local">back to top</a>⇈</p>
+	<p>⇈<a href="mixer_cust_bas.html#" class="local">back to top</a>⇈</p>
 	<footer>
 		<a class="icon" id="email" href="mailto:noizhardware@gmail.com" alt="email" target="_blank" rel="noopener"></a>
 		<a class="icon" id="youtube" href="https://youtube.com/@minijackaudio/" alt="youtube" target="_blank" rel="noopener"></a>

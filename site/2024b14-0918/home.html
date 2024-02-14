@@ -1,7 +1,7 @@
 <!--
 head: title, theme
 body:
-	nav: menu (current, selected)
+	nav: menu
 	main: content
 	footer: year
 
@@ -47,12 +47,11 @@ body:
 
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="www.noizhardware.com" />
-	<!--*** title -->
-	<meta property="og:title" content="noizHARDWARE &mdash; about" />
+	<meta property="og:title" content="noizHARDWARE" />
 	<meta property="og:description" content="We make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules" />
 
 
-	<title>noizHARDWARE &mdash; about</title>
+	<title>noizHARDWARE</title>
 
 	<meta name="pronunciation" content="nɔɪz">
 	<meta name="description" content="noizHARDWARE, we make machines to make music. Custom audio equipment, ranging from Matrix Mixers to Eurorack synthesizer modules">
@@ -68,13 +67,7 @@ body:
 	<link rel="stylesheet" type="text/css" href="../css/neu/main.css" />
 	<!-- <link rel="shortcut icon" type="image/png" href="./img/neu/favico/favicon-32x32.png" /> -->
 	<link rel="stylesheet" type="text/css" href="../css/neu/bridge.css">
-	<!--*** theme -->
-	<!--
-		black
-		dark
-		dark-hc
-		light
-	-->
+	<!-- theme -->
 	<link rel="stylesheet" type="text/css" href="../css/neu/themes/dark-hc.css" />
 
 </head>
@@ -83,85 +76,85 @@ body:
 	<header>
 		<a id="logo" href="home.html" alt="LOGO"></a>
 	</header>
-	<!--*** menu -->
 	<nav id="lxmenu">
 		<ul>
 			<li><a href="mixers.html">mixers</a></li>
 			<li><a href="eurorack.html">eurorack</a></li>
 			<li><a href="pnd.html">P'n'D VCAs</a></li>
 			<li><a href="order.html">order</a></li>
-			<li><a class="current" href="about.html">about</a></li>
+			<li><a href="about.html">about</a></li>
 		</ul>
 	</nav>
 
-	<!--*** content -->
 	<main>
-		<img src="../img/pages/nhware.png" alt="example layout" width="120%"/>
-		<img src="../img/pages/lab01.jpg" alt="example layout" width="120%"/>
+		<h1>noizHARDWARE</h1>
 		<h3>We make Machines to make Music ™</h3>
-		<p>Based in Italy, a small lab on the Appennino Reggiano, amidst the mountains and nature.</p>
-		<p>Building hardware since 2016</p>
 
-		<div class="spacer"></div>
+		<a href="mixers.html" class="local"><img src="../img/pages/sample.jpg" alt="mixers" width="98%"/></a>
+		<p><a href="mixers.html" class="local">>>> Mixers</a> flagship signal routing hardware (<a href="order.html#mixers" class="local">see ordering info</a>)</p>
+		</br>
 
-		<p><q>Your effort to remain what you are is what limits you.</q>
-		Puppet Master - <i>Ghost in the Shell</i></p>
+		<a href="eurorack.html" class="local"><img src="../img/pages/euro.jpg" alt="eurorack" width="98%"/></a>
+		<p><a href="eurorack.html" class="local">>>> Eurorack</a> modulez (<a href="eurorack.html#order" class="local">see ordering info</a>)</p>
+		</br>
 
+		<a href="pnd.html" class="local"><img src="../img/pages/pndPersp.jpg" alt="P'n'D" width="98%"/></a>
+		<p><a href="pnd.html" class="local">>>> Pluck'n'Duck</a> our signature flexible VCAs</p>
+		</br>
 
-		<p>For all inquiries and orders, send an email to <a href="mailto:noizhardware@gmail.com" target="_blank" rel="noopener" class="external">noizhardware@gmail.com</a></p>
+		<a href="order.html" class="local"><img src="../img/pages/contact2.jpg" alt="order" width="98%"/></a>
+		<p><a href="order.html" class="local">>>> Ordering info</a></p>
+		</br>
 
-		<div class="spacer"></div>
+		<a href="about.html" class="local"><img src="../img/pages/lab00.jpg" alt="about" width="98%"/></a>
+		<p><a href="about.html" class="local">>>> About</a></p>
+		</br>
 
+		<p><font color="808080">
+			Subscribe to the newsletter for updates:
+		</font></p>
 
-		<p id="newsletter">Subscribe to the newsletter for updates ; send a blank email to <a href="mailto:noizhardware+subscribe@gmail.com" target="_blank" rel="noopener" class="external">noizhardware+subscribe@gmail.com</a></p>
-		<form>
-			<a href="mailto:noizhardware+subscribe@gmail.com" target="_blank" rel="noopener" class="external">
-				<input
-					value="Subscribe"
-					class="button"
-				/>
-			</a>
+		<form
+			style="
+				padding:3px;
+				/* text-align:center; */
+			"
+			action="https://tinyletter.com/noizHARDWARE"
+			method="post"
+			target="popupwindow"
+			onsubmit=
+			"window.open('https://tinyletter.com/noizHARDWARE',
+			'popupwindow',
+			'scrollbars=yes,width=800,height=600');
+			return true"
+				>
+			<input
+				type="email"
+				value=""
+				name="email"
+				class="email"
+				placeholder="email@address.com"
+				required=""
+			/>
+			<input
+				type="submit"
+				value="Subscribe"
+				name="subscribe"
+				class="button"
+			/>
 		</form>
-
-		<h2 id="other">Find us also on:</h2>
-		<div class="chapter_h">
-			<ul>
-				<li><p><a href="https://www.youtube.com/c/minijackaudio" target="_blank" rel="noopener" class="external">Minijack YouTube channel</a> : audio tech, r&d and music</p><iframe width='624' height='380' src='https://www.youtube.com/embed/EAZWlJxd5nI?rel=0' style='max-width:700px' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe></li>
-				<li><p><a href="https://www.instagram.com/noisefuel/" target="_blank" rel="noopener" class="external">Instagram</a> : eye candy</p> <a href="https://www.instagram.com/noisefuel/" target="_blank" rel="noopener" class="external"><img src="../img/pages/IMG_2415.jpg" alt="eye candy" width="98%"/></a></li>
-
-			</ul>
-			
-
-		</div>
-
-		<hr style="visibility: hidden; margin-top:40px;">
-
-		<p>No cookies, no google analytics, no javascript.</p>
-		<p><q>I need privacy, not because my actions are questionable, but because your judgement and intentions are</q></p>
-		<p><a href="https://www.reddit.com/r/privacy/comments/fvocq2/i_need_privacy_not_because_my_actions_are/" target="_blank" rel="noopener" class="external">From here</a> (that's the only source I've been able to track that quote to)</p>
-		
-		<h2>Thanks</h2>
-		<div class="chapter_h">
-			<p>This website is handwritten with love, the design is heavily inspired by <a href="https://xxiivv.com/" target="_blank" rel="noopener" class="external">XXIIVV</a>, thanks :))</p>
-		</div>
-
-
 	</main>
 
-	<!--*** footer -->
-
 	<div class="spacer"></div>
-	<p>⇈<a href="about.html#" class="local">back to top</a>⇈</p>
+	<p>⇈<a href="home.html#" class="local">back to top</a>⇈</p>
 	<footer>
 		<a class="icon" id="email" href="mailto:noizhardware@gmail.com" alt="email" target="_blank" rel="noopener"></a>
 		<a class="icon" id="youtube" href="https://youtube.com/@minijackaudio/" alt="youtube" target="_blank" rel="noopener"></a>
 		<a class="icon" id="instagram" href="https://www.instagram.com/noisefuel/" alt="instagram" target="_blank" rel="noopener"></a>
 		<a class="icon" id="merveilles" href="https://merveilles.town/@nff" alt="merveilles" target="_blank" rel="noopener"></a>
 		<a class="icon" id="sourcehut" href="https://git.sr.ht/~noizhardware" alt="sourcehut" target="_blank" rel="noopener"></a>
-		<a class="icon" id="github" href="https://github.com/noizhardware" alt="github" target="_blank" rel="noopener"></a>
+		<a class="icon" id="github" href="https://github.com/noizhardware/electronics-app-notes" alt="github" target="_blank" rel="noopener"></a>
 		<a class="icon" id="cc" href="https://creativecommons.org/licenses/by-nc-sa/4.0" alt="CC" target="_blank" rel="noopener"></a>
-
-		<!--*** year -->
 		<span><a href="home.html">noizHARDWARE</a> © 2023 — <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank" rel="noopener">BY-NC-SA 4.0</a></span>
 	</footer>
 
