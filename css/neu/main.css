@@ -1,4 +1,5 @@
 :root {
+  --font-main: monospace;
   --left-size: 1fr;
   --epi-size: 3fr;
   --icon-size: 30px;
@@ -21,6 +22,31 @@ nhw orange #f26722
 #4c5454
 #2c3434
 */
+
+/* link to #id animation */
+:target {
+	-webkit-animation: target-fade 2s;
+	-moz-animation: target-fade 2s;
+	-o-animation: target-fade 2s;
+	animation: target-fade 2s;
+}
+@-webkit-keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+@-moz-keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+@-o-keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+@keyframes target-fade {
+	from { background-color: var(--hilite); }
+	to { background-color: transparent; }
+}
+
 
 media {
 	display: block;
@@ -86,14 +112,17 @@ photo {
      text-decoration:none;
      color: var(--main-fg);}
 body {
-     background-color: var(--main-bg);
+	background-color: var(--main-bg);
 	/*font-size: large;*/
 	font-size: var(--fontsize);
 	color: var(--main-fg);
-     font-family: monospace;
-     padding:30px}
+	font-family: var(--font-main);
+	padding:30px;
+}
 body > * {
-     margin-bottom:30px }
+	margin-bottom:30px
+}
+
 body > * > * {
      margin-bottom:30px }
 a:hover, ::selection {
@@ -101,12 +130,21 @@ a:hover, ::selection {
      color: var(--hover-text);
      text-decoration:none }
 table td, table th {
-     vertical-align: top;
-     padding:2.5px 5px }
+	vertical-align: top;
+	padding:2.5px 5px;
+}
 
 header {
-     float:left;
-     margin: 5px 30px 0 0;} 
+	float:left;
+	margin-top:5px;
+	margin-right:30px;
+	margin-bottom:0px;
+	margin-left:0px;
+}
+h1{
+	text-decoration: none;
+	text-decoration-style: dotted;
+}
 
 header #logo {
      background:none;
@@ -127,15 +165,26 @@ header #logo {
      /* margin-top: 15px; */
 }
 header #logo:hover{
-    filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
-    -webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));}
-     
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+}
+
+object {
+	width: 100%;
+	margin:0;
+	padding:0;
+}    
 
 
      
 
     
-nav { margin:0 0 30px }
+nav {
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:30px;
+/*	margin-left:;*/
+}
 
 
 /* header #activity ul {
@@ -232,9 +281,17 @@ header #activity li a:hover {
      font-weight: bold;}
 /**************************************/
 
+#chapter_h figure figcaption {
+     /*font-size: 14px;*/
+     font-size: var(--fontsize);
+     max-width:400px ;
+     color: black;
+ }
+
 main {
      padding-top: 20px;
      max-width:624px;
+/*     max-width:100%;*/
      clear:both }
 main figure:first-child img {
      margin-left: -30px;
@@ -243,12 +300,14 @@ main figure:first-child img {
 main figure figcaption {
      /*font-size: 14px;*/
      font-size: var(--fontsize);
-     max-width:400px }
+     max-width:400px ;
+     color: black;
+ }
 main pre { border: 1px solid black;
      padding: 15px;
      overflow-x: scroll }
-main h2 {
-     max-width:400px } 
+/*main h2 {*/
+/*     max-width: 400px; } */
 main h4 {
      font-style: italic;
      font-weight: normal } 
@@ -271,21 +330,41 @@ main q { /* short quotation - Use <blockquote> for long quotations. */
      font-style:italic;
      display:block;
      max-width: 400px } 
+
+/* For mobile phones: */
 main img {
-     max-width:100%;
-     display:block;
-     margin:0 0 10px } 
+	max-width:100%;
+	display:block;
+	margin:0 0 10px;
+}
+#frame {
+  max-width:100%;
+}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+	main img {
+		max-width:150%;
+		display:block;
+		margin:0 0 10px;
+	}
+	#frame {
+		max-width:700px;
+	}
+}
+
 main svg {
-     max-width:100%;
-     display:block;
-     margin:0 0 10px } 
+	max-width:100%;
+	display:block;
+	margin:0 0 10px;
+} 
      
 
-/* footer *************************************/
+/*** footer */
 footer {
      border-top:1.5px solid;
      padding:30px 0 0 0;
-     clear:both } 
+     clear:both
+ } 
 /* footer a.icon:hover {
      background-color: var(--main-bg);
      color: var(--main-bg);
@@ -296,25 +375,47 @@ footer img {
 /* footer .icon:hover img{
     -webkit-filter: drop-shadow(0px 0px 3px var(--main-fg));} */
     
+footer #email{
+	background:none;
+	background-image: url(../../img/neu/svg/email.svg);
+	display: block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0); /*starting from a black base in the svg*/
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	margin: 0 0 0 5px;
+	float: left;
+}
+footer #email:hover{
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+}
+
 footer #merveilles{
-     background:none;
-     background-image: url(../../img/neu/svg/merveilles.svg);
-     display: block;
-     width: var(--icon-size);
-     height: var(--icon-size);
-     
-     /* filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5); */
-     filter: invert(1) brightness(var(--icons-light-percent)) saturate(0); /*starting from a black base in the svg*/
-     -webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0);
-     
-     /* background-image: url(../img/svg/bho.svg); */
-     /* background-color: red; */
-     
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position-y: center;
-     margin: 0 0 0 5px;
-     float: left;}
+	background:none;
+	background-image: url(../../img/neu/svg/merveilles.svg);
+	display: block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+
+	/* filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5); */
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0); /*starting from a black base in the svg*/
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0);
+
+	/* background-image: url(../img/svg/bho.svg); */
+	/* background-color: red; */
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	margin: 0 0 0 5px;
+	float: left;
+}
 footer #merveilles:hover{
      filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
      -webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));}
@@ -335,6 +436,63 @@ footer #github{
 footer #github:hover{
      filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
      -webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));}
+
+footer #instagram{
+	background:none;
+	background-image: url(../../img/neu/svg/instagram.svg);
+	display: block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0); /*starting from a black base in the svg*/
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	margin: 0 0 0 5px;
+	float: left;
+}
+footer #instagram:hover{
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+}
+
+footer #youtube{
+	background:none;
+	background-image: url(../../img/neu/svg/youtube.svg);
+	display: block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0); /*starting from a black base in the svg*/
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	margin: 0 0 0 5px;
+	float: left;
+}
+footer #youtube:hover{
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+}
+
+footer #sourcehut{
+	background:none;
+	background-image: url(../../img/neu/svg/sourcehut.svg);
+	display: block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0); /*starting from a black base in the svg*/
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	margin: 0 0 0 5px;
+	float: left;
+}
+footer #sourcehut:hover{
+	filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+	-webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
+}
      
 footer #cc{
      background:none;
@@ -352,12 +510,13 @@ footer #cc{
 footer #cc:hover{
      filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));
      -webkit-filter: invert(1) brightness(var(--icons-light-percent)) saturate(0) drop-shadow(0px 0px 4px var(--main-fg));}
-/**************************************/
+/*** footer END. */
 
 /* external links *************************************/
 .external { /* external link*/
-     text-decoration-line: underline;
-     text-decoration-style: solid;}
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
 .external:hover {
      background-color: var(--link-e-hover);
      color: var(--link-e-text);
@@ -366,8 +525,9 @@ footer #cc:hover{
 
 /* local links *************************************/
 .local { /* local link*/
-     text-decoration-line: underline;
-     text-decoration-style: double;}
+	text-decoration-line: underline;
+	text-decoration-style: double;
+}
 .local:hover { /* local link*/
      background-color: var(--link-e-hover);
      color: var(--link-e-text);
@@ -433,7 +593,19 @@ grid-row-gap: 0px;
 } */
 
 div {
-    display: block;}
+    display: block;
+}
+div.chapter {
+  margin-top: 10px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}div.chapter_h {
+  margin-top: -20px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+div.spacer {
+  margin-top: 20px !important;}
 /*
 body {*/
     /* background-color: #111418; */
