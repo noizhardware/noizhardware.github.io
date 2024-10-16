@@ -66,13 +66,10 @@
 2023-02-06T17:03:46+01:00	@<pbatch https://pbat.ch/twtxt.txt> not sure you're reading this, how come you're ditching twtxt?
 2023-04-30T08:53:24+01:00	being immersed in gorgeous #nature makes me want to write elegant programs, I'm amazed by the underlying systems #coding #phylosophy
 2023-07-02T13:45:35+01:00	I AM IN THE MOUNTAINS. finally. #life
-<<<<<<< HEAD
-2024-10-16T00:42:28+01:00	I'm VERY specific about zipties
-=======
 2023-07-26T21:52:50+01:00	there is E-L-E-C-T-R-I-C-I-T-Y in the sky.
 2023-09-16T13:50:06+01:00	funny how looking at someone's sketchbook might very well be like looking at an entire hidden world #art #draw #trip #phyilosophy
 2023-09-16T23:22:05+01:00	going thru my own old drawings, exploring those distant worlds, like an archaeologist. tracing origins and evolutions #draw #art #trip #mind
 2023-10-27T09:52:47+01:00	new website is live!! https://www.noizhardware.com
 2024-09-28T16:04:38+01:00	today I wrote a CV sequencer in VoodooAssembly for work O__O #coding #programming #embedded
 2024-10-02T22:25:41+01:00	stick computers, to snugly fit in reclaimed plastic tubes/containers #halfbaked #coding #programming #embedded #electronics
->>>>>>> 6744e43cbf6b98491c0a5fb6fc19cf286904f300
+2024-10-16T00:42:28+01:00	I'm VERY specific about zipties
