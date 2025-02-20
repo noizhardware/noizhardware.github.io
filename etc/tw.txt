@@ -62,7 +62,6 @@
 2022-11-11T19:16:56+01:00	WTFM : Write The Fucking Manual, a note to self. #coding #lol
 2022-12-08T22:25:52+01:00	tonight's treat: roasted peanuts, ginger soda and some #ada #coding , with a side of HPC rabbithole
 2022-12-12T18:37:21+01:00	updated kalk, a minimal CLI RPN calculator with some extra quirky fuctionality. Pretty happy with its current status https://git.sr.ht/~noizhardware/kalk
-2023-02-06T16:48:38+01:00
 2023-02-06T16:56:20+01:00	sloooowly recovering from burnout, more like dragging my knuckles in lukewarm ashes
 2023-02-06T17:03:46+01:00	@<pbatch https://pbat.ch/twtxt.txt> not sure you're reading this, how come you're ditching twtxt?
 2023-04-30T08:53:24+01:00	being immersed in gorgeous #nature makes me want to write elegant programs, I'm amazed by the underlying systems #coding #phylosophy
@@ -78,3 +77,4 @@
 2024-11-08T23:06:16+01:00	the smell of fog is soo gud <3
 2025-01-21T08:18:09+01:00	thinking about l-systems again, maybe a morse beacon  #coding #sound #radio #halfbaked
 2025-02-19T19:02:29+01:00	hey @<lyse https://lyse.isobeef.org/twtxt.txt> I've seen your mention from uhhmmm 4months ago just now using my crawler -__-' / curious to know, do you see my mention now? #meta #twtxt
+2025-02-20T10:23:30+01:00	oh cool @<lyse https://lyse.isobeef.org/twtxt.txt> !! and thanks, got rid of that empty line. ATM I'm using twtxt very much in an experimental way, only manual editing or writing my tools. curious to see how it will evolve. #meta #twtxt
