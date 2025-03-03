@@ -79,3 +79,4 @@
 2025-01-21T08:18:09+01:00	thinking about l-systems again, maybe a morse beacon  #coding #sound #radio #halfbaked
 2025-02-19T19:02:29+01:00	hey @<lyse https://lyse.isobeef.org/twtxt.txt> I've seen your mention from uhhmmm 4months ago just now using my crawler -__-' / curious to know, do you see my mention now? #meta #twtxt
 2025-02-20T10:23:30+01:00	oh cool @<lyse https://lyse.isobeef.org/twtxt.txt> !! and thanks, got rid of that empty line. ATM I'm using twtxt very much in an experimental way, only manual editing or writing my tools. curious to see how it will evolve. #meta #twtxt
+2025-03-03T14:19:29+01:00	hi there!! @<arne https://uplegger.eu/twtxt.txt> \0/
