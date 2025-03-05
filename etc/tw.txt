@@ -22,6 +22,7 @@
 # follow = lord-enki https://www.lord-enki.net/twtxt.txt
 # follow = Phys_org https://feeds.twtxt.net/Phys_org/twtxt.txt
 # follow = melyanna http://tilde.club/~melyanna/twtxt.txt
+# follow = adi https://twtxt.net/user/adi/twtxt.txt
 #
 2022-03-20T16:40:09+01:00	hello twtxt!!! tweeting with https://git.sr.ht/~noizhardware/twBao, still a work in progress :))
 2022-03-20T22:50:19+01:00	now twtxting from my netbook, on Lubuntu uiiii it works!
