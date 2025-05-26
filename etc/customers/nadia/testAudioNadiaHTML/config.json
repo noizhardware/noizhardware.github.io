@@ -1,0 +1,260 @@
+{
+  "grid": [
+    {
+      "sounds": [
+        {
+          "name": "01_G_01",
+          "url": "./suoniNadia/01_G_01.mp3"
+        },
+        {
+          "name": "01_G_02",
+          "url": "./suoniNadia/01_G_02.mp3"
+        },
+        {
+          "name": "01_G_03",
+          "url": "./suoniNadia/01_G_03.mp3"
+        },
+        {
+          "name": "01_G_04",
+          "url": "./suoniNadia/01_G_04.mp3"
+        },
+        {
+          "name": "01_G_05",
+          "url": "./suoniNadia/01_G_05.mp3"
+        },
+        {
+          "name": "01_G_06",
+          "url": "./suoniNadia/01_G_06.mp3"
+        },
+        {
+          "name": "01_G_07",
+          "url": "./suoniNadia/01_G_07.mp3"
+        }
+      ]
+    },
+    {
+      "sounds": [
+        {
+          "name": "02_B_01",
+          "url": "./suoniNadia/02_B_01.mp3"
+        },
+        {
+          "name": "02_B_02",
+          "url": "./suoniNadia/02_B_02.mp3"
+        },
+        {
+          "name": "02_B_03",
+          "url": "./suoniNadia/02_B_03.mp3"
+        },
+        {
+          "name": "02_B_04",
+          "url": "./suoniNadia/02_B_04.mp3"
+        },
+        {
+          "name": "02_B_05",
+          "url": "./suoniNadia/02_B_05.mp3"
+        },
+        {
+          "name": "02_B_06",
+          "url": "./suoniNadia/02_B_06.mp3"
+        },
+        {
+          "name": "02_B_07",
+          "url": "./suoniNadia/02_B_07.mp3"
+        }
+      ]
+    },
+    {
+      "sounds": [
+        {
+          "name": "03_D_01",
+          "url": "./suoniNadia/03_D_01.mp3"
+        },
+        {
+          "name": "03_D_02",
+          "url": "./suoniNadia/03_D_02.mp3"
+        },
+        {
+          "name": "03_D_03",
+          "url": "./suoniNadia/03_D_03.mp3"
+        },
+        {
+          "name": "03_D_04",
+          "url": "./suoniNadia/03_D_04.mp3"
+        },
+        {
+          "name": "03_D_05",
+          "url": "./suoniNadia/03_D_05.mp3"
+        },
+        {
+          "name": "03_D_06",
+          "url": "./suoniNadia/03_D_06.mp3"
+        },
+        {
+          "name": "03_D_07",
+          "url": "./suoniNadia/03_D_07.mp3"
+        }
+      ]
+    },
+    {
+      "sounds": [
+        {
+          "name": "04_F_01",
+          "url": "./suoniNadia/04_F_01.mp3"
+        },
+        {
+          "name": "04_F_02",
+          "url": "./suoniNadia/04_F_02.mp3"
+        },
+        {
+          "name": "04_F_03",
+          "url": "./suoniNadia/04_F_03.mp3"
+        },
+        {
+          "name": "04_F_04",
+          "url": "./suoniNadia/04_F_04.mp3"
+        },
+        {
+          "name": "04_F_05",
+          "url": "./suoniNadia/04_F_05.mp3"
+        },
+        {
+          "name": "04_F_06",
+          "url": "./suoniNadia/04_F_06.mp3"
+        },
+        {
+          "name": "04_F_07",
+          "url": "./suoniNadia/04_F_07.mp3"
+        }
+      ]
+    },
+    {
+      "sounds": [
+        {
+          "name": "05_A_01",
+          "url": "./suoniNadia/05_A_01.mp3"
+        },
+        {
+          "name": "05_A_02",
+          "url": "./suoniNadia/05_A_02.mp3"
+        },
+        {
+          "name": "05_A_03",
+          "url": "./suoniNadia/05_A_03.mp3"
+        },
+        {
+          "name": "05_A_04",
+          "url": "./suoniNadia/05_A_04.mp3"
+        },
+        {
+          "name": "05_A_05",
+          "url": "./suoniNadia/05_A_05.mp3"
+        },
+        {
+          "name": "05_A_06",
+          "url": "./suoniNadia/05_A_06.mp3"
+        },
+        {
+          "name": "05_A_07",
+          "url": "./suoniNadia/05_A_07.mp3"
+        }
+      ]
+    },
+    {
+      "sounds": [
+        {
+          "name": "06_C_01",
+          "url": "./suoniNadia/06_C_01.mp3"
+        },
+        {
+          "name": "06_C_02",
+          "url": "./suoniNadia/06_C_02.mp3"
+        },
+        {
+          "name": "06_C_03",
+          "url": "./suoniNadia/06_C_03.mp3"
+        },
+        {
+          "name": "06_C_04",
+          "url": "./suoniNadia/06_C_04.mp3"
+        },
+        {
+          "name": "06_C_05",
+          "url": "./suoniNadia/06_C_05.mp3"
+        },
+        {
+          "name": "06_C_06",
+          "url": "./suoniNadia/06_C_06.mp3"
+        },
+        {
+          "name": "06_C_07",
+          "url": "./suoniNadia/06_C_07.mp3"
+        }
+      ]
+    },
+    {
+      "sounds": [
+        {
+          "name": "07_E_01",
+          "url": "./suoniNadia/07_E_01.mp3"
+        },
+        {
+          "name": "07_E_02",
+          "url": "./suoniNadia/07_E_02.mp3"
+        },
+        {
+          "name": "07_E_03",
+          "url": "./suoniNadia/07_E_03.mp3"
+        },
+        {
+          "name": "07_E_04",
+          "url": "./suoniNadia/07_E_04.mp3"
+        },
+        {
+          "name": "07_E_05",
+          "url": "./suoniNadia/07_E_05.mp3"
+        },
+        {
+          "name": "07_E_06",
+          "url": "./suoniNadia/07_E_06.mp3"
+        },
+        {
+          "name": "07_E_07",
+          "url": "./suoniNadia/07_E_07.mp3"
+        }
+      ]
+    },
+    {
+      "sounds": [
+        {
+          "name": "08_G_alto_01",
+          "url": "./suoniNadia/08_G_alto_01.mp3"
+        },
+        {
+          "name": "08_G_alto_02",
+          "url": "./suoniNadia/08_G_alto_02.mp3"
+        },
+        {
+          "name": "08_G_alto_03",
+          "url": "./suoniNadia/08_G_alto_03.mp3"
+        },
+        {
+          "name": "08_G_alto_04",
+          "url": "./suoniNadia/08_G_alto_04.mp3"
+        },
+        {
+          "name": "08_G_alto_05",
+          "url": "./suoniNadia/08_G_alto_05.mp3"
+        },
+        {
+          "name": "08_G_alto_06",
+          "url": "./suoniNadia/08_G_alto_06.mp3"
+        },
+        {
+          "name": "08_G_alto_07",
+          "url": "./suoniNadia/08_G_alto_07.mp3"
+        }
+      ]
+    }
+  ]
+}
