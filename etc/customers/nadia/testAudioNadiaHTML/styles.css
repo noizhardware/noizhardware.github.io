@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    /* Le proprietà grid-template-columns e grid-template-rows sono impostate dinamicamente via JavaScript */
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.grid-button {
+    position: relative;
+    min-height: 80px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.grid-button:hover {
+    background-color: #357ae8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-button.playing {
+    background-color: #2ecc71;
+    animation: pulse 1.5s infinite;
+}
+
+.grid-button.paused {
+    background-color: #e74c3c;
+}
+
+.grid-button.error {
+    background-color: #e67e22;
+    border: 2px solid #c0392b;
+}
+
+.error-message {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(192, 57, 43, 0.8);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+.grid-button .status-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.grid-button.playing .status-indicator {
+    background-color: #27ae60;
+}
+
+.grid-button.paused .status-indicator {
+    background-color: #c0392b;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+    }
+}
+
+/* Rimuoviamo la responsività per tablet per mantenere sempre almeno 8 colonne */
+@media (max-width: 768px) {
+    .grid-button {
+        min-height: 60px;
+        font-size: 12px;
+    }
+}
+
+/* Solo per dispositivi molto piccoli riduciamo il numero di colonne */
+@media (max-width: 480px) {
+    .grid-container {
+        /* Nota: questa proprietà verrà sovrascritta dal JavaScript se necessario */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-button {
+        min-height: 50px;
+        font-size: 10px;
+    }
+}
