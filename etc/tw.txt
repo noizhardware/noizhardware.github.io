@@ -81,3 +81,4 @@
 2025-02-20T10:23:30+01:00	oh cool @<lyse https://lyse.isobeef.org/twtxt.txt> !! and thanks, got rid of that empty line. ATM I'm using twtxt very much in an experimental way, only manual editing or writing my tools. curious to see how it will evolve. #meta #twtxt
 2025-03-03T14:19:29+01:00	hi there!! @<arne https://uplegger.eu/twtxt.txt> \0/
 2025-05-05T20:27:22+01:00	I want livecoding to feel like casting a spell #programming #livecoding
+2025-06-24T09:40:43+01:00	#TIR (Today I Realized): breadboard #electronics are actually a form of flow-based #livecoding . #programming
