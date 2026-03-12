@@ -86,3 +86,4 @@
 2025-08-19T21:14:29+01:00	twtxting from Linux Mint uiiiiiiii! finally ~completely kiked windows #linux
 2025-11-11T00:06:53+01:00	The Art of Solder Jumper Programming ; a book I'd love to write one day . #halfbaked #electronics #programming
 2025-12-16T23:52:38+01:00	there's something very soothing in spreadsheets to compute filters parts values and frequencies #electronics
+2026-03-12T16:21:55+01:00	thinking of Masyu. What a great game. Wondering about the perfect algorithm to generate a board of arbitrary size with only one solution. That's _almost_ more fun than playing the game #programming #masyu #puzzle #videogame
